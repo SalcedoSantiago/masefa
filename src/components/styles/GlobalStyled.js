@@ -5,6 +5,7 @@ import variables from './variables';
 
 const GlobalStyle = createGlobalStyle`
     @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+   
     ${variables};
 
     html {
@@ -23,10 +24,6 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
     }
 
-    #root{
-        width: 100vw;
-        height: 100vh;
-    }
 
     body {
         margin: 0;
@@ -37,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         color: var(--slate);
-        font-family: var(--font-sans);
+        font-family: "Montserrat", "Poppins", sans-serif;
         font-size: var(--fz-xl);
         line-height: 1.3;
 
@@ -116,12 +113,42 @@ const GlobalStyle = createGlobalStyle`
         color: var(--black);
         font-weight: 500;
         text-transform: capitalize;
-        font-weight: 800;
+        font-weight: 700;
+        line-height: 1.5;
         text-align: center;
         font-size: clamp(40px, 3vw, 80px);
         margin-bottom: 15px;
+
+
+        &-special{
+            display: block;
+            color: var(--blue);
+        }
+    }
+
+
+    .test-heading{
+        text-align: start;
+        font-size: 38px;
+        position: relative;
+        margin-left: -20px;
+        padding-left: 20px;
+        color: #00235A;
+
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: var(--orange);
+        }
     }
     
+   
+
     .sub-heading{
         margin: 0;
         font-size: 18px;
@@ -129,13 +156,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     p {
-        color: #79787F;
+        color: #7A7A7A;
+        font-family: "Poppins", Sans-serif;
         font-size: 16px;
-        line-height: 1.8;
-
-        & > a {
-        /* ${({ theme }) => theme.inlineLink}; */
-        }
+        font-weight: 400;
+        line-height: 1.6;
     }
 
 

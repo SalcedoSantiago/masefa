@@ -26,9 +26,9 @@ const Masefa = () => {
                 <GlobalStyle />
                 <Header />
                 <Hero />
+                <About />
                 <Featured />
                 <Services />
-                <About />
                 <Cta />
                 <Works />
                 <Testimonials />

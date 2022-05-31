@@ -72,8 +72,8 @@ export default () => {
   return (
     <StyledSection>
       <div className="header">
-        <h5 className="sub-heading">Por que nosotros?</h5>
-        <h2 className="heading">Nuestros Servicios</h2>
+        {/* <h5 className="sub-heading">Por que nosotros?</h5> */}
+        <h2 className="test-heading">Nuestros Servicios</h2>
       </div>
       <Columns>
         {cardServices.map(({ imageSrc, title, description }, i) => (

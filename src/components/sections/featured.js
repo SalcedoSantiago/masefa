@@ -1,12 +1,11 @@
-/**
- * Internal dependencies
- */
 import styled from "styled-components";
-
-import { css } from "styled-components/macro"; //eslint-disable-line
 import { motion } from "framer-motion";
+import { IoMdConstruct } from "react-icons/io";
 
 const SectionStyled = styled.section` 
+    max-width: 1080px;
+
+
 
    .columns{
      display: flex;
@@ -17,54 +16,48 @@ const SectionStyled = styled.section`
      margin: 0 auto;
  
      > .column {
-       margin: 20px;
        width: 100%;
        min-height: 18rem;
        @media (min-width: 768px) {
-         width: calc(30% - 20px);
+         width: calc(33% - 2rem);
        }
      }
    }
  `
 
-const OverlayImage = styled.div`
-     width: 100%;
-     height: 100%;
-     ${props => css`
-         background-image: url("${props.imageSrc}");
-         background-size: cover;
-     `}
-   
- `
 
 const CartContent = styled(motion.div)`
-     height: 100%;
-     display: flex;
-     padding: 2.5rem 2.5rem 3rem 2.5rem;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     background-color: transparent;
-     background-image: linear-gradient(90deg, #1E1D24 0%, #EF0B0B00 100%);
-     opacity: 1;
-     transition: 'background' 0s, border-radius 0.3s, opacity 0s;
+    height: 100%;
+    padding: 50px 50px 75px 50px;
+    box-shadow: 0px 10px 50px 0px rgb(161 161 161 / 50%);
+    border-radius: 0px 0px 0px 0px;
+    ${({ theme }) => theme.boxShadow};
+    cursor: pointer;
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+    border-color: #FF6C00;
+    border-radius: 0px 0px 0px 0px;
  
-     &:hover{
-         background-color: transparent;
-         background-image: linear-gradient(90deg, #FC5A0A 0%, #100E0F00 100%);
-         opacity: 1;
+
+     svg{
+        width: 40px;
+        height: 40px;
+        color: var(--orange);
+        margin-bottom: 10px;
      }
- 
+
      .title{
-       font-weight: bold;
-       font-size: 1.5rem;
-       color:#FFFFFF;
-       font-weight: 600;
+        padding: 0px 0px 0px 0px;
+        font-family: "Poppins", Sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--blue);
      }
  
      .desc{
-       margin-top: 1rem;
-       color: #FFFFFF;
+        font-family: "Poppins", Sans-serif;
+        font-size: 14px;
+        font-weight: 400;
      }
  `
 
@@ -74,19 +67,17 @@ const Featured = () => {
     return (
         <SectionStyled>
             <div className="header">
-                <h2 className="heading">Soluciones que ofrecemos</h2>
-                <p className="sub-heading">Our strengths in welding are focused around 3 core functions: Resistance Welding (spot welding, seam welding.)</p>
+                <h2 className="test-heading">Soluciones que ofrecemos</h2>
             </div>
             {/* <div className="colums-wrapper"> */}
             <div className="columns">
                 {cards.map(({ title, description, imageSrc }, i) => (
                     <div key={i} className="column">
-                        <OverlayImage imageSrc={imageSrc}>
-                            <CartContent >
-                                <h2 className="title">{title}</h2>
-                                <p className="desc">{description}</p>
-                            </CartContent>
-                        </OverlayImage>
+                        <CartContent >
+                            <IoMdConstruct />
+                            <h2 className="title">{title}</h2>
+                            <p className="desc">{description}</p>
+                        </CartContent>
                     </div>
                 ))}
             </div>
