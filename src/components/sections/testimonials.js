@@ -1,89 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-import { FaQuoteLeft } from "react-icons/fa";
-
 /**
  * Internal dependencies
  */
 
-const Columns = styled.div`
-  margin-top: 80px;
-  ${({ theme }) => theme.flexCenter};
+
+const SectionStyled = styled.section`
+  padding: 60px 0;
 `
 
-const StyledSection = styled.section`
-`
 
-const FeatureCotainer = styled.div`
-  border: none;
-  width: 100%;
-  box-shadow: 0 0 35px 0 rgb(93 114 128 / 15%);
-  transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
-  margin: -20px 20px 40px;
-  padding: 30px;
+const PartnersContainer = styled.div`
+  display: flex;
+  align-items: center;
 
-    &.featured{
-      margin: 20px;
+  .featured{
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #ccc;
+
+    h2{
+      font-size: 20px;
+      padding-right: 10px;
     }
-
-  @media (min-width: 768px) {
-      width: calc(50% - 2rem);
-  }
-
-  @media (min-width: 1024px) {
-      width: calc(30% - 2rem);
-  }
-
-  .columns{
-    display: flex;
-    flex-direction: column;
-    @media (min-width: 768px) {
-      flex-direction: row;
-    }
-  }
-
-  div{
-    margin: 0;
-    @media (min-width: 768px) {
-      /* margin-right: 20px; */
-    }
-    svg{
-      margin-right: auto;
-      margin-bottom: 10px;
-      width: 40px;
-      height: 50px;
-      color: var(--orange);
-    }
-  }
-
-  p{
-    font-size: 12px;
-    line-height: 1.643em;
-    text-align: start;
-    margin: 0 20px;
-    margin-top: 1.25rem;
-    color: rgba(113,128,150,1);
-    font-weight: 500;
-    line-height: 2;
-
-    @media (min-width: 768px) {
-      margin: 0;
-    }
-  }
-
-  .name{
-    display: block;
-    text-align: start;
-    margin-top: 1rem;
-    color: rgba(26,32,44,1);
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.875rem;
-    letter-spacing: 0.025em;
-  }
-
-  .company{
-    font-size: 14px;
   }
 `
 
@@ -92,31 +31,41 @@ const FeatureCotainer = styled.div`
 
 export default () => {
   return (
-    <StyledSection>
-      <div className="header">
-        <h3 className="sub-heading">Testimonials</h3>
-        <h2 className="heading">Que dicen los clientes?</h2>
-      </div>
-      <Columns>
-        {cardServices.map(({ imageSrc, title, description }, i) => (
-          <FeatureCotainer key={i} className={i == 1 || i == 4 ? 'featured' : ''}>
-            <div className="columns">
-              <div className="card">
-                <FaQuoteLeft />
-                <div className="content">
-                  <p>"{description}"</p>
-                  <span className="name">-Lorem ipsum</span>
-                  <span className="company">google company</span>
-                </div>
-              </div>
-            </div>
-          </FeatureCotainer>
-        ))}
-      </Columns>
-    </StyledSection>
+    <SectionStyled>
+      <PartnersContainer>
+        <div className="featured">
+          <h2>Industry Partners</h2>
+        </div>
+        <div>
+          <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-1.svg" />
+        </div>
+        <div>
+          <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-2.svg" />
+        </div>
+
+        <div>
+          <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-3.svg" />
+        </div>
+
+        <div>
+          <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-4.svg" />
+        </div>
+
+        <div>
+          <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-2.svg" />
+        </div>
+        <div>
+          <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-3.svg" />
+        </div>
+
+
+      </PartnersContainer>
+    </SectionStyled>
   );
 };
 
+
+// https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-2.svg
 
 const cardServices = [
   {

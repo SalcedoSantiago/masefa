@@ -65,6 +65,9 @@ export const theme = {
 
 
   button,
+  listReset: css`
+    list-style: none;
+  `,
 
   boxShadow: css`
   box-shadow: 0 0 35px 0 rgb(93 114 128 / 15%);

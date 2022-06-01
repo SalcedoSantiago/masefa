@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { css } from "styled-components";
 
 
 
@@ -12,6 +13,11 @@ export const Button = styled.button`
     border-style: none;
     border-radius: 0px 0px 0px 0px;
     cursor: pointer;
+
+    ${(props)=> props.center && css`
+        margin: 0 auto;
+        display: flex;
+    `}
 
     .arrow{
         padding-left:5px;

@@ -5,6 +5,7 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import { Button } from "../button";
 /**
  * Internal dependencies
  */
@@ -16,13 +17,10 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 const Columns = styled.div`
      ${({ theme }) => theme.flexStart};
      gap: 20px;
- 
+     margin-bottom: 60px;
  `
 const StyledSection = styled.section`
-     @media (min-width: 1024px) {
-         /* padding: 0 ; */
-     }
- 
+
  `
 
 export const CardContainer = styled.div`
@@ -91,12 +89,9 @@ export default () => {
     return (
         <StyledSection>
             <div className="header">
-                <h2 className="heading">
+                <h2 className="test-heading">
                     Nuestro trabajos
                 </h2 >
-                <h5 className="sub-heading">
-                    The smartest working shoh5 in the steel business
-                </h5>
             </div>
 
             <Columns>
@@ -127,7 +122,7 @@ export default () => {
                     </CardContainer>
                 ))}
             </Columns>
-            <button className="btn">Show More</button>
+            <Button center>Show More</Button>
         </StyledSection>
     );
 };

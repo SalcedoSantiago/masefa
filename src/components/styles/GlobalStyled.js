@@ -30,16 +30,12 @@ const GlobalStyle = createGlobalStyle`
         width: 100%;
         min-height: 100%;
         overflow-x: hidden;
-        background-color: #F6F6F6;
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        color: var(--slate);
+        background-color: #FFF;
         font-family: "Montserrat", "Poppins", sans-serif;
-        font-size: var(--fz-xl);
         line-height: 1.3;
 
         @media (max-width: 480px) {
-        font-size: var(--fz-lg);
+            font-size: var(--fz-lg);
         }
   }
     
@@ -134,7 +130,7 @@ const GlobalStyle = createGlobalStyle`
         margin-left: -20px;
         padding-left: 20px;
         color: #00235A;
-
+        font-weight: 700;
 
         &::before{
             content: "";
@@ -166,6 +162,13 @@ const GlobalStyle = createGlobalStyle`
 
     img{
         width: 100%;
+    }
+
+
+    ul{
+        li{
+            ${(({ theme }) => theme.listReset)};
+        }
     }
 
 

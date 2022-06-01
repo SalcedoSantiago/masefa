@@ -3,10 +3,6 @@ import { motion } from "framer-motion";
 import { IoMdConstruct } from "react-icons/io";
 
 const SectionStyled = styled.section` 
-    max-width: 1080px;
-
-
-
    .columns{
      display: flex;
      justify-content: space-between;
@@ -31,7 +27,7 @@ const CartContent = styled(motion.div)`
     padding: 50px 50px 75px 50px;
     box-shadow: 0px 10px 50px 0px rgb(161 161 161 / 50%);
     border-radius: 0px 0px 0px 0px;
-    ${({ theme }) => theme.boxShadow};
+    /* ${({ theme }) => theme.boxShadow}; */
     cursor: pointer;
     border-style: solid;
     border-width: 0px 0px 3px 0px;
