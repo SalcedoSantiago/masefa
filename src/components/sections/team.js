@@ -1,10 +1,23 @@
 import styled from "styled-components"
+import { IoLogoLinkedin, IoLogoFacebook } from 'react-icons/io'
+
 
 const StyledSection = styled.section`
 
+
+    .header{
+        margin-bottom: 80px;
+    }
+
+    .columns{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
     
 `
-const Columns = styled.div`
+const TeamColumn = styled.div`
+    width: 60%;
     ${({ theme }) => theme.flexStart};
 
     > div{
@@ -15,27 +28,28 @@ const Columns = styled.div`
             width: 50%;
         }
     }
+
 `
 
 const TeamContainer = styled.div`
-    padding: 35px 30px 35px 30px;
-    margin: 0 20px;
-    ${({ theme }) => theme.flexStart};
-    align-items: center;
-    /* box-shadow: 5px 6px 15px -1px rgba(0,0,0,0.29); */
+    padding: 0 30px 35px 30px;
     border-radius: 5px;
+    width: 400px;
 
-    .image{
+
+    .image-container{
         border-radius: 0.75rem;
-        object-fit: cover;
-        aspect-ratio: 1/1;
-        width: 40%;
+        width: 100%;
+
+        img{
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
     }
 
     .content{
-        width: 50%;
-        flex: 1;
-        padding-left: 20px;
+        width: 100%;
+        padding: 10px 20px;
 
         .name{
             font-size: 20px;
@@ -55,8 +69,36 @@ const TeamContainer = styled.div`
         }
 
     }
+`
 
+const Links = styled.ul`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+`
 
+const Link = styled.li`
+
+        svg{
+            width: 30px;
+            height: 30px;
+            path{
+                fill: var(--blue);
+            }
+        }
+`
+
+const SectionDescription = styled.div`
+    width: 40%;
+    padding-left: 40px;
+
+    h3{
+        font-size: 26px;
+        text-align: center;
+        font-weight: 700;
+        color: var(--blue);
+    }
 `
 
 
@@ -66,22 +108,44 @@ export default () => {
             <div className="header">
                 <h2 className="heading">Nustro Equipo</h2>
             </div>
-            <Columns>
-                {EQUIPO.map(({ name, description, img, position }, index) =>
-                (
-                    <div key={index}>
-                        <TeamContainer>
-                            <img className="image" src={img} />
-                            <div className="content">
-                                <h3 className="name">{name}</h3>
-                                <span className="position">{position}</span>
-                                <p className="desc">{description}</p>
-                            </div>
-                        </TeamContainer>
-                    </div>
-                ))
-                }
-            </Columns>
+            <div className="columns">
+                <TeamColumn>
+                    {EQUIPO.map(({ name, description, img, position }, index) =>
+                    (
+                        <div key={index}>
+                            <TeamContainer>
+                                <div className="image-container">
+
+                                    <img className="image" src={img} />
+                                </div>
+                                <div className="content">
+                                    <h3 className="name">{name}</h3>
+                                    <span className="position">{position}</span>
+                                    <p className="desc">{description}</p>
+                                    <Links>
+                                        <Link>
+                                            <a>
+                                                <IoLogoLinkedin />
+                                            </a>
+                                            <a>
+                                                <IoLogoFacebook />
+                                            </a>
+                                        </Link>
+                                    </Links>
+                                </div>
+
+                            </TeamContainer>
+                        </div>
+                    ))
+                    }
+                </TeamColumn>
+                <SectionDescription>
+                    <h3>El equipo mas calificado</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </p>
+                </SectionDescription>
+            </div>
         </StyledSection>
     )
 }
