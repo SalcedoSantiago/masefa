@@ -162,6 +162,7 @@ const GlobalStyle = createGlobalStyle`
 
 
     ul{
+        padding: 0;
         li{
             ${(({ theme }) => theme.listReset)};
         }
