@@ -89,7 +89,7 @@ export default () => {
     return (
         <StyledSection>
             <div className="header">
-                <h2 className="test-heading">
+                <h2 className="heading">
                     Nuestro trabajos
                 </h2 >
             </div>

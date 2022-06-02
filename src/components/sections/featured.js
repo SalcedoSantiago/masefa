@@ -2,11 +2,31 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { IoMdConstruct } from "react-icons/io";
 
-const SectionStyled = styled.section` 
+const SectionStyled = styled.div` 
+    background-color: var(--blue);
+
+
+    > section{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .short-column{
+        width: 30%;
+        margin-right: 30px;
+        p,
+        h2
+        {
+            color: var(--white);
+
+        }
+    }
+
    .columns{
      display: flex;
      justify-content: space-between;
-     width: 100%;
+     width: 70%;
      max-width: 1280px;
      flex-wrap: wrap;
      margin: 0 auto;
@@ -15,30 +35,35 @@ const SectionStyled = styled.section`
        width: 100%;
        min-height: 18rem;
        @media (min-width: 768px) {
-         width: calc(33% - 2rem);
+         width: calc(33% - .5rem);
        }
+
+       &.featured{
+            border-radius: 5px;
+            color: #fff;
+        }
      }
+
+    
    }
  `
 
-
 const CartContent = styled(motion.div)`
     height: 100%;
-    padding: 50px 50px 75px 50px;
-    box-shadow: 0px 10px 50px 0px rgb(161 161 161 / 50%);
-    border-radius: 0px 0px 0px 0px;
+    padding: 50px 15px 40px 15px;
+    /* box-shadow: 0px 10px 50px 0px rgb(161 161 161 / 50%); */
     /* ${({ theme }) => theme.boxShadow}; */
     cursor: pointer;
-    border-style: solid;
-    border-width: 0px 0px 3px 0px;
-    border-color: #FF6C00;
-    border-radius: 0px 0px 0px 0px;
+    /* border-style: solid; */
+    /* border-width: 0px 0px 3px 0px; */
+    /* border-color: #FF6C00; */
  
 
      svg{
         width: 40px;
         height: 40px;
-        color: var(--orange);
+        color: var(--orange
+            );
         margin-bottom: 10px;
      }
 
@@ -47,12 +72,13 @@ const CartContent = styled(motion.div)`
         font-family: "Poppins", Sans-serif;
         font-size: 24px;
         font-weight: 600;
-        color: var(--blue);
+        color: var(--white);
      }
  
      .desc{
         font-family: "Poppins", Sans-serif;
         font-size: 14px;
+        color: var(--white);
         font-weight: 400;
      }
  `
@@ -62,21 +88,25 @@ const CartContent = styled(motion.div)`
 const Featured = () => {
     return (
         <SectionStyled>
-            <div className="header">
-                <h2 className="test-heading">Soluciones que ofrecemos</h2>
-            </div>
-            {/* <div className="colums-wrapper"> */}
-            <div className="columns">
-                {cards.map(({ title, description, imageSrc }, i) => (
-                    <div key={i} className="column">
-                        <CartContent >
-                            <IoMdConstruct />
-                            <h2 className="title">{title}</h2>
-                            <p className="desc">{description}</p>
-                        </CartContent>
-                    </div>
-                ))}
-            </div>
+            <section className="container">
+                <div className="short-column">
+                    <h2 className="">Soluciones que ofrecemos</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con
+                    </p>
+                </div>
+                <div className="columns">
+                    {cards.map(({ title, description, imageSrc }, i) => (
+                        <div key={i} className={`column ${i == 1 && `featured`}`}>
+                            <CartContent >
+                                <IoMdConstruct />
+                                <h2 className="title">{title}</h2>
+                                <p className="desc">{description}</p>
+                            </CartContent>
+                        </div>
+                    ))}
+                </div>
+            </section>
             {/* </div> */}
         </SectionStyled >
     )

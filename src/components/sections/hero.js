@@ -165,7 +165,7 @@ const Hero = () => {
 
     setTimeout(() => {
         paginate(1);
-    }, 2000)
+    }, 5000)
 
     return (
         <StyledSection>

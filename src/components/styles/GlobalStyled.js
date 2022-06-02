@@ -105,16 +105,12 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .heading {
-        margin: 0;
         color: var(--black);
+        font-size: 2.3333333333333rem;
         font-weight: 500;
         text-transform: capitalize;
-        font-weight: 700;
-        line-height: 1.5;
+        font-weight: 800;
         text-align: center;
-        font-size: clamp(40px, 3vw, 80px);
-        margin-bottom: 15px;
-
 
         &-special{
             display: block;
@@ -127,7 +123,7 @@ const GlobalStyle = createGlobalStyle`
         text-align: start;
         font-size: 38px;
         position: relative;
-        margin-left: -20px;
+        margin-left:  20px;
         padding-left: 20px;
         color: #00235A;
         font-weight: 700;

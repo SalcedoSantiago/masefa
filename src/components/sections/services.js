@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { IoIosHammer, IoIosArrowForward } from "react-icons/io";
+import { IoIosHammer, IoIosCheckmarkCircle } from "react-icons/io";
 /**
  * Internal dependencies
  */
@@ -101,7 +101,7 @@ export default () => {
     <StyledSection>
       <div className="header">
         {/* <h5 className="sub-heading">Por que nosotros?</h5> */}
-        <h2 className="test-heading">Nuestros Servicios</h2>
+        <h2 className="heading">Nuestros Servicios</h2>
       </div>
       <ExperienceContainer>
         {cardServices.map(({ imageSrc, title, description }, i) => (
@@ -118,23 +118,23 @@ export default () => {
           <h3>El rubro donde nos desarrollamos</h3>
           <ul>
             <li>
-              <IoIosArrowForward />
+              <IoIosCheckmarkCircle />
               Industria química
             </li>
             <li>
-              <IoIosArrowForward />
+              <IoIosCheckmarkCircle />
               Industria química
             </li>
             <li>
-              <IoIosArrowForward />
+              <IoIosCheckmarkCircle />
               Industria química
             </li>
             <li>
-              <IoIosArrowForward />
+              <IoIosCheckmarkCircle />
               Industria química
             </li>
             <li>
-              <IoIosArrowForward />
+              <IoIosCheckmarkCircle />
               Industria química
             </li>
           </ul>
@@ -143,19 +143,19 @@ export default () => {
           <h3>Ejecucion de soldaduras especiales en</h3>
           <ul>
             <li>
-              <IoIosArrowForward />
+              <IoIosCheckmarkCircle />
               Industria química
             </li>
             <li>
-              <IoIosArrowForward />
+              <IoIosCheckmarkCircle />
               Industria química
             </li>
             <li>
-              <IoIosArrowForward />
+              <IoIosCheckmarkCircle />
               Industria química
             </li>
             <li>
-              <IoIosArrowForward />
+              <IoIosCheckmarkCircle />
               Industria química
             </li>
           </ul>

@@ -33,7 +33,6 @@ const Columns = styled.div`
 `
 
 const StyledSection = styled.section`
-padding-top: 0;
     img{
         flex-shrink: 0;
         position: relative;

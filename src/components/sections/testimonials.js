@@ -22,6 +22,8 @@ const PartnersContainer = styled.div`
     h2{
       font-size: 20px;
       padding-right: 10px;
+      color: var(--blue);
+      font-weight: 700;
     }
   }
 `

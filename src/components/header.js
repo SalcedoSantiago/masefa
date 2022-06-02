@@ -6,7 +6,7 @@ import styled from "styled-components";
 const DesktopNavLinks = styled.nav`
     display: flex;
     flex-wrap: wrap;
-
+    min-height: 20vh;
     a{
         text-decoration: none;
         color: var(--white);

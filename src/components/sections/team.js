@@ -65,7 +65,7 @@ export default () => {
     return (
         <StyledSection>
             <div className="header">
-                <h2 className="test-heading">Nustro Equipo</h2>
+                <h2 className="heading">Nustro Equipo</h2>
             </div>
             <Columns>
                 {EQUIPO.map(({ name, description, img, position }, index) =>
