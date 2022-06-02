@@ -61,6 +61,8 @@ const ServicesContainer = styled.div`
       text-align: center;
       width: 50%;
 
+
+     
       h3{
         margin-top: 40px;
         margin-bottom: 30px;
@@ -74,6 +76,8 @@ const ServicesContainer = styled.div`
     svg{
       color: var(--orange);
       margin-right: 10px;
+      width: 30px;
+      height: 30px;
     }
 
     ul{
@@ -83,7 +87,6 @@ const ServicesContainer = styled.div`
       padding-left: 0;
 
       li{
-
         width: 50%;
         margin-bottom: 30px;
         font-weight: 600;
@@ -99,7 +102,7 @@ const ServicesContainer = styled.div`
 
 export default () => {
   return (
-    <Fade right>
+    <Fade>
       <StyledSection>
         <div className="header">
           {/* <h5 className="sub-heading">Por que nosotros?</h5> */}
@@ -120,23 +123,23 @@ export default () => {
             <h3>El rubro donde nos desarrollamos</h3>
             <ul>
               <li>
-                <IoIosCheckmarkCircle />
+                <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
               </li>
               <li>
-                <IoIosCheckmarkCircle />
+                <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
               </li>
               <li>
-                <IoIosCheckmarkCircle />
+                <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
               </li>
               <li>
-                <IoIosCheckmarkCircle />
+                <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
               </li>
               <li>
-                <IoIosCheckmarkCircle />
+                <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
               </li>
             </ul>
@@ -145,19 +148,19 @@ export default () => {
             <h3>Ejecucion de soldaduras especiales en</h3>
             <ul>
               <li>
-                <IoIosCheckmarkCircle />
+                <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
               </li>
               <li>
-                <IoIosCheckmarkCircle />
+                <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
               </li>
               <li>
-                <IoIosCheckmarkCircle />
+                <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
               </li>
               <li>
-                <IoIosCheckmarkCircle />
+                <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
               </li>
             </ul>
