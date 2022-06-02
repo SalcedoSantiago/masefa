@@ -8,7 +8,6 @@ import { IoIosPin } from 'react-icons/io'
 const StyledFooter = styled.footer`
     background-color: var(--blue);
     padding-top: 120px;
-    padding-bottom: 120px;
 `;
 
 
@@ -41,11 +40,16 @@ const Columns = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 40px;
 
 `
 
 const Column = styled.div`
     width: calc(25% - 1rem);
+`
+
+const Heading = styled.h3`
+    color: #fff;
 `
 
 
@@ -62,6 +66,24 @@ const Link = styled.li`
 const LogoLink = styled(Link)`
     img{
         max-width: 130px;
+    }
+`
+
+const LineDivider = styled.div`
+    margin: 20px 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-bottom-width: 2px;
+    border-color: rgba(45, 55, 72, 1);
+`
+
+const Copyright = styled.div`
+    display: flex;
+    justify-content: space-between;
+    
+    
+    p{
+        color: #fff;
     }
 `
 
@@ -96,7 +118,7 @@ const Footer = () => {
                         </div>
                     </Column>
                     <Column>
-                        <h3>Services</h3>
+                        <Heading>Services</Heading>
                         <LinksContainer>
                             <Link>
                                 <a>Primer servicio</a>
@@ -113,7 +135,7 @@ const Footer = () => {
                         </LinksContainer>
                     </Column>
                     <Column>
-                        <h3>Services</h3>
+                        <Heading>Services</Heading>
                         <LinksContainer>
                             <Link>
                                 <a>Primer servicio</a>
@@ -130,7 +152,7 @@ const Footer = () => {
                         </LinksContainer>
                     </Column>
                     <Column>
-                        <h3>Quick Contact</h3>
+                        <Heading>Quick Contact</Heading>
                         <LinksContainer>
                             <Link>
                                 <a>Primer servicio</a>
@@ -147,9 +169,12 @@ const Footer = () => {
                         </LinksContainer>
                     </Column>
                 </Columns>
+                <LineDivider></LineDivider>
 
-
-
+                <Copyright>
+                    <p>© Copyright 2020, Treact Inc.</p>
+                    <p>An Internet Company.</p>
+                </Copyright>
             </FooterContainer>
         </StyledFooter>
     );

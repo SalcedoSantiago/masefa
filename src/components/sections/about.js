@@ -40,16 +40,21 @@ const StyledSection = styled.section`
 
     .desc{
         margin-top: 16px;
+        font-size: 14px;
+        color: var(--black);
+        font-weight: 500;
     }
 
-    .heading{
-        font-size: 34px;
+    .heading-section{
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--blue);
         &::before{
             content:"";
         }
     }
 
-    .heading,
+    .heading-section,
     .desc
     {
         margin-right: 20px;
@@ -147,14 +152,19 @@ const PrimaryButton = styled(Button)`
 export default () => {
     return (
         <StyledSection>
+            <div className="header">
+                <h2 className="heading">
+                    Quienes somos?
+                </h2>
+            </div>
             <Columns>
                 <div className="two-colunm relative">
                     <Layers />
                     <img alt="about-us" src={AboutImage} />
                 </div>
                 <div className="two-colunm">
-                    <h2 className="heading">
-                        Somos una empresa de oficio integral Servicios a su servicio
+                    <h2 className="heading-section">
+                        Sobre nosotros
                         {/* <span className="heading-special"> */}
 
                         {/* </span> */}

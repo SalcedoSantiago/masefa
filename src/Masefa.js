@@ -7,6 +7,7 @@ import Cta from "./components/sections/cta";
 import Works from "./components/sections/works";
 import Testimonials from "./components/sections/testimonials";
 import Team from "./components/sections/team";
+import Contact from "./components/sections/contact";
 import Footer from "./components/footer";
 
 
@@ -33,6 +34,7 @@ const Masefa = () => {
                 <Works />
                 <Testimonials />
                 <Team />
+                <Contact />
                 <Footer />
             </ThemeProvider>
         </>

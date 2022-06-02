@@ -143,8 +143,10 @@ const GlobalStyle = createGlobalStyle`
 
     .sub-heading{
         margin: 0;
-        font-size: 18px;
-        color: #79787F;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--orange);
     }
 
     p {

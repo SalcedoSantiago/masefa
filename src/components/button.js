@@ -14,8 +14,14 @@ export const Button = styled.button`
     border-radius: 0px 0px 0px 0px;
     cursor: pointer;
 
-    ${(props)=> props.center && css`
+    ${(props) => props.center && css`
         margin: 0 auto;
+        display: flex;
+    `}
+
+    ${(props) => props.end && css`
+        /* margin: 0 auto; */
+        margin-left: auto;
         display: flex;
     `}
 
