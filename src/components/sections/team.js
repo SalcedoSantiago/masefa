@@ -22,11 +22,10 @@ const TeamContainer = styled.div`
     margin: 0 20px;
     ${({ theme }) => theme.flexStart};
     align-items: center;
-    box-shadow: 5px 6px 15px -1px rgba(0,0,0,0.29);
+    /* box-shadow: 5px 6px 15px -1px rgba(0,0,0,0.29); */
     border-radius: 5px;
 
     .image{
-        /* width: 12rem; */
         border-radius: 0.75rem;
         object-fit: cover;
         aspect-ratio: 1/1;

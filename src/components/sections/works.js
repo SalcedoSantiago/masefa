@@ -6,6 +6,8 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { Button } from "../button";
+import Fade from 'react-reveal/Fade';
+
 /**
  * Internal dependencies
  */
@@ -87,43 +89,46 @@ export const CardHoverOverlay = styled(motion.div)`
 
 export default () => {
     return (
-        <StyledSection>
-            <div className="header">
-                <h2 className="heading">
-                    Nuestro trabajos
-                </h2 >
-            </div>
+        <Fade>
 
-            <Columns>
-                {Works.map((card, index) => (
-                    <CardContainer key={index}>
-                        <Card className="group" href={card.url} initial="rest" whileHover="hover" animate="rest">
-                            <CardImageContainer imageSrc={card.imageSrc}>
-                                <CardHoverOverlay
-                                    variants={{
-                                        hover: {
-                                            opacity: 1,
-                                        },
-                                        rest: {
-                                            opacity: 0,
-                                        }
-                                    }}
-                                    transition={{ duration: 0.4 }}
-                                >
-                                    <h2>
-                                        Lorem Ipsum
-                                    </h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo i ncidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.
-                                    </p>
-                                </CardHoverOverlay>
-                            </CardImageContainer>
-                        </Card>
-                    </CardContainer>
-                ))}
-            </Columns>
-            <Button center>Show More</Button>
-        </StyledSection>
+            <StyledSection>
+                <div className="header">
+                    <h2 className="heading">
+                        Nuestro trabajos
+                    </h2 >
+                </div>
+
+                <Columns>
+                    {Works.map((card, index) => (
+                        <CardContainer key={index}>
+                            <Card className="group" href={card.url} initial="rest" whileHover="hover" animate="rest">
+                                <CardImageContainer imageSrc={card.imageSrc}>
+                                    <CardHoverOverlay
+                                        variants={{
+                                            hover: {
+                                                opacity: 1,
+                                            },
+                                            rest: {
+                                                opacity: 0,
+                                            }
+                                        }}
+                                        transition={{ duration: 0.4 }}
+                                    >
+                                        <h2>
+                                            Lorem Ipsum
+                                        </h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo i ncidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.
+                                        </p>
+                                    </CardHoverOverlay>
+                                </CardImageContainer>
+                            </Card>
+                        </CardContainer>
+                    ))}
+                </Columns>
+                <Button center>Show More</Button>
+            </StyledSection>
+        </Fade>
     );
 };
 

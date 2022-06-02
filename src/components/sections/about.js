@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // import { css } from "styled-components/macro"; //eslint-disable-line
-
+import Fade from 'react-reveal/Fade';
 import AboutImage from '../assets/images/about.JPG'
 
 /**
@@ -151,85 +151,87 @@ const PrimaryButton = styled(Button)`
 
 export default () => {
     return (
-        <StyledSection>
-            <div className="header">
-                <h2 className="heading">
-                    Quienes somos?
-                </h2>
-            </div>
-            <Columns>
-                <div className="two-colunm relative">
-                    <Layers />
-                    <img alt="about-us" src={AboutImage} />
-                </div>
-                <div className="two-colunm">
-                    <h2 className="heading-section">
-                        Sobre nosotros
-                        {/* <span className="heading-special"> */}
-
-                        {/* </span> */}
+        <Fade right>
+            <StyledSection>
+                <div className="header">
+                    <h2 className="heading">
+                        Quienes somos?
                     </h2>
-                    <p className="desc">
-                        Nos
-                        dedicamos fundamentalmente a satisfacer necesidades de mantenimiento
-                        preventivo, correctivo y de tareas generales accesorias de instalaciones y
-                        servicios en platas industriales, desarrollándose en el rubro de
-                        prefabricado y montajes de cañerías, y ejecución de soldaduras especiales.
-                    </p>
-                    <p className="desc">
-                        Nuestro objetivo es crecer en la industria y poder ofrecer un servicio
-                        profesional adecuado para cada necesidad que se nos presente.
-                        Administrar el tiempo de manera activa, productiva y prudente para
-                        acortar costos y dejar satisfechos a todos nuestros clientes, como lo
-                        venimos haciendo.
-                    </p>
-                    <p className="desc">
-                        A lo largo de mas de 10 años, MASEFA creció de recomendación en
-                        recomendación, pero creemos que ha llegado el momento de agrandar la
-                        lista de clientes y presentarnos como la empresa confiable, ágil y eficaz
-                        que somos.
-                    </p>
+                </div>
+                <Columns>
+                    <div className="two-colunm relative">
+                        <Layers />
+                        <img alt="about-us" src={AboutImage} />
+                    </div>
+                    <div className="two-colunm">
+                        <h2 className="heading-section">
+                            Sobre nosotros
+                            {/* <span className="heading-special"> */}
 
-                    <PrimaryButton href="/#we">
-                        Contact Us <span className="arrow">&gt;</span>
-                    </PrimaryButton>
-                </div>
-            </Columns>
-            <ExperienceContainer>
-                <div className="experiencie">
-                    <div className="counter">
-                        <span>24+</span>
-                    </div>
-                    <div className="content">
-                        <h4>Running Project</h4>
-                        <p>
-                            Welding is a fabrication process that joins materials, usually metals or thermoplastics,
+                            {/* </span> */}
+                        </h2>
+                        <p className="desc">
+                            Nos
+                            dedicamos fundamentalmente a satisfacer necesidades de mantenimiento
+                            preventivo, correctivo y de tareas generales accesorias de instalaciones y
+                            servicios en platas industriales, desarrollándose en el rubro de
+                            prefabricado y montajes de cañerías, y ejecución de soldaduras especiales.
                         </p>
-                    </div>
-                </div>
-                <div className="experiencie">
-                    <div className="counter">
-                        <span>24+</span>
-                    </div>
-                    <div className="content">
-                        <h4>Running Project</h4>
-                        <p>
-                            Welding is a fabrication process that joins materials, usually metals or thermoplastics,
+                        <p className="desc">
+                            Nuestro objetivo es crecer en la industria y poder ofrecer un servicio
+                            profesional adecuado para cada necesidad que se nos presente.
+                            Administrar el tiempo de manera activa, productiva y prudente para
+                            acortar costos y dejar satisfechos a todos nuestros clientes, como lo
+                            venimos haciendo.
                         </p>
-                    </div>
-                </div>
-                <div className="experiencie">
-                    <div className="counter">
-                        <span>24+</span>
-                    </div>
-                    <div className="content">
-                        <h4>Running Project</h4>
-                        <p>
-                            Welding is a fabrication process that joins materials, usually metals or thermoplastics,
+                        <p className="desc">
+                            A lo largo de mas de 10 años, MASEFA creció de recomendación en
+                            recomendación, pero creemos que ha llegado el momento de agrandar la
+                            lista de clientes y presentarnos como la empresa confiable, ágil y eficaz
+                            que somos.
                         </p>
+
+                        <PrimaryButton href="/#we">
+                            Contact Us <span className="arrow">&gt;</span>
+                        </PrimaryButton>
                     </div>
-                </div>
-            </ExperienceContainer>
-        </StyledSection >
+                </Columns>
+                <ExperienceContainer>
+                    <div className="experiencie">
+                        <div className="counter">
+                            <span>24+</span>
+                        </div>
+                        <div className="content">
+                            <h4>Running Project</h4>
+                            <p>
+                                Welding is a fabrication process that joins materials, usually metals or thermoplastics,
+                            </p>
+                        </div>
+                    </div>
+                    <div className="experiencie">
+                        <div className="counter">
+                            <span>24+</span>
+                        </div>
+                        <div className="content">
+                            <h4>Running Project</h4>
+                            <p>
+                                Welding is a fabrication process that joins materials, usually metals or thermoplastics,
+                            </p>
+                        </div>
+                    </div>
+                    <div className="experiencie">
+                        <div className="counter">
+                            <span>24+</span>
+                        </div>
+                        <div className="content">
+                            <h4>Running Project</h4>
+                            <p>
+                                Welding is a fabrication process that joins materials, usually metals or thermoplastics,
+                            </p>
+                        </div>
+                    </div>
+                </ExperienceContainer>
+            </StyledSection>
+        </Fade>
     );
 };

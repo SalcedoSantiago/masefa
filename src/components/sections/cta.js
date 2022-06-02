@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button } from "../button";
+import Fade from 'react-reveal/Fade';
 
 /**
  * Internal dependencies
@@ -42,14 +43,16 @@ const PrimaryButton = styled(Button)`
 export default () => {
 
   return (
-    <StyledContainer>
-      <div className="container">
-        <h3 className="heading">looking for a reliable & stable partner?</h3>
-        <h5 className="sub-heading">Contact us and learn more about us</h5>
-        <div className="width-100">
-          <PrimaryButton>Contact Us</PrimaryButton>
+    <Fade>
+      <StyledContainer>
+        <div className="container">
+          <h3 className="heading">looking for a reliable & stable partner?</h3>
+          <h5 className="sub-heading">Contact us and learn more about us</h5>
+          <div className="width-100">
+            <PrimaryButton>Contact Us</PrimaryButton>
+          </div>
         </div>
-      </div>
-    </StyledContainer >
+      </StyledContainer>
+    </Fade>
   );
 };

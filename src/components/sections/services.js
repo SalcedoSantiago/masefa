@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { IoIosHammer, IoIosCheckmarkCircle } from "react-icons/io";
+import Fade from 'react-reveal/Fade';
 /**
  * Internal dependencies
  */
@@ -98,70 +99,72 @@ const ServicesContainer = styled.div`
 
 export default () => {
   return (
-    <StyledSection>
-      <div className="header">
-        {/* <h5 className="sub-heading">Por que nosotros?</h5> */}
-        <h2 className="heading">Nuestros Servicios</h2>
-      </div>
-      <ExperienceContainer>
-        {cardServices.map(({ imageSrc, title, description }, i) => (
-          <div className="experiencie">
-            <IoIosHammer />
-            <div className="content">
-              <h4>Running Project</h4>
+    <Fade right>
+      <StyledSection>
+        <div className="header">
+          {/* <h5 className="sub-heading">Por que nosotros?</h5> */}
+          <h2 className="heading">Nuestros Servicios</h2>
+        </div>
+        <ExperienceContainer>
+          {cardServices.map(({ imageSrc, title, description }, i) => (
+            <div className="experiencie">
+              <IoIosHammer />
+              <div className="content">
+                <h4>Running Project</h4>
+              </div>
             </div>
+          ))}
+        </ExperienceContainer>
+        <ServicesContainer>
+          <div>
+            <h3>El rubro donde nos desarrollamos</h3>
+            <ul>
+              <li>
+                <IoIosCheckmarkCircle />
+                Industria química
+              </li>
+              <li>
+                <IoIosCheckmarkCircle />
+                Industria química
+              </li>
+              <li>
+                <IoIosCheckmarkCircle />
+                Industria química
+              </li>
+              <li>
+                <IoIosCheckmarkCircle />
+                Industria química
+              </li>
+              <li>
+                <IoIosCheckmarkCircle />
+                Industria química
+              </li>
+            </ul>
           </div>
-        ))}
-      </ExperienceContainer>
-      <ServicesContainer>
-        <div>
-          <h3>El rubro donde nos desarrollamos</h3>
-          <ul>
-            <li>
-              <IoIosCheckmarkCircle />
-              Industria química
-            </li>
-            <li>
-              <IoIosCheckmarkCircle />
-              Industria química
-            </li>
-            <li>
-              <IoIosCheckmarkCircle />
-              Industria química
-            </li>
-            <li>
-              <IoIosCheckmarkCircle />
-              Industria química
-            </li>
-            <li>
-              <IoIosCheckmarkCircle />
-              Industria química
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Ejecucion de soldaduras especiales en</h3>
-          <ul>
-            <li>
-              <IoIosCheckmarkCircle />
-              Industria química
-            </li>
-            <li>
-              <IoIosCheckmarkCircle />
-              Industria química
-            </li>
-            <li>
-              <IoIosCheckmarkCircle />
-              Industria química
-            </li>
-            <li>
-              <IoIosCheckmarkCircle />
-              Industria química
-            </li>
-          </ul>
-        </div>
-      </ServicesContainer>
-    </StyledSection>
+          <div>
+            <h3>Ejecucion de soldaduras especiales en</h3>
+            <ul>
+              <li>
+                <IoIosCheckmarkCircle />
+                Industria química
+              </li>
+              <li>
+                <IoIosCheckmarkCircle />
+                Industria química
+              </li>
+              <li>
+                <IoIosCheckmarkCircle />
+                Industria química
+              </li>
+              <li>
+                <IoIosCheckmarkCircle />
+                Industria química
+              </li>
+            </ul>
+          </div>
+        </ServicesContainer>
+      </StyledSection>
+    </Fade>
   );
 };
 

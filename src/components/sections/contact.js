@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 import { Button } from "../button";
+import Fade from 'react-reveal/Fade';
 
 
 const StyledSection = styled.section`
@@ -78,64 +79,66 @@ const InfoContact = styled.div`
 const Contact = () => {
 
     return (
-        <StyledSection>
-            <div className="header">
-                <h2 className='heading'>Contacto</h2>
+        <Fade>
+            <StyledSection>
+                <div className="header">
+                    <h2 className='heading'>Contacto</h2>
 
-            </div>
-            <Columns>
-                <FormContainer>
-                    <form>
-                        <Columns>
-                            <Field>
-                                <label for="name">Name: </label>
-                                <input type="text" name="name" id="name" placeholder="name" required />
-                            </Field>
-                            <Field>
-                                <label for="apellido">Apellido: </label>
-                                <input type="text" name="apellido" id="apellido" placeholder="apellido" required />
-                            </Field>
-                        </Columns>
-                        <Columns>
-                            <Field>
-                                <label for="email">Email: </label>
-                                <input type="email" name="email" id="email" placeholder="email" required />
-                            </Field>
-                        </Columns>
-                        <Columns>
-                            <Field>
-                                <label for="telefono">Telefono: </label>
-                                <input type="tel" name="telefono" id="telefono" placeholder="telefono" required />
-                            </Field>
-                        </Columns>
-                        <Columns>
-                            <Field>
-                                <label for="mensaje">Mensaje: </label>
-                                <textarea
-                                    id="mensaje"
+                </div>
+                <Columns>
+                    <FormContainer>
+                        <form>
+                            <Columns>
+                                <Field>
+                                    <label for="name">Name: </label>
+                                    <input type="text" name="name" id="name" placeholder="name" required />
+                                </Field>
+                                <Field>
+                                    <label for="apellido">Apellido: </label>
+                                    <input type="text" name="apellido" id="apellido" placeholder="apellido" required />
+                                </Field>
+                            </Columns>
+                            <Columns>
+                                <Field>
+                                    <label for="email">Email: </label>
+                                    <input type="email" name="email" id="email" placeholder="email" required />
+                                </Field>
+                            </Columns>
+                            <Columns>
+                                <Field>
+                                    <label for="telefono">Telefono: </label>
+                                    <input type="tel" name="telefono" id="telefono" placeholder="telefono" required />
+                                </Field>
+                            </Columns>
+                            <Columns>
+                                <Field>
+                                    <label for="mensaje">Mensaje: </label>
+                                    <textarea
+                                        id="mensaje"
 
-                                ></textarea>
-                            </Field>
-                        </Columns>
-                        <Button end style={{ marginRight: '30px' }}>Enviar</Button>
-                    </form>
-                </FormContainer>
-                <InfoContact>
-                    <div>
+                                    ></textarea>
+                                </Field>
+                            </Columns>
+                            <Button end style={{ marginRight: '30px' }}>Enviar</Button>
+                        </form>
+                    </FormContainer>
+                    <InfoContact>
+                        <div>
 
-                        <h3>Contactese con nosotros!</h3>
-                        <p className='text'>
-                            Envianos tu consulta y a la brevedad nos pondremos en contacto
-                        </p>
-                    </div>
-                    <div>
-                        <p className='featured'>
-                            Gracias por elegirnos!!!
-                        </p>
-                    </div>
-                </InfoContact>
-            </Columns>
-        </StyledSection>
+                            <h3>Contactese con nosotros!</h3>
+                            <p className='text'>
+                                Envianos tu consulta y a la brevedad nos pondremos en contacto
+                            </p>
+                        </div>
+                        <div>
+                            <p className='featured'>
+                                Gracias por elegirnos!!!
+                            </p>
+                        </div>
+                    </InfoContact>
+                </Columns>
+            </StyledSection>
+        </Fade>
     )
 }
 

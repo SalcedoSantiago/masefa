@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { IoMdConstruct } from "react-icons/io";
+import Fade from 'react-reveal/Fade';
 
 const SectionStyled = styled.div` 
     background-color: var(--blue);
@@ -87,28 +88,29 @@ const CartContent = styled(motion.div)`
 
 const Featured = () => {
     return (
-        <SectionStyled>
-            <section className="container">
-                <div className="short-column">
-                    <h2 className="">Soluciones que ofrecemos</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con
-                    </p>
-                </div>
-                <div className="columns">
-                    {cards.map(({ title, description, imageSrc }, i) => (
-                        <div key={i} className={`column ${i == 1 && `featured`}`}>
-                            <CartContent >
-                                <IoMdConstruct />
-                                <h2 className="title">{title}</h2>
-                                <p className="desc">{description}</p>
-                            </CartContent>
-                        </div>
-                    ))}
-                </div>
-            </section>
-            {/* </div> */}
-        </SectionStyled >
+        <Fade left>
+            <SectionStyled>
+                <section className="container">
+                    <div className="short-column">
+                        <h2 className="">Soluciones que ofrecemos</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con
+                        </p>
+                    </div>
+                    <div className="columns">
+                        {cards.map(({ title, description, imageSrc }, i) => (
+                            <div key={i} className={`column ${i == 1 && `featured`}`}>
+                                <CartContent >
+                                    <IoMdConstruct />
+                                    <h2 className="title">{title}</h2>
+                                    <p className="desc">{description}</p>
+                                </CartContent>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            </SectionStyled >
+        </Fade>
     )
 }
 

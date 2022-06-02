@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Fade from 'react-reveal/Fade';
 /**
  * Internal dependencies
  */
@@ -33,36 +34,36 @@ const PartnersContainer = styled.div`
 
 export default () => {
   return (
-    <SectionStyled>
-      <PartnersContainer>
-        <div className="featured">
-          <h2>Industry Partners</h2>
-        </div>
-        <div>
-          <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-1.svg" />
-        </div>
-        <div>
-          <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-2.svg" />
-        </div>
+    <Fade>
+      <SectionStyled>
+        <PartnersContainer>
+          <div className="featured">
+            <h2>Industry Partners</h2>
+          </div>
+          <div>
+            <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-1.svg" />
+          </div>
+          <div>
+            <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-2.svg" />
+          </div>
 
-        <div>
-          <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-3.svg" />
-        </div>
+          <div>
+            <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-3.svg" />
+          </div>
 
-        <div>
-          <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-4.svg" />
-        </div>
+          <div>
+            <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-4.svg" />
+          </div>
 
-        <div>
-          <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-2.svg" />
-        </div>
-        <div>
-          <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-3.svg" />
-        </div>
-
-
-      </PartnersContainer>
-    </SectionStyled>
+          <div>
+            <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-2.svg" />
+          </div>
+          <div>
+            <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-3.svg" />
+          </div>
+        </PartnersContainer>
+      </SectionStyled>
+    </Fade>
   );
 };
 
