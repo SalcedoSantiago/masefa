@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { IoLogoLinkedin, IoLogoFacebook } from 'react-icons/io'
+import Fade from 'react-reveal/Fade';
 
 
 const StyledSection = styled.section`
@@ -104,50 +105,52 @@ const SectionDescription = styled.div`
 
 export default () => {
     return (
-        <StyledSection>
-            <div className="header">
-                <h2 className="heading">Nustro Equipo</h2>
-            </div>
-            <div className="columns">
-                <SectionDescription>
-                    <h3>El equipo mas calificado</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                    </p>
-                </SectionDescription>
-                <TeamColumn>
-                    {EQUIPO.map(({ name, description, img, position }, index) =>
-                    (
-                        <div key={index}>
-                            <TeamContainer>
-                                <div className="image-container">
+        <Fade>
+            <StyledSection>
+                <div className="header">
+                    <h2 className="heading">Nustro Equipo</h2>
+                </div>
+                <div className="columns">
+                    <SectionDescription>
+                        <h3>El equipo mas calificado</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        </p>
+                    </SectionDescription>
+                    <TeamColumn>
+                        {EQUIPO.map(({ name, description, img, position }, index) =>
+                        (
+                            <div key={index}>
+                                <TeamContainer>
+                                    <div className="image-container">
 
-                                    <img className="image" src={img} />
-                                </div>
-                                <div className="content">
-                                    <h3 className="name">{name}</h3>
-                                    <span className="position">{position}</span>
-                                    <p className="desc">{description}</p>
-                                    <Links>
-                                        <Link>
-                                            <a>
-                                                <IoLogoLinkedin />
-                                            </a>
-                                            <a>
-                                                <IoLogoFacebook />
-                                            </a>
-                                        </Link>
-                                    </Links>
-                                </div>
+                                        <img className="image" src={img} />
+                                    </div>
+                                    <div className="content">
+                                        <h3 className="name">{name}</h3>
+                                        <span className="position">{position}</span>
+                                        <p className="desc">{description}</p>
+                                        <Links>
+                                            <Link>
+                                                <a>
+                                                    <IoLogoLinkedin />
+                                                </a>
+                                                <a>
+                                                    <IoLogoFacebook />
+                                                </a>
+                                            </Link>
+                                        </Links>
+                                    </div>
 
-                            </TeamContainer>
-                        </div>
-                    ))
-                    }
-                </TeamColumn>
+                                </TeamContainer>
+                            </div>
+                        ))
+                        }
+                    </TeamColumn>
 
-            </div>
-        </StyledSection>
+                </div>
+            </StyledSection>
+        </Fade>
     )
 }
 

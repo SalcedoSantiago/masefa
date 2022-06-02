@@ -1,139 +1,144 @@
 import React from 'react'
 import styled from "styled-components";
+import { IoIosMail, IoMdPin, IoIosCall, IoLogoFacebook, IoLogoTwitter, IoLogoLinkedin, IoLogoWhatsapp } from 'react-icons/io'
 
 
-const DesktopNavLinks = styled.nav`
+const HeaderContainer = styled.header`
+    width: 100%;
+`
+
+
+const StyledNavigation = styled.div`
+    background-color:#00235a;
+    width: 100%;
+    padding: 1.5rem 0;
+`
+
+const NavLinksContainer = styled.div`
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    min-height: 20vh;
-    a{
-        text-decoration: none;
-        color: var(--white);
-        margin-right: 15px;
-    }
+    align-items: center;
+    justify-content: space-between;
+
 `;
+
+const NavLinks = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 60px;
+    
+`;
+
+const Link = styled.a`
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: white;
+`
+
+
+const InfoContainer = styled.div`
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--orange);
+
+    > div{
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    span{
+        color: white;
+    }
+
+    svg{
+        path{
+            fill: var(--white);
+        }
+    }
+
+`
 
 const LogoLink = styled.a`
-  ${({ theme }) => theme.flexCenter};
-    flex-wrap: wrap;
 
-  img {
-  }
-`;
+
+    img{
+        width: 160px;
+    }
+
+`
 
 const Header = () => {
 
-    const links = (
-        <NavLinksContainer key={1}>
-            <NavLinks>
-                <a href="/#">Home</a>
-                <a href="/#">Sobre Nosotros</a>
-                <a href="/#">Servcios</a>
-                <a href="/#">Contacto</a>
-            </NavLinks>
-        </NavLinksContainer>
-    )
-
     const logoLink = (
-        <LogoLink className='flex' href="/">
-            <img id="logo" src="https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/07/logo.png" alt="test" />
+        <LogoLink href="/">
+            <img id="logo" src="http://wp.dreamitsolution.net/dreamit/dreamit-handyman/wp-content/uploads/2021/04/logo.png" alt="test" />
         </LogoLink>
     )
 
+    const links = (
+        <StyledNavigation>
+            <NavLinksContainer key={1}>
+                <div>
+                    {logoLink}
+                </div>
+                <NavLinks>
+                    <Link href="/#">Home</Link>
+                    <Link href="/#">Sobre Nosotros</Link>
+                    <Link href="/#">Servcios</Link>
+                    <Link href="/#">Contacto</Link>
+                </NavLinks>
+            </NavLinksContainer>
+        </StyledNavigation>
+    )
+
+
+
     return (
         <HeaderContainer>
-            <DesktopNavLinks>
-                <ContainerMxlarge>
-                    {logoLink}
-                    <ActionContainer>
-                        <Action>
-                            <h2>(+1) 555 234-8765</h2>
-                            <span> Call us </span>
-                        </Action>
-                        <Action>
-                            <h2>(+1) 555 234-8765</h2>
-                            <span>Mail Us Now </span>
-                        </Action>
-                        <Action>
-                            <PrimaryButton>Contact us</PrimaryButton>
-                        </Action>
-                    </ActionContainer>
-                </ContainerMxlarge>
-                {links}
-            </DesktopNavLinks>
-            {/* mobile here */}
+            <InfoContainer>
+                <div>
+                    <div>
+                        <span>
+                            <IoIosMail /> masefa@gmail.com
+                        </span>
+                        <span>
+                            <IoMdPin /> 1st Floor New World
+                        </span>
+                        <span>
+                            <IoIosCall /> +880 320 432 242
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <IoLogoFacebook />
+                        </span>
+                        <span>
+                            <IoLogoTwitter />
+                        </span>
+                        <span>
+                            <IoLogoLinkedin />
+                        </span>
+                        <span>
+                            <IoLogoWhatsapp />
+                        </span>
+                    </div>
+                </div>
+            </InfoContainer>
+            {links}
         </HeaderContainer>
     )
 }
 
-const HeaderContainer = styled.header`
-    width: 100%;
-    min-height: 20vh;
-`
 
-const PrimaryButton = styled.button`
- ${({ theme }) => theme.button};
-`
 
-const ContainerMxlarge = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 1rem 0;
-`
 
-const NavLinksContainer = styled.div`
-    margin-top: auto;
-    background-color:#00235a;
-    padding: 1.5rem 0;
-    width: 100%;
-`;
-
-const NavLinks = styled.div`
-    margin: 0 auto;
-    max-width: 1280px;
-`;
-
-const ActionContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
-    justify-content: end;
-    align-items: center;
-    gap: 10px;
-    width: 75%;
-`
-
-const Action = styled.div`
-    color :black;
-    display: inline-block;
-    text-align: left;
-    position: relative;
-    padding-left: 36px;
-    margin-left: 50px;
-
-    h2{
-        font-weight: 700;
-        font-size: 20px;
-
-        &::before{
-            content: "";
-            position: absolute;
-            width: 1.5rem;
-            height: 2px;
-            background-color: #ff6c00;
-            left: -10px;
-            top: 15px;
-        }
-
-    }
-    span{
-        color: #7777;
-        font-size: 16px;
-    }
-`
 
 
 export default Header;

@@ -52,13 +52,7 @@ const SectionStyled = styled.div`
 const CartContent = styled(motion.div)`
     height: 100%;
     padding: 50px 15px 40px 15px;
-    /* box-shadow: 0px 10px 50px 0px rgb(161 161 161 / 50%); */
-    /* ${({ theme }) => theme.boxShadow}; */
     cursor: pointer;
-    /* border-style: solid; */
-    /* border-width: 0px 0px 3px 0px; */
-    /* border-color: #FF6C00; */
- 
 
      svg{
         width: 40px;
@@ -88,7 +82,7 @@ const CartContent = styled(motion.div)`
 
 const Featured = () => {
     return (
-        <Fade left>
+        <Fade>
             <SectionStyled>
                 <section className="container">
                     <div className="short-column">

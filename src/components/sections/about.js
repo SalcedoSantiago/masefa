@@ -151,7 +151,7 @@ const PrimaryButton = styled(Button)`
 
 export default () => {
     return (
-        <Fade right>
+        <Fade>
             <StyledSection>
                 <div className="header">
                     <h2 className="heading">
