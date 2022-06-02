@@ -109,6 +109,12 @@ export default () => {
                 <h2 className="heading">Nustro Equipo</h2>
             </div>
             <div className="columns">
+                <SectionDescription>
+                    <h3>El equipo mas calificado</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </p>
+                </SectionDescription>
                 <TeamColumn>
                     {EQUIPO.map(({ name, description, img, position }, index) =>
                     (
@@ -139,12 +145,7 @@ export default () => {
                     ))
                     }
                 </TeamColumn>
-                <SectionDescription>
-                    <h3>El equipo mas calificado</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                    </p>
-                </SectionDescription>
+
             </div>
         </StyledSection>
     )
