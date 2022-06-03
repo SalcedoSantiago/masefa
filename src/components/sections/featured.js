@@ -5,38 +5,35 @@ import Fade from 'react-reveal/Fade';
 
 const SectionStyled = styled.div` 
     background-color: var(--blue);
+    padding: 0 2rem;
 
-
-    > section{
-        display: flex;
-        gap: 20px;
-        align-items: center;
+    .header{
+        margin-bottom: 80px;
     }
 
-    .short-column{
-        width: 30%;
-        margin-right: 30px;
-        p,
-        h2
-        {
-            color: var(--white);
-
-        }
+    h2 {
+        color: var(--white);
     }
 
    .columns{
      display: flex;
-     justify-content: space-between;
-     width: 70%;
+     /* justify-content: space-between; */
+     justify-content: center;
+     width: 100%;
      max-width: 1280px;
      flex-wrap: wrap;
      margin: 0 auto;
  
      > .column {
+       /* min-height: 18rem; */
        width: 100%;
-       min-height: 18rem;
+
        @media (min-width: 768px) {
          width: calc(33% - .5rem);
+       }
+
+       @media (min-width: 1024px) {
+         width: calc(25% - .5rem);
        }
 
        &.featured{
@@ -44,39 +41,40 @@ const SectionStyled = styled.div`
             color: #fff;
         }
      }
-
-    
    }
- `
+`;
 
 const CartContent = styled(motion.div)`
     height: 100%;
-    padding: 50px 15px 40px 15px;
-    cursor: pointer;
+    padding: 20px 15px 40px 15px;
+    text-align: center;
 
-     svg{
-        width: 40px;
-        height: 40px;
-        color: var(--orange
-            );
-        margin-bottom: 10px;
-     }
+    @media (min-width: 768px) {
+        /* text-align: start; */
+    }
 
-     .title{
-        padding: 0px 0px 0px 0px;
-        font-family: "Poppins", Sans-serif;
-        font-size: 24px;
-        font-weight: 600;
-        color: var(--white);
-     }
- 
-     .desc{
-        font-family: "Poppins", Sans-serif;
-        font-size: 14px;
-        color: var(--white);
-        font-weight: 400;
-     }
- `
+    svg{
+    width: 40px;
+    height: 40px;
+    color: var(--orange);
+    margin-bottom: 10px;
+    }
+
+    .title{
+    padding: 0px 0px 0px 0px;
+    font-family: "Poppins", Sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white);
+    }
+
+    .desc{
+    font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 400;
+    }
+`;
 
 
 
@@ -84,12 +82,9 @@ const Featured = () => {
     return (
         <Fade>
             <SectionStyled>
-                <section className="container">
-                    <div className="short-column">
-                        <h2 className="">Soluciones que ofrecemos</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con
-                        </p>
+                <section>
+                    <div className="header">
+                        <h2 className="heading">Soluciones que ofrecemos</h2>
                     </div>
                     <div className="columns">
                         {cards.map(({ title, description, imageSrc }, i) => (

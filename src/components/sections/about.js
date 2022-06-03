@@ -14,7 +14,7 @@ import { Button } from '../button'
 const Columns = styled.div`
     ${({ theme }) => theme.flexCenter};
     justify-content: space-between;
-    padding: 0 30px;
+    /* padding: 0 30px; */
 
     @media (min-width: 1024px) {
         padding: 0;
