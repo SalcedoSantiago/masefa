@@ -170,7 +170,6 @@ export default () => {
                                         </Link>
                                     </Links>
                                 </div>
-
                             </TeamContainer>
                         ))
                         }

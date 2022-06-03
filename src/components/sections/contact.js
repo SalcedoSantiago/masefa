@@ -5,7 +5,9 @@ import Fade from 'react-reveal/Fade';
 
 
 const StyledSection = styled.section`
-    max-width: 1080px;
+    max-width: 1280px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     .header{
         margin-bottom: 80px;
@@ -15,24 +17,41 @@ const StyledSection = styled.section`
 
 const FormContainer = styled.div`
     margin: 0 auto;
-    margin-right: 40px;
-    width: 50%;
     font-family: "Poppins";
+    order: 1;
+
+    @media (min-width: 1024px) {
+        order: 0;
+    }
 `
 
 
 const Columns = styled.div`
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 20px;
+    gap: 30px;
+
+    > div{
+        width: 100%;
+        @media (min-width: 1024px) {
+            width: calc(50% - 1rem);
+        }
+    }
 
     &:last-child{
         margin-right: 0!important;
     }
 `
 const Field = styled.div`
-    margin-right: 30px;
+    margin-right: 0;
     width: 300px;
     flex: 1;
+    
+    @media (min-width: 1024px) {
+        margin-right: 30px;
+    }
+
     label{
         display: block;
         font-weight: 500;
@@ -53,9 +72,13 @@ const Field = styled.div`
 `
 
 const InfoContact = styled.div`
-    width: 50%;
     font-family: "Montserrat";
     padding-left: 30px;
+    order: 0;
+
+    @media (min-width: 1024px) {
+        order: 1;
+    }
 
     h3{
         font-weight: 700;
@@ -65,6 +88,12 @@ const InfoContact = styled.div`
         color: var(--blue);
         margin-bottom: 30px;
     }
+    .text{
+        text-align: center;
+        @media (min-width: 1024px) {
+            text-align: start;
+        }
+    }
 
     .featured{
         font-size: 18px;
@@ -73,8 +102,18 @@ const InfoContact = styled.div`
         font-size: 20px;
         margin-top: 60px;
     }
-
 `
+
+const PrimaryButton = styled(Button)`
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    @media (min-width: 1024px) {
+        width: auto;
+    }
+ `
+
 
 const Contact = () => {
 
@@ -83,7 +122,6 @@ const Contact = () => {
             <StyledSection>
                 <div className="header">
                     <h2 className='heading'>Contacto</h2>
-
                 </div>
                 <Columns>
                     <FormContainer>
@@ -119,7 +157,7 @@ const Contact = () => {
                                     ></textarea>
                                 </Field>
                             </Columns>
-                            <Button end style={{ marginRight: '30px' }}>Enviar</Button>
+                            <PrimaryButton end style={{ marginRight: '30px' }}>Enviar</PrimaryButton>
                         </form>
                     </FormContainer>
                     <InfoContact>
