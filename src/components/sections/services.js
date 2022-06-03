@@ -14,10 +14,16 @@ const ExperienceContainer = styled.div`
     ${({ theme }) => theme.flexStart};
     margin-top: 80px;
     margin-bottom: 40px;
+    padding: 0 2rem;
 
 
     > div{
-        width: 25%;
+        width: 50%;
+        margin-bottom: 40px;
+
+        @media (min-width: 1024px) {
+            width: calc(25% - .5rem);
+        }
     }
 
     .experiencie{
@@ -54,22 +60,26 @@ const ExperienceContainer = styled.div`
 
 const ServicesContainer = styled.div`
     margin-top: 50px;
+    padding: 0 2rem;
     ${({ theme }) => theme.flexStart};
     justify-content: space-between;
 
     > div{
       text-align: center;
-      width: 50%;
+      width: 100%;
 
+        @media (min-width: 1024px) {
+            width: calc(50% - .5rem);
+        }
 
-     
       h3{
         margin-top: 40px;
         margin-bottom: 30px;
         font-weight: 600;
         font-size: 24px;
-        text-align: start;
+        text-align: center;
         color: var(--blue);
+        line-height: 1.5;
       }
     }
 
@@ -80,18 +90,25 @@ const ServicesContainer = styled.div`
       height: 30px;
     }
 
-    ul{
+    .columns{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       padding-left: 0;
 
-      li{
+
+      > div {
         width: 50%;
         margin-bottom: 30px;
         font-weight: 600;
         display: flex;
         align-items: center;
+        justify-content: center;
+
+        @media (max-width: 500px) {
+            width: calc(100% - .5rem);
+        }
+
       }
 
     }
@@ -105,7 +122,6 @@ export default () => {
     <Fade>
       <StyledSection>
         <div className="header">
-          {/* <h5 className="sub-heading">Por que nosotros?</h5> */}
           <h2 className="heading">Nuestros Servicios</h2>
         </div>
         <ExperienceContainer>
@@ -121,49 +137,49 @@ export default () => {
         <ServicesContainer>
           <div>
             <h3>El rubro donde nos desarrollamos</h3>
-            <ul>
-              <li>
+            <div className="columns">
+              <div>
                 <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
-              </li>
-              <li>
+              </div>
+              <div>
                 <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
-              </li>
-              <li>
+              </div>
+              <div>
                 <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
-              </li>
-              <li>
+              </div>
+              <div>
                 <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
-              </li>
-              <li>
+              </div>
+              <div>
                 <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
           <div>
             <h3>Ejecucion de soldaduras especiales en</h3>
-            <ul>
-              <li>
+            <div className="columns">
+              <div>
                 <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
-              </li>
-              <li>
+              </div>
+              <div>
                 <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
-              </li>
-              <li>
+              </div>
+              <div>
                 <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
-              </li>
-              <li>
+              </div>
+              <div>
                 <IoIosCheckmarkCircle className="check-icon" />
                 Industria química
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </ServicesContainer>
       </StyledSection>
