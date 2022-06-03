@@ -180,7 +180,7 @@ const ExperienceContainer = styled.div`
         }
         
     }
-`
+`;
 
 const PrimaryButton = styled(Button)`
     margin-top: 30px;
@@ -192,7 +192,11 @@ const PrimaryButton = styled(Button)`
     font-size: 18px;
     font-weight: 600;
 
-`
+
+    @media (min-width: 1024px) {
+        width: auto;
+    }
+`;
 
 
 export default () => {

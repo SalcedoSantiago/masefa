@@ -86,6 +86,16 @@ export const CardHoverOverlay = styled(motion.div)`
  
  `;
 
+const PrimaryButton = styled(Button)`
+    width: 60%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    @media (min-width: 1024px) {
+        width: auto;
+    }
+ `
+
 
 export default () => {
     return (
@@ -126,7 +136,7 @@ export default () => {
                         </CardContainer>
                     ))}
                 </Columns>
-                <Button center>Show More</Button>
+                <PrimaryButton center>Show More</PrimaryButton>
             </StyledSection>
         </Fade>
     );

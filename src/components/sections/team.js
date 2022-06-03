@@ -4,7 +4,8 @@ import Fade from 'react-reveal/Fade';
 
 
 const StyledSection = styled.section`
-
+    padding-left:  2rem;
+    padding-right:  2rem;
 
     .header{
         margin-bottom: 80px;
@@ -18,38 +19,53 @@ const StyledSection = styled.section`
     
 `
 const TeamColumn = styled.div`
-    width: 60%;
     ${({ theme }) => theme.flexStart};
-
-    > div{
-        max-width: 1024px;
-        width: 100%;
-
-        @media (min-width: 768px) {
-            width: 50%;
-        }
+    width: 100%;
+    @media (min-width: 1024px) {
+        width: 60%;
     }
-
 `
 
 const TeamContainer = styled.div`
-    padding: 0 30px 35px 30px;
     border-radius: 5px;
-    width: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
 
+    @media (min-width: 768px) {
+        width: 50%;
+        padding: 0 30px 35px 30px;
+    }
+
+    > div{
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+        
+        @media (min-width: 768px) {
+            width: 100%;
+            margin-bottom: 0;
+
+        }
+    }
 
     .image-container{
         border-radius: 0.75rem;
-        width: 100%;
+        margin-right: 40px;
+
+        @media (min-width: 768px) {
+            margin-right: 0;
+        }
 
         img{
-            aspect-ratio: 1/1;
+            @media (min-width: 768px) {
+                aspect-ratio: 1/1;
+            }
             object-fit: cover;
         }
     }
 
     .content{
-        width: 100%;
         /* padding: 10px 20px; */
 
         .name{
@@ -80,7 +96,6 @@ const Links = styled.ul`
 `
 
 const Link = styled.li`
-
         svg{
             width: 30px;
             height: 30px;
@@ -91,14 +106,30 @@ const Link = styled.li`
 `
 
 const SectionDescription = styled.div`
-    width: 40%;
-    padding-left: 40px;
+    width: 100%;
+    margin-bottom: 80px;
+    margin-left: 3rem;
+    margin-right: 3rem ;
+    
+    @media (min-width: 1024px) {
+        width: 40%;
+        margin-bottom: 0px;
+        margin-left: 0;
+        margin-right: 0 ;
+    }
 
     h3{
         font-size: 26px;
         text-align: center;
         font-weight: 700;
         color: var(--blue);
+    }
+
+    p{
+        text-align: center;
+        @media (min-width: 1024px) {
+            text-align: start;
+        }
     }
 `
 
@@ -120,34 +151,30 @@ export default () => {
                     <TeamColumn>
                         {EQUIPO.map(({ name, description, img, position }, index) =>
                         (
-                            <div key={index}>
-                                <TeamContainer>
-                                    <div className="image-container">
+                            <TeamContainer key={index}>
+                                <div className="image-container">
+                                    <img className="image" src={img} />
+                                </div>
+                                <div className="content">
+                                    <h3 className="name">{name}</h3>
+                                    <span className="position">{position}</span>
+                                    <p className="desc">{description}</p>
+                                    <Links>
+                                        <Link>
+                                            <a>
+                                                <IoLogoLinkedin />
+                                            </a>
+                                            <a>
+                                                <IoLogoFacebook />
+                                            </a>
+                                        </Link>
+                                    </Links>
+                                </div>
 
-                                        <img className="image" src={img} />
-                                    </div>
-                                    <div className="content">
-                                        <h3 className="name">{name}</h3>
-                                        <span className="position">{position}</span>
-                                        <p className="desc">{description}</p>
-                                        <Links>
-                                            <Link>
-                                                <a>
-                                                    <IoLogoLinkedin />
-                                                </a>
-                                                <a>
-                                                    <IoLogoFacebook />
-                                                </a>
-                                            </Link>
-                                        </Links>
-                                    </div>
-
-                                </TeamContainer>
-                            </div>
+                            </TeamContainer>
                         ))
                         }
                     </TeamColumn>
-
                 </div>
             </StyledSection>
         </Fade>
