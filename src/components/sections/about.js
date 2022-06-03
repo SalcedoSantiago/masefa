@@ -3,6 +3,7 @@ import styled from "styled-components";
 // import { css } from "styled-components/macro"; //eslint-disable-line
 import Fade from 'react-reveal/Fade';
 import AboutImage from '../assets/images/about.JPG'
+import { IoIosArrowRoundForward } from 'react-icons/io'
 
 /**
  * Internal dependencies
@@ -10,14 +11,13 @@ import AboutImage from '../assets/images/about.JPG'
 import { Button } from '../button'
 
 
-
 const Columns = styled.div`
     ${({ theme }) => theme.flexCenter};
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 30px;
 
     @media (min-width: 1024px) {
-        padding: 0 ;
+        padding: 0;
     }
     
     .two-colunm{
@@ -32,7 +32,19 @@ const Columns = styled.div`
     }
 `
 
+
 const StyledSection = styled.section`
+    padding-left:2rem;
+    padding-right:2rem;
+    
+    .about-us{
+        margin-top: 45px;
+        @media (min-width: 1024px) {
+            margin-top: 0;
+            padding-right: 30px;
+        }
+    }
+
     img{
         flex-shrink: 0;
         position: relative;
@@ -40,17 +52,24 @@ const StyledSection = styled.section`
 
     .desc{
         margin-top: 16px;
-        font-size: 14px;
+        font-size: 16px;
         color: var(--black);
         font-weight: 500;
+        @media (min-width: 1024px) {
+            font-size: 14px;
+        }
     }
 
     .heading-section{
-        font-size: 28px;
+        font-size: 34px;
         font-weight: 700;
         color: var(--blue);
         &::before{
             content:"";
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 28px;
         }
     }
 
@@ -87,20 +106,33 @@ const ExperienceContainer = styled.div`
 
 
     > div{
-        width: 33%;
+        width: 100%;
+        @media (min-width: 1024px) {
+            width: 33%;
+        }
     }
 
     .experiencie{
-        padding-right: 40px;
-        text-align: center;
         ${({ theme }) => theme.flexCenter};
+        text-align: center;
         gap: 5px;
+        padding: 0 40px;
+        margin-bottom: 30px;
 
+        @media (min-width: 1024px){
+            padding-right: 40px;
+            padding-left: 0px;
+        }
 
         .counter{
             width: auto;
-            padding: 20px;
-            margin-right: 5px;
+            width: 100%;
+            padding: 0;
+            @media (min-width: 1024px) {
+                padding: 20px;
+                margin-right: 5px;
+                padding-left: 0px;
+            }
         }
 
         .content{
@@ -128,17 +160,23 @@ const ExperienceContainer = styled.div`
 
 
         p{
-            font-size: 14px;
+            font-size: 16px;
             margin-top: 0;
+            @media (min-width: 1024px) {
+                font-size: 14px;
+            }
         }
 
         h4{
             color: var(--black);
-            font-size: 18px;
+            font-size: 22px;
             font-weight: 600;
             margin: 0;
             line-height: 2.1;
             text-transform: capitalize;
+            @media (min-width: 1024px) {
+                font-size: 18px;
+            }
         }
         
     }
@@ -146,6 +184,14 @@ const ExperienceContainer = styled.div`
 
 const PrimaryButton = styled(Button)`
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: 600;
+
 `
 
 
@@ -163,7 +209,7 @@ export default () => {
                         <Layers />
                         <img alt="about-us" src={AboutImage} />
                     </div>
-                    <div className="two-colunm">
+                    <div className="two-colunm  about-us">
                         <h2 className="heading-section">
                             Sobre nosotros
                             {/* <span className="heading-special"> */}
@@ -192,7 +238,7 @@ export default () => {
                         </p>
 
                         <PrimaryButton href="/#we">
-                            Contact Us <span className="arrow">&gt;</span>
+                            Contact Us {/*  <span className="arrow"><IoIosArrowRoundForward /></span> */}
                         </PrimaryButton>
                     </div>
                 </Columns>

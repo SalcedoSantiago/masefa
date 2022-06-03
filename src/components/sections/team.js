@@ -50,7 +50,7 @@ const TeamContainer = styled.div`
 
     .content{
         width: 100%;
-        padding: 10px 20px;
+        /* padding: 10px 20px; */
 
         .name{
             font-size: 20px;
