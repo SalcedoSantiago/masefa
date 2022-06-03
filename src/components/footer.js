@@ -10,10 +10,10 @@ const StyledFooter = styled.footer`
     padding-top: 120px;
 `;
 
-
 const FooterContainer = styled.div`
     max-width: 1280px;
     margin: 0 auto;
+    padding:0 2rem;
 
     .links{
         display: flex;
@@ -45,8 +45,22 @@ const Columns = styled.div`
 `
 
 const Column = styled.div`
-    width: calc(25% - 1rem);
+    width: 100%;
+    @media (min-width: 768px) {
+        width: calc(33% - 1rem);
+        &:first-of-type{
+            width: calc(100% - 1rem);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        &:first-of-type{
+            width: calc(25% - 1rem);
+        }
+        width: calc(25% - 1rem);
+    }
 `
+
 
 const Heading = styled.h3`
     color: #fff;
