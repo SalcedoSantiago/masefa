@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
 // import { images } from "./image-data";
@@ -152,10 +152,9 @@ const Overlay = styled.div`
 
 `
 
-
-
 const Hero = () => {
     const [[page, direction], setPage] = useState([0, 0]);
+    const [time, setTime] = useState(1000);
 
     const imageIndex = wrap(0, images.length, page);
 
@@ -163,9 +162,25 @@ const Hero = () => {
         setPage([page + newDirection, newDirection]);
     };
 
-    setTimeout(() => {
-        paginate(1);
-    }, 5000)
+    function repetirCadaSegundo() {
+        // clearInterval(time);
+        setTime(setInterval(() => {
+            paginate(1);
+        }, 1000));
+        console.log('time', time);
+    }
+
+
+    // useEffect(() => {
+    //     // repetirCadaSegundo();
+    //     setInterval(() => {
+    //         paginate(1);
+    //     }, 1000);
+    //     console.log('time', time);
+    // }, [])
+
+
+
 
     return (
         <StyledSection>
@@ -181,14 +196,13 @@ const Hero = () => {
                     exit="exit"
                     transition={{
                         x: { type: "spring", stiffness: 300, damping: 50 },
-                        opacity: { duration: 0.4 }
+                        opacity: { duration: 0.4 },
                     }}
                     drag="x"
                     dragConstraints={{ left: 0, right: 0 }}
                     dragElastic={1}
                     onDragEnd={(e, { offset, velocity }) => {
                         const swipe = swipePower(offset.x, velocity.x);
-
                         if (swipe < -swipeConfidenceThreshold) {
                             paginate(1);
                         } else if (swipe > swipeConfidenceThreshold) {

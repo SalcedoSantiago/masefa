@@ -128,36 +128,36 @@ const Contact = () => {
                         <form>
                             <Columns>
                                 <Field>
-                                    <label for="name">Name: </label>
+                                    <label htmlFor="name">Name: </label>
                                     <input type="text" name="name" id="name" placeholder="name" required />
                                 </Field>
                                 <Field>
-                                    <label for="apellido">Apellido: </label>
+                                    <label htmlFor="apellido">Apellido: </label>
                                     <input type="text" name="apellido" id="apellido" placeholder="apellido" required />
                                 </Field>
                             </Columns>
                             <Columns>
                                 <Field>
-                                    <label for="email">Email: </label>
+                                    <label htmlFor="email">Email: </label>
                                     <input type="email" name="email" id="email" placeholder="email" required />
                                 </Field>
                             </Columns>
                             <Columns>
                                 <Field>
-                                    <label for="telefono">Telefono: </label>
+                                    <label htmlFor="telefono">Telefono: </label>
                                     <input type="tel" name="telefono" id="telefono" placeholder="telefono" required />
                                 </Field>
                             </Columns>
                             <Columns>
                                 <Field>
-                                    <label for="mensaje">Mensaje: </label>
+                                    <label htmlFor="mensaje">Mensaje: </label>
                                     <textarea
                                         id="mensaje"
 
                                     ></textarea>
                                 </Field>
                             </Columns>
-                            <PrimaryButton end style={{ marginRight: '30px' }}>Enviar</PrimaryButton>
+                            <PrimaryButton end="true" style={{ marginRight: '30px' }}>Enviar</PrimaryButton>
                         </form>
                     </FormContainer>
                     <InfoContact>

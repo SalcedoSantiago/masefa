@@ -126,7 +126,7 @@ export default () => {
         </div>
         <ExperienceContainer>
           {cardServices.map(({ imageSrc, title, description }, i) => (
-            <div className="experiencie">
+            <div className="experiencie" key={i}>
               <IoIosHammer />
               <div className="content">
                 <h4>Running Project</h4>
