@@ -88,7 +88,7 @@ const Featured = () => {
                     </div>
                     <div className="columns">
                         {cards.map(({ title, description, imageSrc }, i) => (
-                            <div key={i} className={`column ${i == 1 && `featured`}`}>
+                            <div key={i} className={`column ${i === 1 && `featured`}`}>
                                 <CartContent >
                                     <IoMdConstruct />
                                     <h2 className="title">{title}</h2>

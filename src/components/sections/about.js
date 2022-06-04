@@ -3,7 +3,7 @@ import styled from "styled-components";
 // import { css } from "styled-components/macro"; //eslint-disable-line
 import Fade from 'react-reveal/Fade';
 import AboutImage from '../assets/images/about.JPG'
-import { IoIosArrowRoundForward } from 'react-icons/io'
+// import { IoIosArrowRoundForward } from 'react-icons/io'
 
 /**
  * Internal dependencies
