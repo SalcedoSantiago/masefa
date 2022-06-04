@@ -12,37 +12,41 @@ const StyledSlider = styled.div`
     position: relative;
     height: 60vh;
 
+
     > div.slider{
         height: 100%;
+        .previousButton,
+        .nextButton
+        {
+            svg polygon{
+                fill: var(--white);
+            }
+        }
     }
+
+  
 `
-
-
 
 const Overlay = styled.div`
     z-index: 2;
-    max-width: 1280px;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
+    background-color: #0000005e;
 
-    > div{
+    .container{
+        margin: 0 auto;
+        max-width: 1280px;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
-        width: 50%;
-        height: 60vh;
- 
-    }
-
-    .container{
-        background-color: #1E1D24E6;
-        padding: 40px 48px;
+        align-items: center;
+        padding: 0 2rem;
 
         .heading,
         .subheading
         {
+            text-align: start;
             color: #FFFFFF;
             font-size: 38px;
             font-weight: 600;
@@ -92,39 +96,35 @@ const Hero = () => {
     return (
         <StyledSection>
             <StyledSlider>
-                <Slider autoplay={3000}>
+                <Slider >
                     {content.map((item, index) => (
                         <div
                             key={index}
                             style={{ background: `url('${item}') no-repeat center center` }}
                         >
-                            <div className="center">
-                                <Overlay>
-                                    <div>
-                                        <div className="container">
-                                            <h2 className="heading">MONTAJES INDUSTRIALES</h2>
-                                            <h3 className="subheading">
-                                                TEL: <a>(011) 342535542</a>
-                                            </h3>
-                                            <p className="smart-text">
-                                                The smartest working shop in the steel business
-                                            </p>
-                                            <span>
-                                                Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                            </span>
-                                            <div className="flex">
-                                                <button>
-                                                    Contact us
-                                                </button>
-                                                <button>
-                                                    About us
-                                                </button>
-                                            </div>
-                                        </div>
+                            <Overlay>
+                                <div className="container">
+                                    <h2 className="heading">MONTAJES INDUSTRIALES</h2>
+                                    <h3 className="subheading">
+                                        TEL: <a>(011) 342535542</a>
+                                    </h3>
+                                    <p className="smart-text">
+                                        The smartest working shop in the steel business
+                                    </p>
+                                    <span>
+                                        Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </span>
+                                    <div className="flex">
+                                        <button>
+                                            Contact us
+                                        </button>
+                                        <button>
+                                            About us
+                                        </button>
                                     </div>
-                                </Overlay>
-                            </div>
+                                </div>
+                            </Overlay>
                         </div>
                     ))}
                 </Slider>
