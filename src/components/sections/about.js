@@ -202,7 +202,7 @@ const PrimaryButton = styled(Button)`
 export default () => {
     return (
         <Fade>
-            <StyledSection>
+            <StyledSection id="nosotros">
                 <div className="header">
                     <h2 className="heading">
                         Quienes somos?

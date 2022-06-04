@@ -142,9 +142,10 @@ const Header = () => {
                 </div>
                 <NavLinks>
                     <Link href="/#">Home</Link>
-                    <Link href="/#">Sobre Nosotros</Link>
-                    <Link href="/#">Servcios</Link>
-                    <Link href="/#">Contacto</Link>
+                    <Link href="/#nosotros">Sobre Nosotros</Link>
+                    <Link href="/#servicios">Servicios</Link>
+                    <Link href="/#equipo">Equipo</Link>
+                    <Link href="/#contact">Contacto</Link>
                 </NavLinks>
             </NavLinksContainer>
         </StyledNavigation>

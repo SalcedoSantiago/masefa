@@ -120,7 +120,7 @@ const ServicesContainer = styled.div`
 export default () => {
   return (
     <Fade>
-      <StyledSection>
+      <StyledSection id="servicios">
         <div className="header">
           <h2 className="heading">Nuestros Servicios</h2>
         </div>

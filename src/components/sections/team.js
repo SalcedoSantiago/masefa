@@ -137,7 +137,7 @@ const SectionDescription = styled.div`
 export default () => {
     return (
         <Fade>
-            <StyledSection>
+            <StyledSection id="equipo">
                 <div className="header">
                     <h2 className="heading">Nustro Equipo</h2>
                 </div>

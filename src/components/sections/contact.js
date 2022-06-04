@@ -119,7 +119,7 @@ const Contact = () => {
 
     return (
         <Fade>
-            <StyledSection>
+            <StyledSection id="contact">
                 <div className="header">
                     <h2 className='heading'>Contacto</h2>
                 </div>

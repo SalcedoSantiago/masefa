@@ -81,7 +81,7 @@ const CartContent = styled(motion.div)`
 const Featured = () => {
     return (
         <Fade>
-            <SectionStyled>
+            <SectionStyled >
                 <section>
                     <div className="header">
                         <h2 className="heading">Soluciones que ofrecemos</h2>
