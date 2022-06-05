@@ -7,12 +7,18 @@ const InfoContainer = styled.div`
     padding: 10px 0;
     background-color: var(--orange);
 
+    @media (max-width: 768px) {
+        display: none;
+    }
+
     > div{
         max-width: 1280px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 2rem;
+
     }
 
     a{

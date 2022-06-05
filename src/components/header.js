@@ -2,6 +2,7 @@ import React from 'react'
 import styled from "styled-components";
 import { IoIosMail, IoIosResize } from 'react-icons/io'
 import { motion } from "framer-motion";
+import { Button } from "./button";
 
 import useAnimatedNavToggler from './helpers/useToggle';
 import Logo from './assets/images/logo.png'
@@ -10,7 +11,6 @@ import HeaderInfo from './links';
 const HeaderContainer = styled.header`
     width: 100%;
 `
-
 
 const StyledNavigation = styled.div`
     background-color:#00235a;
@@ -64,7 +64,7 @@ const MobileNavLinksContainer = styled.nav`
     display: flex;
     flex:1;
     align-items: center;
-    padding: 2rem;
+    padding: 20px 2rem;
     justify-content: space-between;
 
     @media (min-width: 768px) {
@@ -72,15 +72,17 @@ const MobileNavLinksContainer = styled.nav`
     }
 `;
 
-const NavToggle = styled.button`
+const NavToggle = styled(Button)`
     z-index: 9999;
+    padding: 10px 20px;
+    background-color: var(--orange);
 `;
 
 
 export const MobileNavLinks = motion(styled.div`
     z-index: 10;
     position: fixed;
-    top: 50px;
+    top: 0px;
     left: 0px;
     right: 0px;
     margin: 1.5rem 1rem;
@@ -139,9 +141,6 @@ const Header = () => {
                 {logoLink}
                 <MobileNavLinks initial={{ x: "150%", display: "none" }} animate={animation} >
                     {navsLinks}
-                    <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
-                        {showNavLinks ? <IoIosResize /> : <IoIosMail />}
-                    </NavToggle>
                 </MobileNavLinks>
                 <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
                     {showNavLinks ? <IoIosResize /> : <IoIosMail />}
