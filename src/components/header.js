@@ -64,6 +64,7 @@ const MobileNavLinksContainer = styled.nav`
     display: flex;
     flex:1;
     align-items: center;
+    padding: 2rem;
     justify-content: space-between;
 
     @media (min-width: 768px) {
@@ -72,29 +73,30 @@ const MobileNavLinksContainer = styled.nav`
 `;
 
 const NavToggle = styled.button`
-    
-    
-
+    z-index: 9999;
 `;
 
 
 export const MobileNavLinks = motion(styled.div`
+    z-index: 10;
     position: fixed;
-    top:0;
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
-    border: 1px solid red;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    margin: 1.5rem 1rem;
+    padding: 2rem;
+    border-width: 1px;
     text-align: center;
-    border-radius: 20px;
-    color: gray;
-    background-color: white;
+    border-radius: 0.5rem;
+    color: #ffff;
+    background-color: var(--blue
+        );
 
-
-  ${Link} {
+  ${NavLinks} {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 `);
 
@@ -129,14 +131,17 @@ const Header = () => {
 
     return (
         <HeaderContainer>
+            <HeaderInfo />
             <DesktopNavContainer>
-                <HeaderInfo />
                 {links}
             </DesktopNavContainer>
             <MobileNavLinksContainer>
                 {logoLink}
                 <MobileNavLinks initial={{ x: "150%", display: "none" }} animate={animation} >
                     {navsLinks}
+                    <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
+                        {showNavLinks ? <IoIosResize /> : <IoIosMail />}
+                    </NavToggle>
                 </MobileNavLinks>
                 <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
                     {showNavLinks ? <IoIosResize /> : <IoIosMail />}
