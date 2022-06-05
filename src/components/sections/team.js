@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import { IoLogoLinkedin, IoLogoFacebook } from 'react-icons/io'
 import Fade from 'react-reveal/Fade';
+import Team from '../assets/images/team.jpg'
+
 
 
 const StyledSection = styled.section`
@@ -186,7 +188,7 @@ const EQUIPO = [
         name: 'Lorem Ipsum',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
         position: 'Director',
-        img: 'https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2019/06/instructor-1-free-img.jpg',
+        img: Team,
         redes: {
             linkedin: '',
             facebook: '',
@@ -197,7 +199,7 @@ const EQUIPO = [
         name: 'Lorem Ipsum',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
         position: 'Director',
-        img: 'https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2019/06/instructor-1-free-img.jpg',
+        img: Team,
         redes: {
             linkedin: '',
             facebook: '',

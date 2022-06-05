@@ -2,16 +2,18 @@ import styled from "styled-components";
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 
+import slide1 from '../assets/images/slide-1.png'
+import slide2 from '../assets/images/slide-2.jpg'
+import slide3 from '../assets/images/slide-3.png'
+
 
 const StyledSection = styled.div`
     height: 60vh;
-
+    background-color: var(--blue);
 `
 
 const StyledSlider = styled.div`
-    position: relative;
-    height: 60vh;
-
+    height: 100%;
 
     > div.slider{
         height: 100%;
@@ -129,15 +131,14 @@ const Hero = () => {
                     ))}
                 </Slider>
             </StyledSlider>
-
-        </StyledSection>
+        </StyledSection >
     );
 };
 
 const content = [
-    "https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/slide-2.jpg",
-    "https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/slide-3.jpg",
-    "https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/slide-1.jpg"
+    slide1,
+    slide2,
+    slide3,
 ];
 
 export default Hero;

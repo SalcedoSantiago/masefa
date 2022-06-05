@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { Button } from "../button";
 import Fade from 'react-reveal/Fade';
+import Work1 from '../assets/images/work-1.jpg'
 
 /**
  * Internal dependencies
@@ -147,7 +148,7 @@ export default () => {
 const Works = [
     {
         imageSrc:
-            "https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/img-4.jpg",
+            Work1,
         title: "Chicken Chilled",
         content: "Chicken Main Course",
         price: "$5.99",
@@ -157,7 +158,7 @@ const Works = [
     },
     {
         imageSrc:
-            "https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/img-11.jpg",
+        Work1,
         title: "Samsa Beef",
         content: "Fried Mexican Beef",
         price: "$3.99",
@@ -167,7 +168,7 @@ const Works = [
     },
     {
         imageSrc:
-            "https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/img-14.jpg",
+        Work1,
         title: "Carnet Nachos",
         content: "Chilli Crispy Nachos",
         price: "$3.99",
@@ -177,7 +178,7 @@ const Works = [
     },
     {
         imageSrc:
-            "https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/img-16.jpg",
+        Work1,
         title: "Guacamole Mex",
         content: "Mexican Chilli",
         price: "$3.99",
@@ -187,7 +188,7 @@ const Works = [
     },
     {
         imageSrc:
-            "https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/img-13.jpg",
+        Work1,
         title: "Chillie Cake",
         content: "Deepfried Chicken",
         price: "$2.99",
@@ -197,7 +198,7 @@ const Works = [
     },
     {
         imageSrc:
-            "https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/img-17.jpg",
+        Work1,
         title: "Nelli",
         content: "Hamburger & Fries",
         price: "$7.99",
@@ -207,7 +208,7 @@ const Works = [
     },
     {
         imageSrc:
-            "http://indro.iamabdus.com/v1.0/wp-content/uploads/2021/04/grant-durr-UPm28si8BRE-unsplash2.jpg.webp",
+        Work1,
         title: "Jalapeno Poppers",
         content: "Crispy Soyabeans",
         price: "$8.99",
@@ -217,7 +218,7 @@ const Works = [
     },
     {
         imageSrc:
-            "http://indro.iamabdus.com/v1.0/wp-content/uploads/2021/06/patrick-hendry-6xeDIZgoPaw-unsplash2-1.jpg",
+        Work1,
         title: "Cajun Chicken",
         content: "Roasted Chicken & Egg",
         price: "$7.99",
