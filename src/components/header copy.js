@@ -63,7 +63,7 @@ const DesktopNavContainer = styled.nav`
 
 const MobileNavLinksContainer = styled.nav`
     display: flex;
-    flex: 1;
+    flex:1;
     align-items: center;
     padding: 20px 2rem;
     justify-content: space-between;
@@ -128,6 +128,34 @@ export const MobileNavLinks = motion(styled.div`
 `);
 
 const Header = () => {
+    const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();
+
+    const logoLink = (
+        <LogoLink href="/">
+            <img id="logo" src={Logo} alt="test" />
+        </LogoLink>
+    )
+
+    const navsLinks =
+        <NavLinks>
+            <Link href="/#">Home</Link>
+            <Link href="/#nosotros">Sobre Nosotros</Link>
+            <Link href="/#servicios">Servicios</Link>
+            <Link href="/#equipo">Equipo</Link>
+            <Link href="/#contact">Contacto</Link>
+        </NavLinks>
+
+    const links = (
+        <StyledNavigation>
+            <NavLinksContainer key={1}>
+                <div>
+                    {logoLink}
+                </div>
+                {navsLinks}
+            </NavLinksContainer>
+        </StyledNavigation>
+    )
+
 
     return (
         <>
@@ -135,6 +163,29 @@ const Header = () => {
         </>
     )
 
+
+    return (
+        <HeaderContainer>
+            <HeaderInfo />
+            <DesktopNavContainer>
+                {links}
+            </DesktopNavContainer>
+            <MobileNavLinksContainer>
+                {logoLink}
+                <MobileNavLinks initial={{ x: "150%", display: "none" }} animate={animation} >
+                    {navsLinks}
+                </MobileNavLinks>
+                <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
+                    {showNavLinks ? <FaTimes /> : <FaBars />}
+                </NavToggle>
+            </MobileNavLinksContainer>
+        </HeaderContainer>
+    )
 }
+
+
+
+
+
 
 export default Header;

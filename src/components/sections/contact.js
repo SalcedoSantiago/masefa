@@ -12,8 +12,7 @@ const StyledSection = styled.section`
     .header{
         margin-bottom: 80px;
     }
-
-`
+`;
 
 const FormContainer = styled.div`
     margin: 0 auto;
@@ -23,7 +22,7 @@ const FormContainer = styled.div`
     @media (min-width: 1024px) {
         order: 0;
     }
-`
+`;
 
 
 const Columns = styled.div`
@@ -42,7 +41,7 @@ const Columns = styled.div`
     &:last-child{
         margin-right: 0!important;
     }
-`
+`;
 const Field = styled.div`
     margin-right: 0;
     width: 300px;
@@ -69,7 +68,7 @@ const Field = styled.div`
         padding: 10px 20px;
         font-family: "Poppins";
     }
-`
+`;
 
 const InfoContact = styled.div`
     font-family: "Montserrat";
@@ -102,7 +101,7 @@ const InfoContact = styled.div`
         font-size: 20px;
         margin-top: 60px;
     }
-`
+`;
 
 const PrimaryButton = styled(Button)`
     width: 100%;
@@ -112,11 +111,10 @@ const PrimaryButton = styled(Button)`
     @media (min-width: 1024px) {
         width: auto;
     }
- `
+`;
 
 
 const Contact = () => {
-
     return (
         <Fade>
             <StyledSection id="contact">

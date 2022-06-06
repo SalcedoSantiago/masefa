@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Masefa from './Masefa';
+import App from './app';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <Masefa />
+  <App />
 );

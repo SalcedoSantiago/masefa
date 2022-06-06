@@ -18,7 +18,7 @@ import GlobalStyle from "./components/styles/GlobalStyled";
 
 
 
-const Masefa = () => {
+const App = () => {
 
 
     return (
@@ -41,4 +41,4 @@ const Masefa = () => {
     )
 }
 
-export default Masefa
+export default App
