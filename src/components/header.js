@@ -8,6 +8,7 @@ import useAnimatedNavToggler from './helpers/useToggle';
 import Logo from './assets/images/logo.png'
 import HeaderInfo from './links';
 import Navbar from './Navbar/Navbar';
+import Sidebar from './Sidebar';
 
 const HeaderContainer = styled.header`
     width: 100%;
@@ -132,6 +133,7 @@ const Header = () => {
     return (
         <>
             <Navbar />
+            <Sidebar />
         </>
     )
 

@@ -10,6 +10,7 @@ export const Nav = styled.div`
 
 export const NavbarContainer = styled.nav`
     max-width: 1280px;
+    height: 100%;
     padding: 0 2rem;
     margin: 0 auto;
     display: flex;
@@ -17,12 +18,20 @@ export const NavbarContainer = styled.nav`
 `
 
 export const NavLogo = styled.div`
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
 `
 
 export const MobileIcon = styled.nav`
-    display: none;
-
-    @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+        display: none;
     }
 `
 
