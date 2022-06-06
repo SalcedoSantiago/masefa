@@ -129,11 +129,12 @@ export const MobileNavLinks = motion(styled.div`
 `);
 
 const Header = () => {
+    const { animation, toggleNavbar } = useAnimatedNavToggler();
 
     return (
         <>
-            <Navbar />
-            <Sidebar />
+            <Navbar toggleNavbar={toggleNavbar} />
+            <Sidebar toggleNavbar={toggleNavbar} animation={animation} />
         </>
     )
 

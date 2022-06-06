@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
 import { Link as LinkS } from 'react-scroll';
+import { motion } from "framer-motion";
 
 
-export const SidebarContainer = styled.aside`
+export const SidebarContainer = motion(styled.aside`
     position: fixed;
     top: 0;
     left: 0;
@@ -13,11 +14,11 @@ export const SidebarContainer = styled.aside`
     background-color: var(--white);
     background-color: black;
     z-index: 999;
-    opacity: 0;
+
     @media screen and (min-width: 768px){
         display: none;
     }   
-`;
+`);
 
 export const Icon = styled.div`
     font-size: 20px;

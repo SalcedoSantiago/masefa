@@ -8,12 +8,11 @@ import {
 } from './SidebarElements';
 
 
+const Sidebar = ({ animation, toggleNavbar }) => {
 
-
-const Sidebar = () => {
     return (
-        <SidebarContainer>
-            <Icon>
+        <SidebarContainer initial={{ x: "150%", display: "none", opacity: '0' }} animate={animation}>
+            <Icon onClick={toggleNavbar}>
                 <CloseIcon />
             </Icon>
             <SidebarWrapper>

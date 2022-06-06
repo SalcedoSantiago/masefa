@@ -158,13 +158,6 @@ const Header = () => {
 
 
     return (
-        <>
-            <Navbar />
-        </>
-    )
-
-
-    return (
         <HeaderContainer>
             <HeaderInfo />
             <DesktopNavContainer>
