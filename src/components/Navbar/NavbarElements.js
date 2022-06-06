@@ -8,7 +8,7 @@ export const Nav = styled.div`
     height: 80px;
 `
 
-export const NavbarContainer = styled.div`
+export const NavbarContainer = styled.nav`
     max-width: 1280px;
     padding: 0 2rem;
     margin: 0 auto;

@@ -25,10 +25,13 @@ const Navbar = () => {
                             <NavLink to="home">Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="about">About</NavLink>
+                            <NavLink to="about">Sobre Nosotros</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="services">Services</NavLink>
+                            <NavLink to="services">Servicios</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink to="services">Servicios</NavLink>
                         </NavItem>
                     </NavMenu>
                 </NavbarContainer>
