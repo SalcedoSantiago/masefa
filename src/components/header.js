@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import { IoIosMail, IoIosResize } from 'react-icons/io'
+import { FaBars, FaTimes } from 'react-icons/fa'
 import { motion } from "framer-motion";
 import { Button } from "./button";
 
@@ -76,6 +76,20 @@ const NavToggle = styled(Button)`
     z-index: 9999;
     padding: 10px 20px;
     background-color: var(--orange);
+    border-radius: 4px;
+    z-index: 12;
+        /* position: fixed;
+        margin: 2rem;
+        right: 0; */
+    &.open{
+        /* z-index: 12; */
+        position: fixed;
+        margin: 2rem;
+        right: 0;
+    }
+    &:hover{
+        background-color: #ff6600;
+    }
 `;
 
 
@@ -99,6 +113,16 @@ export const MobileNavLinks = motion(styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
+    gap: 2px;
+
+    ${Link}{
+        padding-top: 20px;
+        padding-bottom: 21px;
+        /* border-bottom: 2px solid white; */
+        &:hover{
+            color: var(--orange);
+        }
+    }
   }
 `);
 
@@ -143,8 +167,11 @@ const Header = () => {
                     {navsLinks}
                 </MobileNavLinks>
                 <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
-                    {showNavLinks ? <IoIosResize /> : <IoIosMail />}
+                    {showNavLinks ? <FaTimes /> : <FaBars />}
                 </NavToggle>
+
+
+                
             </MobileNavLinksContainer>
         </HeaderContainer>
     )
