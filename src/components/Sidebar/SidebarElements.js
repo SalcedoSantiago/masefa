@@ -12,7 +12,7 @@ export const SidebarContainer = motion(styled.aside`
     width: 100%;
     height: 100%;
     background-color: var(--white);
-    background-color: black;
+    background-color: var(--blue);
     z-index: 999;
 
     @media screen and (min-width: 768px){
@@ -55,4 +55,8 @@ export const SidebarLink = styled(LinkS)`
     list-style: none;
     text-decoration: none;
     cursor: pointer;
+
+    &:hover{
+        color: var(--orange)
+    }
 `

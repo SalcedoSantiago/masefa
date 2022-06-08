@@ -1,5 +1,5 @@
 
-import Hero from '../components/sections/hero';
+import Hero from '../components/HeroSection';
 import About from '../components/sections/about';
 import Featured from '../components/sections/featured';
 import Services from '../components/sections/services';

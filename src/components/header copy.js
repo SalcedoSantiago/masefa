@@ -119,7 +119,7 @@ export const MobileNavLinks = motion(styled.div`
     ${Link}{
         padding-top: 20px;
         padding-bottom: 21px;
-        /* border-bottom: 2px solid white; */
+        
         &:hover{
             color: var(--orange);
         }
