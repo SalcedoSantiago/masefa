@@ -1,50 +1,30 @@
 import styled from "styled-components";
-import { css } from "styled-components";
+import { Link } from 'react-scroll';
 
-
-
-
-export const Button = styled.button`
-    padding: 20px 30px 20px 30px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #FFFFFF;
-    background-color: var(--orange);
-    border-style: none;
-    border-radius: 0px 0px 0px 0px;
+export const Button = styled(Link)`
+    padding: ${({ big }) => big ? '14px 48px' : '12px 30px'};
+    background: ${({ primary }) => primary ? 'var(--orange) ' : 'white'};
+    color: ${({ primary }) => primary ? '#fff' : 'var(--orange)'};
+    font-size: ${({ fontBig }) => fontBig ? '20px' : '16px'};
+    white-space: no-wrap;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-
-    ${(props) => props.center && css`
-        margin: 0 auto;
-        display: flex;
-    `}
-
-    ${(props) => props.end && css`
-        /* margin: 0 auto; */
-        margin-left: auto;
-        display: flex;
-    `}
-
-    .arrow{
-        padding-left:5px;
-    }
+    transition: all 0.2s ease-in-out;
 
     &:hover{
-        background-color: var(--blue);
+        transition: all 0.2s ease-in-out;
+        background: ${({ primary }) => primary ? 'transparent' : 'var(--orange) '};
+        outline: 2px solid var(--orange);
+        color: ${({ primary }) => primary ? 'var(--orange)' : '#fff'};
     }
-
 `
 
 
 
 export const LinkButton = styled.button`
-    color: var(--orange);
-    border: none;
-    font-size: 18px;
-    /* transition: var(--transition); */
-    padding: 0;
 
-    &:hover{
-        border-bottom: 2px solid;
-    }
 `

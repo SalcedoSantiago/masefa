@@ -8,49 +8,73 @@ import slide3 from '../assets/images/slide-3.png'
 
 
 import {
-    StyledSection,
+    HeroContainer,
     StyledSlider,
-    Overlay
+    BgImageSlider,
+    HeroInfoContainer,
+    HeroInfoWrapper,
+    HeroInfoContent,
+    HeroH1,
+    HeroSubHeading,
+    SmartText,
+    HeroInfoText,
+    BtnWrapper
 } from './HeroElements'
+import { Button } from '../button';
+
 
 const Hero = () => {
     return (
-        <StyledSection>
+        <HeroContainer>
             <StyledSlider>
-                <Slider >
+                <Slider>
                     {content.map((item, index) => (
-                        <div
+                        <BgImageSlider
                             key={index}
-                            style={{ background: `url('${item}') no-repeat center center` }}
+                            imageUrl={item}
                         >
-                            <Overlay>
-                                <div className="container">
-                                    <h2 className="heading">MONTAJES INDUSTRIALES</h2>
-                                    <h3 className="subheading">
-                                        TEL: <a>(011) 342535542</a>
-                                    </h3>
-                                    <p className="smart-text">
-                                        The smartest working shop in the steel business
-                                    </p>
-                                    <span>
-                                        Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </span>
-                                    <div className="flex">
-                                        <button>
-                                            Contact us
-                                        </button>
-                                        <button>
-                                            About us
-                                        </button>
-                                    </div>
-                                </div>
-                            </Overlay>
-                        </div>
+                        </BgImageSlider>
                     ))}
                 </Slider>
+                <HeroInfoContainer>
+                    <HeroInfoWrapper>
+                        <HeroInfoContent>
+                            <HeroH1>
+                                Montajes industriales
+                            </HeroH1>
+                            <HeroSubHeading>
+                                TEL: <a>(011) 342535542</a>
+                            </HeroSubHeading>
+                            <SmartText>
+                                The smartest working shop in the steel business
+                            </SmartText>
+                            <HeroInfoText>
+                                Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </HeroInfoText>
+                            <BtnWrapper>
+                                <Button
+                                    primary="true"
+                                    big="true"
+                                    fontBig="true"
+                                    to="contact"
+                                >
+                                    Contact us
+                                </Button>
+                                <Button
+                                    primary="true"
+                                    big="true"
+                                    fontBig="true"
+                                    to="about"
+                                >
+                                    About us
+                                </Button>
+                            </BtnWrapper>
+                        </HeroInfoContent>
+                    </HeroInfoWrapper>
+                </HeroInfoContainer>
             </StyledSlider>
-        </StyledSection >
+        </HeroContainer >
     );
 };
 

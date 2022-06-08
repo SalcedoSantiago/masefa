@@ -1,91 +1,143 @@
 import styled from 'styled-components';
+import { css } from 'styled-components';
 
 
-
-
-export const StyledSection = styled.div`
-    height: 60vh;
-    background-color: var(--blue);
+export const HeroContainer = styled.div`
+    height: 70vh;
+    background-color: var(--white);
 `
 
 export const StyledSlider = styled.div`
     height: 100%;
+    position: relative;
 
-    > div.slider{
+    > div{
         height: 100%;
         .previousButton,
         .nextButton
         {
+            z-index: 2;
             svg polygon{
                 fill: var(--white);
             }
         }
     }
-
-  
+`
+export const BgImageSlider = styled.div`
+    height:  70vh;
+    ${({ imageUrl }) => css`
+        background-image: url(${imageUrl});
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    `}
 `
 
-export const Overlay = styled.div`
-    z-index: 2;
+
+export const HeroInfoContainer = styled.div`
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    
+`
+
+export const HeroInfoWrapper = styled.div`
+    margin: 0 auto;
     width: 100%;
     height: 100%;
-    background-color: #0000005e;
+    max-width: 1280px;
+    padding: 0 2rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+`
 
-    .container{
-        margin: 0 auto;
-        max-width: 1280px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 2rem;
+export const HeroInfoContent = styled.div`
+    background-color: #00000094;
+    padding: 30px 50px;
+    max-width: 800px;
+    border-radius: 3px;
+`;
 
-        .heading,
-        .subheading
-        {
-            text-align: start;
-            color: #FFFFFF;
-            font-size: 38px;
-            font-weight: 600;
-            line-height: 1em;
-            a{
-                text-decoration: none;
-                &:hover{
-                    cursor: pointer;
-                    color: var(--orange);
-                }
-            }
+export const HeroH1 = styled.div`
+    font-size: 48px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.5;
+
+    @media screen and (max-width: 760px){
+        font-size: 40px;
+        text-align: center;
+    }
+    @media screen and (max-width: 480px){
+        text-align: center;
+        font-size: 38px;
+    }
+`
+
+export const HeroSubHeading = styled.h2`
+    font-size: 44px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.5;
+
+    a{
+        color: #f7b02d;
+        cursor: pointer;
+        &:hover{
+            text-decoration-line: underline;
         }
-        .smart-text{
-            margin: 10px 0;
-            color: #FFFFFF;
-            font-family: "Montserrat", Sans-serif;
-            font-size: 18px;
-            font-weight: 500;
-            text-transform: uppercase;
-            line-height: 1.2222em;
-        }
-
-        span{
-            display: block;
-            color: #FFFFFF;
-            font-family: "Roboto", Sans-serif;
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 1.83em;
-        }
-
-        .flex{
-            ${({ theme }) => theme.flexStart};
-            gap: 20px;
-            margin-top: 20px;
-
-            button{
-            ${({ theme }) => theme.button};
-            }
-        }
-
     }
 
+    @media screen and (max-width: 760px){
+        font-size: 38px;
+        text-align: center;
+    }
+    @media screen and (max-width: 480px){
+        text-align: center;
+        font-size: 34px;
+    }
+`;
+
+
+export const SmartText = styled.p`
+    font-size: 22px;
+    color: var(--white);
+    margin-bottom: 15px;
+    font-weight: 500;
+
+    @media screen and (max-width: 760px){
+        font-size: 20px;
+        text-align: center;
+    }
+    @media screen and (max-width: 480px){
+        text-align: center;
+        font-size: 18px;
+    }
+`
+
+export const HeroInfoText = styled.p`
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 30px;
+    
+
+    @media screen and (max-width: 760px){
+        font-size: 20px;
+        text-align: center;
+    }
+    @media screen and (max-width: 480px){
+        text-align: center;
+        font-size: 18px;
+    }
+`
+
+export const BtnWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 15px;
 `

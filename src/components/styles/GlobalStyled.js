@@ -96,7 +96,6 @@ const GlobalStyle = createGlobalStyle`
         margin: 0 0 10px 0;
         font-weight: 600;
         color: var(--black);
-        line-height: 1.1;
     }
 
     .header{
@@ -151,10 +150,11 @@ const GlobalStyle = createGlobalStyle`
 
     p {
         color: #7A7A7A;
-        font-family: "Poppins", Sans-serif;
+        font-family: "Montserrat", Sans-serif;
         font-size: 16px;
         font-weight: 400;
         line-height: 1.6;
+        margin: 0;
     }
 
 
