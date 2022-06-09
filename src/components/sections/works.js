@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { Button } from "../button";
 import Fade from 'react-reveal/Fade';
-import Work1 from '../assets/images/work-1.jpg'
+import Work1 from '../../assets/images/work-1.jpg'
 
 /**
  * Internal dependencies

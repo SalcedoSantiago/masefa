@@ -5,9 +5,8 @@ import { motion } from "framer-motion";
 import { Button } from "./button";
 
 import useAnimatedNavToggler from './helpers/useToggle';
-import Logo from './assets/images/logo.png'
+import Logo from '../assets/images/logo.png'
 import HeaderInfo from './links';
-import Navbar from './Navbar/Navbar';
 
 const HeaderContainer = styled.header`
     width: 100%;

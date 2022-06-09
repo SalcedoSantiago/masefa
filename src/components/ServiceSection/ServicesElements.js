@@ -85,6 +85,7 @@ export const Row = styled.div`
     max-width: 1000px;
     display: flex;
     gap: 40px;
+    padding-bottom: 70px;
 
     @media screen and (max-width: 760px){
         flex-direction: column;
@@ -126,7 +127,7 @@ export const CheckIcon = styled.div`
 export const SubtitleServices = styled.h3`
     margin: 0;
     font-family: "Montserrat";
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 400;
     color: var(--black);
 `

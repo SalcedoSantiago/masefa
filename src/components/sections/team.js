@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { IoLogoLinkedin, IoLogoFacebook } from 'react-icons/io'
 import Fade from 'react-reveal/Fade';
-import Team from '../assets/images/team.jpg'
+import Team from '../../assets/images/team.jpg'
 
 
 
