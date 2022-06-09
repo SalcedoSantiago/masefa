@@ -1,6 +1,6 @@
 
 import Hero from '../components/HeroSection';
-import About from '../components/sections/about';
+import About from '../components/AboutSection';
 import Featured from '../components/sections/featured';
 import Services from '../components/sections/services';
 import Cta from '../components/sections/cta';

@@ -101,8 +101,6 @@ const Layers = styled.div`
 
 const ExperienceContainer = styled.div`
     ${({ theme }) => theme.flexStart};
-    margin-top: 80px;
-    margin-bottom: 40px;
 
 
     > div{
