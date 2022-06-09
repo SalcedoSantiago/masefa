@@ -1,7 +1,8 @@
 
 import Hero from '../components/HeroSection';
 import About from '../components/AboutSection';
-import Featured from '../components/sections/featured';
+import Featured from '../components/FeaturedSection';
+import Featureds from '../components/sections/featured';
 import Services from '../components/sections/services';
 import Cta from '../components/sections/cta';
 import Works from '../components/sections/works';
@@ -16,6 +17,7 @@ const Home = () => {
             {/* <Testimonials /> */}
             <About />
             <Featured />
+            {/* <Featureds /> */}
             <Services />
             <Cta />
             <Works />

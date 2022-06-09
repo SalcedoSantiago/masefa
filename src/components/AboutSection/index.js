@@ -27,8 +27,8 @@ import AboutImage from '../assets/images/about.jfif'
 const About = () => {
     return (
         <AboutContainer id="about">
+            <Heading>Quienes somos?</Heading>
             <AboutWrapper>
-                <Heading>Quienes somos?</Heading>
                 <AboutRow>
                     <Column1>
                         <Layer />
