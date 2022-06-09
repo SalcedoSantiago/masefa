@@ -44,7 +44,6 @@ export const Heading = styled.h1`
 export const AboutRow = styled.div`
     display: grid;
     grid-auto-columns:  minmax(auto, 1fr);
-    /* align-items: center; */
     grid-template-areas: 'col1 col2';
     padding-top: 60px;
 

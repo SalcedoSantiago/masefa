@@ -32,6 +32,7 @@ export const ServicesRow = styled.div`
     /* align-items: center; */
     max-width: 1000px;
     margin: 0 auto;
+    margin-bottom: 80px;
 
     @media screen and (max-width: 1000px){
         grid-template-columns: repeat(2, 1fr);
@@ -76,5 +77,56 @@ export const ServiceTitle = styled.h2`
     font-family: "Poppins";
     color: var(--blue);
     transition: all 0.2s ease-in-out;
-
 `;
+
+
+export const Row = styled.div`
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    gap: 40px;
+
+    @media screen and (max-width: 760px){
+        flex-direction: column;
+    }
+`
+export const Column = styled.div`
+    width: 50%;
+    box-shadow: 5px 0px 25px 0px rgba(0,0,0,0.2);
+    padding: 45px 40px;
+    border-radius: 10px;
+    @media screen and (max-width: 760px){
+        width: 80%;
+        margin: 0 auto;
+    }
+`
+
+export const HeadingService = styled.h3`
+    font-size: 1.1rem;
+    font-family: "Montserrat";
+    color: var(--blue);
+    margin-bottom: 22px;
+    line-height: 1.7;
+    text-transform: uppercase;
+`
+
+export const ColumnService = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 13px;
+`
+
+export const CheckIcon = styled.div`
+    font-size: 28px;
+    color: var(--orange);
+    line-height: 1;
+`
+
+export const SubtitleServices = styled.h3`
+    margin: 0;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black);
+`

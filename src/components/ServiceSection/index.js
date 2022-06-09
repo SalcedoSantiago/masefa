@@ -7,7 +7,15 @@ import {
     ServicesRow,
     CardService,
     IconWrapper,
-    ServiceTitle
+    ServiceTitle,
+    Row,
+    Column,
+    Column2,
+    RowService,
+    ColumnService,
+    SubtitleServices,
+    HeadingService,
+    CheckIcon
 } from './ServicesElements';
 
 const Services = () => {
@@ -16,7 +24,7 @@ const Services = () => {
         <ServicesContainer>
             <Heading>Nuestros Servicios</Heading>
             <ServicesRow>
-                {services.map(({ title, Icon}, index) =>
+                {services.map(({ title, Icon }, index) =>
                     <CardService key={index}>
                         <IconWrapper>
                             <IoIosHammer />
@@ -25,6 +33,35 @@ const Services = () => {
                     </CardService>
                 )}
             </ServicesRow>
+            <Heading>Ademas ofrecemos</Heading>
+            <Row>
+                <Column>
+                    <HeadingService>El rubro donde nos desarrollamos:</HeadingService>
+                    {[1, 2, 3, 4, 5].map((data, index) =>
+                        <ColumnService key={index}>
+                            <CheckIcon>
+                                <IoIosCheckmarkCircle className="check-icon" />
+                            </CheckIcon>
+                            <SubtitleServices>
+                                Industria química
+                            </SubtitleServices>
+                        </ColumnService>
+                    )}
+                </Column>
+                <Column>
+                    <HeadingService>El rubro donde nos desarrollamos:</HeadingService>
+                    {[1, 2, 3, 4, 5].map((data, index) =>
+                        <ColumnService key={index}>
+                            <CheckIcon>
+                                <IoIosCheckmarkCircle className="check-icon" />
+                            </CheckIcon>
+                            <SubtitleServices>
+                                Industria química
+                            </SubtitleServices>
+                        </ColumnService>
+                    )}
+                </Column>
+            </Row>
         </ServicesContainer>
     )
 }
