@@ -96,9 +96,16 @@ export const Column = styled.div`
     box-shadow: 5px 0px 25px 0px rgba(0,0,0,0.2);
     padding: 45px 40px;
     border-radius: 10px;
+
     @media screen and (max-width: 760px){
         width: 80%;
         margin: 0 auto;
+    }
+
+    @media screen and (max-width: 480px){
+        width: 100%;
+        margin: 0 auto;
+        padding: 45px 10px;
     }
 `
 
