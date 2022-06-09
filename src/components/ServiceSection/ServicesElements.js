@@ -11,12 +11,12 @@ export const ServicesContainer = styled.div`
 
 
 export const Heading = styled.h1`
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-family: "Montserrat", "Poppins";
     line-height: 1.1;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     color: var(--black);
 
     @media screen and (max-width: 768px){
@@ -42,15 +42,32 @@ export const ServicesRow = styled.div`
     }
 `;
 
+
+export const CardService = styled.div`
+    padding: 20px 10px;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+`;
+
 export const IconWrapper = styled.div`
     text-align: center;
     font-size: 60px;
-    color: var(--orange);
-    margin-bottom: 10px;
+    color: var(--blue);
+    margin-bottom: 15px;
     line-height: 1;
     transition: all 0.2s ease-in-out;
-
-`
+    background-color: #3f51b54d;
+    width: 90px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+`;
 
 export const ServiceTitle = styled.h2`
     font-size: 1.2rem;
@@ -60,24 +77,4 @@ export const ServiceTitle = styled.h2`
     color: var(--blue);
     transition: all 0.2s ease-in-out;
 
-`
-
-export const CardService = styled.div`
-    padding: 20px 30px;
-    box-shadow: 5px 13px 15px -3px rgba(0,0,0,0.1);
-    border-radius: 5px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-
-    &:hover{
-        background-color: var(--orange);
-
-        ${ServiceTitle},
-        ${IconWrapper}
-        {
-            color: var(--white);
-        }
-    }
-`
-
+`;

@@ -1,18 +1,18 @@
 export const services = [
     {
-        imageSrc: 'https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/img-3.jpg',
+        Icon: 'IoIosHammer',
         title: "Secure",
     },
     {
-        imageSrc: 'https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/img-3.jpg',
+        Icon: 'IoIosHammer',
         title: "24/7 Support",
     },
     {
-        imageSrc: 'https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/img-3.jpg',
+        Icon: 'IoIosHammer',
         title: "Customizable",
     },
     {
-        imageSrc: 'https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/img-3.jpg',
+        Icon: 'IoIosHammer',
         title: "Running Projects",
     }
 ]

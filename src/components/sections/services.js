@@ -121,10 +121,10 @@ export default () => {
   return (
     <Fade>
       <StyledSection id="servicios">
-        <div className="header">
+        {/* <div className="header">
           <h2 className="heading">Nuestros Servicios</h2>
-        </div>
-        <ExperienceContainer>
+        </div> */}
+        {/* <ExperienceContainer>
           {cardServices.map(({ imageSrc, title, description }, i) => (
             <div className="experiencie" key={i}>
               <IoIosHammer />
@@ -133,7 +133,7 @@ export default () => {
               </div>
             </div>
           ))}
-        </ExperienceContainer>
+        </ExperienceContainer> */}
         <ServicesContainer>
           <div>
             <h3>El rubro donde nos desarrollamos</h3>

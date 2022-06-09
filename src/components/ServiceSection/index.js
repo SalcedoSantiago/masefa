@@ -16,7 +16,7 @@ const Services = () => {
         <ServicesContainer>
             <Heading>Nuestros Servicios</Heading>
             <ServicesRow>
-                {services.map(({ title }, index) =>
+                {services.map(({ title, Icon}, index) =>
                     <CardService key={index}>
                         <IconWrapper>
                             <IoIosHammer />
