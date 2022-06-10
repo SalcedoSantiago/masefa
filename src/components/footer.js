@@ -106,7 +106,7 @@ const Footer = () => {
                     <Column>
                         <LogoLink>
                             <a>
-                                <img id="logo" src="https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/07/logo.png" alt="test" />
+                                <img id="logo"  width="200" height="200" src="https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/07/logo.png" alt="test" />
                             </a>
                         </LogoLink>
                         <p>

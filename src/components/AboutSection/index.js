@@ -34,7 +34,7 @@ const About = () => {
                     <AboutRow>
                         <Column1>
                             <Layer />
-                            <Image src={AboutImage} />
+                            <Image data-src={AboutImage} className="lazyload" width="auto" height="auto" />
                         </Column1>
                         <Column2>
                             <Subtitle>Sobre nosotros</Subtitle>
