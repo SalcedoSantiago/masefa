@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
   }
     
     section {
-    margin: 0 auto;
+    /* margin: 0 auto;
     padding: 125px 0 100px;
     max-width: 1280px;
 
@@ -50,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
 
         @media (max-width: 480px) {
         padding: 60px 0;
-        }
+        } */
     }
 
     main {

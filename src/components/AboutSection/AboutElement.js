@@ -181,7 +181,7 @@ export const ExperienceContent = styled.div`
     flex: 1;
 `
 
-export const ExperienceHeading = styled.h4`
+export const ExperienceHeading = styled.h3`
     color: var(--black);
     font-size: 22px;
     font-weight: 600;
