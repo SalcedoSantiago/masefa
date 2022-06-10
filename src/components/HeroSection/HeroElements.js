@@ -3,12 +3,17 @@ import { css } from 'styled-components';
 
 
 export const HeroContainer = styled.div`
-    height: 70vh;
+    height: 650px;
+    max-height: 650px;
+    
     background-color: var(--white);
+    overflow: hidden;
 `
 
 export const StyledSlider = styled.div`
-    height: 100%;
+    height: 650px;
+    max-height: 650px;
+
     position: relative;
 
     > div{
@@ -24,7 +29,9 @@ export const StyledSlider = styled.div`
     }
 `
 export const BgImageSlider = styled.div`
-    height:  70vh;
+    height: 650px;
+    max-height: 650px;
+
     ${({ imageUrl }) => css`
         background-image: url(${imageUrl});
         background-position: center;

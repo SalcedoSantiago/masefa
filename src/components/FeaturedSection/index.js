@@ -1,4 +1,3 @@
-import { IoMdConstruct } from "react-icons/io";
 import {
     BgFeaturedContainer,
     FeaturedContainer,
@@ -26,7 +25,7 @@ const Featured = () => {
                         {cards.map(({ title, description, imageSrc }, index) => (
                             <FeaturedCard key={index}>
                                 <IconWrapper>
-                                    <IoMdConstruct />
+                                    test
                                 </IconWrapper>
                                 <CardH2>{title}</CardH2>
                                 <CardP>{description}</CardP>

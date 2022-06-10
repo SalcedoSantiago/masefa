@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import { IoIosPin } from 'react-icons/io'
-
-// import { FaFacebookSquare } from "react-icons/fa";
-
 const StyledFooter = styled.footer`
     background-color: var(--blue);
     padding-top: 120px;
@@ -118,16 +114,16 @@ const Footer = () => {
                         </p>
                         <div className="links">
                             <a>
-                                <IoIosPin />
+                               test
                             </a>
                             <a>
-                                <IoIosPin />
+                               test
                             </a>
                             <a>
-                                <IoIosPin />
+                               test
                             </a>
                             <a>
-                                <IoIosPin />
+                               test
                             </a>
                         </div>
                     </Column>

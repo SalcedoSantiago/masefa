@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { IoMdConstruct } from "react-icons/io";
 import Fade from 'react-reveal/Fade';
 
 const SectionStyled = styled.div` 
@@ -90,7 +89,7 @@ const Featured = () => {
                         {cards.map(({ title, description, imageSrc }, i) => (
                             <div key={i} className={`column ${i === 1 && `featured`}`}>
                                 <CartContent >
-                                    <IoMdConstruct />
+                                    tests
                                     <h2 className="title">{title}</h2>
                                     <p className="desc">{description}</p>
                                 </CartContent>

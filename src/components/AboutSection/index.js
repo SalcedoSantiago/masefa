@@ -21,7 +21,7 @@ import {
     ExperienceInfo
 } from './AboutElement';
 import { Button } from '../button';
-import AboutImage from '../../assets/images/about.jfif'
+import AboutImage from '../../assets/images/about.jpg'
 
 import Fade from 'react-reveal/Fade';
 

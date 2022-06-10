@@ -1,4 +1,3 @@
-import { FaBars } from 'react-icons/fa'
 import {
     Nav,
     NavbarContainer,
@@ -18,7 +17,7 @@ const Navbar = ({toggleNavbar}) => {
                         Masefa
                     </NavLogo>
                     <MobileIcon onClick={toggleNavbar}>
-                        <FaBars />
+                        +
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>

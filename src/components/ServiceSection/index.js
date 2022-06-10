@@ -1,4 +1,3 @@
-import { IoIosHammer, IoIosCheckmarkCircle } from "react-icons/io";
 import { services } from './Data';
 import Fade from 'react-reveal/Fade';
 
@@ -29,7 +28,7 @@ const Services = () => {
                     {services.map(({ title, Icon }, index) =>
                         <CardService key={index}>
                             <IconWrapper>
-                                <IoIosHammer />
+                               test
                             </IconWrapper>
                             <ServiceTitle>{title}</ServiceTitle>
                         </CardService>
@@ -42,7 +41,7 @@ const Services = () => {
                         {[1, 2, 3, 4, 5].map((data, index) =>
                             <ColumnService key={index}>
                                 <CheckIcon>
-                                    <IoIosCheckmarkCircle className="check-icon" />
+                                    test
                                 </CheckIcon>
                                 <SubtitleServices>
                                     Industria química
@@ -55,7 +54,7 @@ const Services = () => {
                         {[1, 2, 3, 4, 5].map((data, index) =>
                             <ColumnService key={index}>
                                 <CheckIcon>
-                                    <IoIosCheckmarkCircle className="check-icon" />
+                                    test
                                 </CheckIcon>
                                 <SubtitleServices>
                                     Industria química

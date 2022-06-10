@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { IoLogoLinkedin, IoLogoFacebook } from 'react-icons/io'
 import Fade from 'react-reveal/Fade';
 import Team from '../../assets/images/team.jpg'
 
@@ -164,10 +163,10 @@ export default () => {
                                     <Links>
                                         <Link>
                                             <a>
-                                                <IoLogoLinkedin />
+                                                test
                                             </a>
                                             <a>
-                                                <IoLogoFacebook />
+                                                test
                                             </a>
                                         </Link>
                                     </Links>

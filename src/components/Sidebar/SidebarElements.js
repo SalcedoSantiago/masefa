@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { FaTimes } from 'react-icons/fa';
 import { Link as LinkS } from 'react-scroll';
 import { motion } from "framer-motion";
 
@@ -25,7 +24,7 @@ export const Icon = styled.div`
     
 `;
 
-export const CloseIcon = styled(FaTimes)`
+export const CloseIcon = styled.p`
     color: #fff;
     position: absolute;
     top: 1.2rem;
