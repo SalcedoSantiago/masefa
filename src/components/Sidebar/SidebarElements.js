@@ -24,7 +24,7 @@ export const Icon = styled.div`
     
 `;
 
-export const CloseIcon = styled.p`
+export const CloseIcon = styled.span`
     color: #fff;
     position: absolute;
     top: 1.2rem;

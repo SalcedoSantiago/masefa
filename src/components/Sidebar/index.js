@@ -17,10 +17,10 @@ const Sidebar = ({ animation, toggleNavbar }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink>Home</SidebarLink>
-                    <SidebarLink>Home</SidebarLink>
-                    <SidebarLink>Home</SidebarLink>
-                    <SidebarLink>Home</SidebarLink>
+                    <SidebarLink to="contact">Home</SidebarLink>
+                    <SidebarLink to="contact">Home</SidebarLink>
+                    <SidebarLink to="contact">Home</SidebarLink>
+                    <SidebarLink to="contact">Home</SidebarLink>
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>

@@ -22,19 +22,9 @@ const Work = () => {
                 <Heading>Nuestros Proyectos</Heading>
                 <CardRow>
                     {WORKS.map((card, index) => (
-                        <Card key={index} href={card.url} initial="rest" whileHover="hover" animate="rest">
+                        <Card key={index} href={card.url}>
                             <BgImage imageSrc={card.imageSrc}>
-                                <InfoContainer
-                                    variants={{
-                                        hover: {
-                                            opacity: 1,
-                                        },
-                                        rest: {
-                                            opacity: 0,
-                                        }
-                                    }}
-                                    transition={{ duration: 0.4 }}
-                                >
+                                <InfoContainer>
                                     <InfoH2>
                                         Lorem Ipsum
                                     </InfoH2>
@@ -47,7 +37,7 @@ const Work = () => {
                     ))}
                 </CardRow>
                 <BtnWrapper>
-                    <Button primary="true">Show More</Button>
+                    <Button to="show" primary="true">Show More</Button>
                 </BtnWrapper>
             </WorkContainer>
         </Fade>

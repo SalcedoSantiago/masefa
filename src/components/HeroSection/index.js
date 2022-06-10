@@ -58,7 +58,7 @@ const Hero = () => {
                                     <Button
                                         primary="true"
                                         big="true"
-                                        fontBig="true"
+                                        fontbig="true"
                                         to="contact"
                                     >
                                         Contact us
@@ -66,7 +66,7 @@ const Hero = () => {
                                     <Button
                                         primary="true"
                                         big="true"
-                                        fontBig="true"
+                                        fontbig="true"
                                         to="about"
                                     >
                                         About us

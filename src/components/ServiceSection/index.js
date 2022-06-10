@@ -28,7 +28,7 @@ const Services = () => {
                     {services.map(({ title, Icon }, index) =>
                         <CardService key={index}>
                             <IconWrapper>
-                               test
+                               +
                             </IconWrapper>
                             <ServiceTitle>{title}</ServiceTitle>
                         </CardService>
@@ -41,7 +41,7 @@ const Services = () => {
                         {[1, 2, 3, 4, 5].map((data, index) =>
                             <ColumnService key={index}>
                                 <CheckIcon>
-                                    test
+                                    +
                                 </CheckIcon>
                                 <SubtitleServices>
                                     Industria química
@@ -54,7 +54,7 @@ const Services = () => {
                         {[1, 2, 3, 4, 5].map((data, index) =>
                             <ColumnService key={index}>
                                 <CheckIcon>
-                                    test
+                                    +
                                 </CheckIcon>
                                 <SubtitleServices>
                                     Industria química

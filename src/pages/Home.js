@@ -5,7 +5,7 @@ import Featured from '../components/FeaturedSection';
 import Services from '../components/ServiceSection';
 import Cta from '../components/cta';
 import Works from '../components/WorkSection';
-import Team from '../components/sections/team';
+import OurTeam from '../components/OurTeamSection';
 import Contact from '../components/sections/contact';
 
 
@@ -19,7 +19,7 @@ const Home = () => {
             <Services />
             <Cta />
             <Works />
-            <Team />
+            <OurTeam />
             <Contact />
         </>
     )

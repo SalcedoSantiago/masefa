@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { motion } from "framer-motion";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { Button } from '../button'
 
@@ -43,12 +42,36 @@ export const CardRow = styled.div`
     }
 `;
 
+export const InfoContainer = styled.div`
+    opacity: 0;
+    background-color: #1E1D24D9;
+    height: 18rem;  
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 50px 0px 50px;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+`
 
-export const Card = styled(motion.div)`
+export const Card = styled.div`
     background-color: #808080;
     width: 100%;
     cursor: pointer;
     border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+
+    &:hover{
+        transition: all 0.4s ease-in-out;
+
+        ${InfoContainer}{
+            opacity: 1;
+            transition: all 0.4s ease-in-out;
+
+        }
+    }
 `;
 
 export const BgImage = styled.div`
@@ -64,18 +87,7 @@ export const BgImage = styled.div`
 `;
 
 
-export const InfoContainer = styled(motion.div)`
-    background-color: #1E1D24D9;
-    height: 18rem;  
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0px 50px 0px 50px;
-    border-radius: 4px;
 
-`
 
 export const InfoH2 = styled.h2`
     font-size: 1.5rem;
