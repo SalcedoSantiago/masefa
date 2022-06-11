@@ -16,6 +16,8 @@ import {
 } from './OurTeamElements'
 
 const OurTeam = () => {
+
+
     return (
         <OurTeamContainer>
             <Heading>Nuestro Equipo</Heading>
@@ -40,7 +42,7 @@ const OurTeam = () => {
                 </RowTeamMembers>
                 <InfoContainer>
                     <InfoH2>
-                    Lorem ipsum dolor sit amet
+                        Lorem ipsum dolor sit amet
                     </InfoH2>
                     <InfoP>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.

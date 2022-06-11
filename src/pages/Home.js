@@ -6,7 +6,7 @@ import Services from '../components/ServiceSection';
 import Cta from '../components/cta';
 import Works from '../components/WorkSection';
 import OurTeam from '../components/OurTeamSection';
-import Contact from '../components/sections/contact';
+import Contact from '../components/ContactSection';
 
 
 const Home = () => {
