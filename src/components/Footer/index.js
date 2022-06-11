@@ -1,7 +1,3 @@
-import Facebook from "../../assets/icons/facebook.svg";
-import Linkedin from "../../assets/icons/linkedin.svg";
-import Instagram from "../../assets/icons/instagram.svg";
-
 
 import {
     FooterContainer,
@@ -36,21 +32,21 @@ const Footer = () => {
                     </InfoUs>
                     <IconsContainer>
                         <IconWrapper>
-                            <img src={Facebook} />
+                            <box-icon type='logo' name='facebook'></box-icon>
                         </IconWrapper>
                         <IconWrapper>
-                            <img src={Linkedin} />
+                            <box-icon name='linkedin' type='logo'></box-icon>
                         </IconWrapper>
                         <IconWrapper>
-                            <img src={Instagram} />
+                            <box-icon name='instagram' type='logo'></box-icon>
                         </IconWrapper>
                     </IconsContainer>
                 </FooterAbout>
                 <Row>
                     <Column>
-                    <HeadingSection>About us</HeadingSection>
+                        <HeadingSection>About us</HeadingSection>
                         <Navigate>
-                        <Link>Who are you?</Link>
+                            <Link>Who are you?</Link>
                             <Link>Who are you?</Link>
                             <Link>Who are you?</Link>
                             <Link>Who are you?</Link>
@@ -58,7 +54,7 @@ const Footer = () => {
                         </Navigate>
                     </Column>
                     <Column>
-                    <HeadingSection>About us</HeadingSection>
+                        <HeadingSection>About us</HeadingSection>
                         <Navigate>
                             <Link>Healthly Food</Link>
                             <Link>Who are you?</Link>
