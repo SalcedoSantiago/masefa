@@ -41,7 +41,7 @@ export const CardMember = styled.div`
     padding: 5px;
 
     @media screen  and (max-width: 768px){
-        max-width: 500px;
+        max-width: 100%;
         margin: 0 auto;
     }
 `
@@ -82,8 +82,11 @@ export const InfoContainer = styled.div`
     @media screen  and (max-width: 1000px){
         order: 1;
         padding-left: 0px;
-        margin-bottom: 30px;
         text-align: center;
+        /* max-width: 500px; */
+        margin: 0 auto; 
+        margin-bottom: 30px;
+
     }
 `
 
@@ -91,6 +94,10 @@ export const InfoH2 = styled.h2`
     font-family: "Montserrat", Sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
+    color: var(--blue);
+    @media screen and (max-width: 768px){
+        font-size: 1.3rem;
+    }
 `
 
 export const InfoP = styled.p`
@@ -99,5 +106,9 @@ export const InfoP = styled.p`
     @media screen  and (max-width: 1000px){
         max-width: 680px;
         margin: 0 auto;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: 14px;
     }
 `

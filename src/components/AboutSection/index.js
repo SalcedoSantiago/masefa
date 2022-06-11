@@ -40,8 +40,7 @@ const About = () => {
                             <Subtitle>Sobre nosotros</Subtitle>
                             <AboutInfoWrapper>
                                 <InfoText>
-                                    Nos
-                                    dedicamos fundamentalmente a satisfacer necesidades de mantenimiento
+                                    Nos dedicamos fundamentalmente a satisfacer necesidades de mantenimiento
                                     preventivo, correctivo y de tareas generales accesorias de instalaciones y
                                     servicios en platas industriales, desarrollándose en el rubro de
                                     prefabricado y montajes de cañerías, y ejecución de soldaduras especiales.
