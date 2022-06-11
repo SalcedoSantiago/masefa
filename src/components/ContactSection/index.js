@@ -17,35 +17,37 @@ const Contact = () => {
     return (
         <Fade>
             <ContactContainer id="contact">
-                <Heading>Contact us</Heading>
+                <Heading style={{ marginBottom: '80px' }}>Contact us</Heading>
                 <ContactWrapper>
                     <FormContainer>
                         <ColumnsField>
                             <Field>
-                                <ContactLabel htmlFor="name">Name:</ContactLabel>
-                                <ContactInput type="text" name="name" id="name" placeholder="name" required />
+                                <ContactLabel htmlFor="name">Nombre:</ContactLabel>
+                                <ContactInput type="text" name="name" id="name" placeholder="Nombre" required />
                             </Field>
                             <Field>
                                 <ContactLabel htmlFor="apellido">Apellido: </ContactLabel>
-                                <ContactInput type="text" name="apellido" id="apellido" placeholder="apellido" required />
+                                <ContactInput type="text" name="apellido" id="apellido" placeholder="Apellido" required />
                             </Field>
                         </ColumnsField>
                         <ColumnsField>
                             <Field>
                                 <ContactLabel htmlFor="email">Email: </ContactLabel>
-                                <ContactInput type="email" name="email" id="email" placeholder="email" required />
+                                <ContactInput type="email" name="email" id="email" placeholder="Email" required />
                             </Field>
                         </ColumnsField>
                         <ColumnsField>
                             <Field>
                                 <ContactLabel htmlFor="telefono">Telefono: </ContactLabel>
-                                <ContactInput type="tel" name="telefono" id="telefono" placeholder="telefono" required />
+                                <ContactInput type="tel" name="telefono" id="telefono" placeholder="Telefono" required />
                             </Field>
                         </ColumnsField>
                         <ColumnsField>
                             <Field>
                                 <ContactLabel htmlFor="mensaje">Mensaje: </ContactLabel>
-                                <ContactTextarea id="mensaje"></ContactTextarea>
+                                <ContactTextarea id="mensaje"
+                                    placeholder='Mensaje'
+                                ></ContactTextarea>
                             </Field>
                         </ColumnsField>
                         <Button>Enviar</Button>

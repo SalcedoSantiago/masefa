@@ -14,19 +14,37 @@ export const ColumnsField = styled.div`
     display: flex;
     align-items: center;
     gap: 25px;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        gap: 0;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
 `;
 
 export const ContactWrapper = styled.div`
     width: 60%;
     margin: 0 auto;
+
+    @media screen and (max-width: 1000px) {
+        width: 75%;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+  
 `
 
 export const FormContainer = styled.form`
     margin: 0 auto;
     font-family: "Poppins";
     order: 1;
+    flex-wrap: wrap;
 
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         order: 0;
     }
 `;
@@ -34,19 +52,11 @@ export const FormContainer = styled.form`
 
 export const Field = styled.div`
     margin-right: 0;
-    width: 300px;
-    flex: 1;
-
-    input,
-    textarea
-    {
-        background-color: #eee;
-        border: none;
-        padding: 15px 15px;
-        margin: 8px 0;
-        width: 100%;
-        padding: 10px 20px;
-        font-family: "Poppins";
+    /* width: 300px; */
+    flex: 1;   
+    
+    @media (max-width: 768px) {
+       width: 100%;
     }
 `;
 
@@ -68,12 +78,12 @@ export const ContactInput = styled.input`
 `;
 
 export const ContactTextarea = styled.textarea`
-   background-color: #eee;
+    font-family: "Poppins";
+    background-color: #eee;
     border: none;
     padding: 15px 15px;
-    margin: 8px 0;
     width: 100%;
     padding: 10px 20px;
-    font-family: "Poppins";
+    margin: 8px 0;
 `
 
