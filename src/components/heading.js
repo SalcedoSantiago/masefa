@@ -16,5 +16,8 @@ export const Heading = styled.h1`
     }
 
     @media screen and (max-width: 480px){
+        font-size: 24px;
+        line-height: 1.4;
+        margin-bottom: 20px;
     }  
 `

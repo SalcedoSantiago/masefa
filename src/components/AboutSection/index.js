@@ -2,7 +2,6 @@ import React from 'react'
 import {
     AboutContainer,
     AboutWrapper,
-    Heading,
     AboutRow,
     Column1,
     Column2,
@@ -18,9 +17,11 @@ import {
     CounterNumber,
     ExperienceContent,
     ExperienceHeading,
-    ExperienceInfo
+    ExperienceInfo,
+    ImageWrapper
 } from './AboutElement';
 import { Button } from '../button';
+import { Heading } from '../heading';
 import AboutImage from '../../assets/images/about.jpg'
 
 import Fade from 'react-reveal/Fade';
@@ -33,8 +34,10 @@ const About = () => {
                 <AboutWrapper>
                     <AboutRow>
                         <Column1>
-                            <Layer />
-                            <Image data-src={AboutImage} className="lazyload" width="auto" height="auto" />
+                            <ImageWrapper>
+                                <Image data-src={AboutImage} className="lazyload" width="auto" height="auto" />
+                                <Layer />
+                            </ImageWrapper>
                         </Column1>
                         <Column2>
                             <Subtitle>Sobre nosotros</Subtitle>

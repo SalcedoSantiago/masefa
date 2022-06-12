@@ -20,26 +20,11 @@ export const AboutWrapper = styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
-`;
 
-
-export const Heading = styled.h1`
-    font-size: 2.5rem;
-    font-family: "Montserrat", "Poppins";
-    line-height: 1.1;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 30px;
-    
-    @media screen and (max-width: 768px){
-        font-size: 2rem;
-        text-align: center;
+    @media screen and (max-width: 768px) {
+        padding: 0 ;
     }
-
-    @media screen and (max-width: 480px){
-    }  
-`
-
+`;
 
 export const AboutRow = styled.div`
     display: grid;
@@ -57,22 +42,37 @@ export const Column1 = styled.div`
     padding: 0 15px;
     grid-area: col1;
     position: relative;
-
+    
+    @media screen and (max-width: 480px){
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 `;
+
+export const ImageWrapper = styled.div`
+    position: relative;
+`
 
 export const Image = styled.img`
     flex-shrink: 0;
     width: 100%;
+    z-index: 2;
     position: relative;
+
 `
 
 export const Layer = styled.div`
-    width: 400px;
+    width: 100%;
     height: 100%;
     position: absolute;
     top: -30px;
     left: -30px;
     background-color: var(--orange);
+    z-index: 1;
+    @media screen and (max-width: 480px){
+        left: -15px;
+
+    }
 `
 
 export const Column2 = styled.div`
@@ -83,6 +83,7 @@ export const Column2 = styled.div`
 
     @media screen and (max-width: 768px){
         padding-left: 0px;
+        padding-right: 0px;
         margin-top: 30px;
     }
 `;
@@ -96,12 +97,12 @@ export const Subtitle = styled.h2`
     color: var(--blue);
     
     @media screen and (max-width: 768px){
-        font-size: 36;
+        font-size: 36px;
         text-align: center;
     }
 
     @media screen and (max-width: 480px){
-        font-size: 30px;
+        font-size: 22px;
     }  
 `
 export const AboutInfoWrapper = styled.div`
@@ -153,6 +154,7 @@ export const Experience = styled.div`
     @media screen and (max-width: 768px){
         width: 100%;
         margin-bottom: 30px;
+        padding-right: 0;
         text-align: center;
     }
 `
@@ -173,7 +175,15 @@ export const CounterNumber = styled.span`
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 8px;
-    
+
+    @media (max-width: 768px) {
+        font-size: 28px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 26px;
+        margin-bottom: 2px;
+    }
 `
 
 export const ExperienceContent = styled.div`
@@ -190,6 +200,9 @@ export const ExperienceHeading = styled.h3`
     @media (max-width: 768px) {
         font-size: 18px;
     }
+    @media (max-width: 480px) {
+        font-size: 18px;
+    }
 `
 export const ExperienceInfo = styled.p`
     font-size: 16px;
@@ -198,7 +211,7 @@ export const ExperienceInfo = styled.p`
         font-size: 14px;
         max-width: 500px;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 `

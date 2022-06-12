@@ -8,7 +8,10 @@ import Fade from 'react-reveal/Fade';
 
 const SectionStyled = styled.section`
   padding: 60px 0;
-`
+  max-width: 1280px;
+  margin: 0 auto
+
+  `
 
 
 const PartnersContainer = styled.div`

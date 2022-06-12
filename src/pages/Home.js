@@ -7,13 +7,13 @@ import Cta from '../components/cta';
 import Works from '../components/WorkSection';
 import OurTeam from '../components/OurTeamSection';
 import Contact from '../components/ContactSection';
-
+import Testimonials from '../components/sections/testimonials'
 
 const Home = () => {
     return (
         <>
             <Hero />
-            {/* <Testimonials />     */}
+            <Testimonials />    
             <About />
             <Featured />
             <Services />

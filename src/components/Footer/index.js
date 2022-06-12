@@ -1,4 +1,3 @@
-
 import {
     FooterContainer,
     FooterWrapper,
@@ -16,6 +15,8 @@ import {
     SectionCopy,
     TextCopy
 } from './FooterElements';
+
+
 
 
 const Footer = () => {
