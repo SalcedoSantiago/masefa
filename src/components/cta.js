@@ -36,6 +36,10 @@ const Heading = styled.h2`
 
     @media screen and (max-width: 768px){
         text-align: center;
+        font-size: 26px;
+    }
+    @media screen and (max-width: 768px){
+        font-size: 24px;
     }
 `
 
@@ -61,7 +65,7 @@ const BtnWrapper = styled.div`
 
     @media screen and (max-width: 768px ) {
         justify-content: center;
-        margin-top: 40px;
+        margin-top: 20px;
         width: 100%;
 
         ${Button}{
@@ -72,6 +76,8 @@ const BtnWrapper = styled.div`
     @media screen and (max-width: 480px ) {
         justify-content: center;
         width: 100%;
+        
+        margin-top: 10px;
 
         ${Button}{
             width: 100%;
