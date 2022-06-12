@@ -9,6 +9,7 @@ export const Heading = styled.h1`
     font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
+    color: ${({ white }) => white ? '#fff' : '#000'};
     
     @media screen and (max-width: 768px){
         font-size: 2rem;
@@ -17,7 +18,7 @@ export const Heading = styled.h1`
 
     @media screen and (max-width: 480px){
         font-size: 24px;
-        line-height: 1.4;
+        line-height: 1.5;
         margin-bottom: 20px;
     }  
 `

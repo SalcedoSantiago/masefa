@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const BgFeaturedContainer = styled.div`
     background-color: var(--blue);
     width: 100%;
@@ -40,12 +39,13 @@ export const FeaturedWrapper = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        grid-template-columns: 1fr;
+        display: block;
     }
 
 `
 export const FeaturedCard = styled.div`
     text-align: center;
+    display: block;
     padding: 20px 15px 40px 15px;
 `
 export const IconWrapper = styled.div`
@@ -60,6 +60,14 @@ export const CardH2 = styled.h2`
     font-size: 24px;
     font-weight: 600;
     color: var(--white);
+
+    @media screen and (max-width: 768px){
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 480px){
+        font-size: 18px;
+    }  
 `
 
 export const CardP = styled.p`
