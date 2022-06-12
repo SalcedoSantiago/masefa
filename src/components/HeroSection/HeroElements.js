@@ -43,32 +43,22 @@ export const BgImageSlider = styled.div`
 
 export const HeroInfoContainer = styled.div`
     width: 100vw;
-    height: 100%;
     position: absolute;
     top: 0;
-    
-`
-
-export const HeroInfoWrapper = styled.div`
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    max-width: 1280px;
-    padding: 0 2rem;
+    z-index: 2;
+    height: 650px;
+    background-color: #00000094;
     display: flex;
-    align-items: start;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    text-align: center;
 `
 
 export const HeroInfoContent = styled.div`
-    background-color: #00000094;
-    padding: 30px 50px;
-    max-width: 800px;
-    border-radius: 3px;
+    padding: 0 2rem;
 `;
 
-export const HeroH1 = styled.div`
+export const HeroH1 = styled.h1`
     font-size: 48px;
     font-family: "Montserrat";
     font-weight: 700;
@@ -77,10 +67,8 @@ export const HeroH1 = styled.div`
 
     @media screen and (max-width: 760px){
         font-size: 40px;
-        text-align: center;
     }
     @media screen and (max-width: 480px){
-        text-align: center;
         font-size: 38px;
     }
 `
@@ -102,10 +90,8 @@ export const HeroSubHeading = styled.h2`
 
     @media screen and (max-width: 760px){
         font-size: 38px;
-        text-align: center;
     }
     @media screen and (max-width: 480px){
-        text-align: center;
         font-size: 34px;
     }
 `;
@@ -119,10 +105,8 @@ export const SmartText = styled.p`
 
     @media screen and (max-width: 760px){
         font-size: 20px;
-        text-align: center;
     }
     @media screen and (max-width: 480px){
-        text-align: center;
         font-size: 18px;
     }
 `
@@ -131,14 +115,14 @@ export const HeroInfoText = styled.p`
     font-size: 18px;
     color: var(--white);
     margin-bottom: 30px;
-    
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (max-width: 760px){
         font-size: 20px;
-        text-align: center;
     }
     @media screen and (max-width: 480px){
-        text-align: center;
         font-size: 18px;
     }
 `
@@ -147,4 +131,5 @@ export const BtnWrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 15px;
+    justify-content: center;
 `

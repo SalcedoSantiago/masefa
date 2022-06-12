@@ -75,4 +75,9 @@ export const CardP = styled.p`
     font-size: 14px;
     color: var(--white);
     font-weight: 400;
+
+
+    @media screen and (max-width: 768px){
+        margin-bottom: 20px;
+    }
 `

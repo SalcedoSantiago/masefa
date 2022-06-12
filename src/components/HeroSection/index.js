@@ -1,13 +1,14 @@
-import Slider from 'react-animated-slider';
-import 'react-animated-slider/build/horizontal.css';
+import Fade from 'react-reveal/Fade';
+import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper";
+/**
+ * Internal dependencies
+ */
 
 import slide1 from '../../assets/images/slide-1.png'
 import slide2 from '../../assets/images/slide-2.jpg'
 import slide3 from '../../assets/images/slide-3.png'
-
-import Fade from 'react-reveal/Fade';
-
-
 import {
     HeroContainer,
     StyledSlider,
@@ -29,51 +30,66 @@ const Hero = () => {
         <Fade>
             <HeroContainer>
                 <StyledSlider>
-                    <Slider>
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        loop={true}
+                        autoplay={{
+                            delay: 1500,
+                            disableOnInteraction: false,
+                        }}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        navigation={true}
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="mySwiper"
+                    >
                         {content.map((item, index) => (
-                            <BgImageSlider
+                            <SwiperSlide
                                 key={index}
-                                imageUrl={item}
                             >
-                            </BgImageSlider>
+                                <BgImageSlider
+                                    imageUrl={item}
+                                >
+                                </BgImageSlider>
+                            </SwiperSlide>
                         ))}
-                    </Slider>
+                    </Swiper>
                     <HeroInfoContainer>
-                        <HeroInfoWrapper>
-                            <HeroInfoContent>
-                                <HeroH1>
-                                    Montajes industriales
-                                </HeroH1>
-                                <HeroSubHeading>
-                                    TEL: <a>(011) 342535542</a>
-                                </HeroSubHeading>
-                                <SmartText>
-                                    The smartest working shop in the steel business
-                                </SmartText>
-                                <HeroInfoText>
-                                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </HeroInfoText>
-                                <BtnWrapper>
-                                    <Button
-                                        primary="true"
-                                        big="true"
-                                        fontbig="true"
-                                        to="contact"
-                                    >
-                                        Contact us
-                                    </Button>
-                                    <Button
-                                        primary="true"
-                                        big="true"
-                                        fontbig="true"
-                                        to="about"
-                                    >
-                                        About us
-                                    </Button>
-                                </BtnWrapper>
-                            </HeroInfoContent>
-                        </HeroInfoWrapper>
+                        <HeroInfoContent>
+                            <HeroH1>
+                                Montajes industriales
+                            </HeroH1>
+                            <HeroSubHeading>
+                                TEL: <a>(011) 342535542</a>
+                            </HeroSubHeading>
+                            <SmartText>
+                                The smartest working shop in the steel business
+                            </SmartText>
+                            <HeroInfoText>
+                                Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </HeroInfoText>
+                            <BtnWrapper>
+                                <Button
+                                    primary="true"
+                                    big="true"
+                                    fontbig="true"
+                                    to="contact"
+                                >
+                                    Contact us
+                                </Button>
+                                <Button
+                                    primary="true"
+                                    big="true"
+                                    fontbig="true"
+                                    to="about"
+                                >
+                                    About us
+                                </Button>
+                            </BtnWrapper>
+                        </HeroInfoContent>
                     </HeroInfoContainer>
                 </StyledSlider>
             </HeroContainer >
