@@ -5,6 +5,9 @@ import { useState, useEffect } from 'react';
  */
 import Fade from 'react-reveal/Fade';
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
 
 /**
  * Internal dependencies
@@ -20,9 +23,6 @@ import {
     CardP
 } from './FeaturedElements';
 import { cards } from './Data';
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper";
 
 function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;

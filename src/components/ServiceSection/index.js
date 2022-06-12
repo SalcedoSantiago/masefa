@@ -3,7 +3,6 @@ import Fade from 'react-reveal/Fade';
 
 import {
     ServicesContainer,
-    Heading,
     ServicesRow,
     CardService,
     IconWrapper,
@@ -17,6 +16,7 @@ import {
     HeadingService,
     CheckIcon
 } from './ServicesElements';
+import { Heading } from '../heading';
 
 const Services = () => {
 

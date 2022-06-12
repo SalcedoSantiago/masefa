@@ -32,15 +32,13 @@ export const ServicesRow = styled.div`
     /* align-items: center; */
     max-width: 1000px;
     margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+    padding-top: 80px;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 768px){
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and (max-width: 768px){
-        grid-template-columns: 1fr;
-    }
 `;
 
 
@@ -50,6 +48,10 @@ export const CardService = styled.div`
     margin: 0 10px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+
+    @media screen and (max-width: 768px){
+      margin-bottom: 25px;
+    }
 `;
 
 export const IconWrapper = styled.div`
@@ -68,15 +70,29 @@ export const IconWrapper = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+
+    @media screen and (max-width: 480px){
+        width: 70px;
+        height: 70px;
+    }
 `;
 
 export const ServiceTitle = styled.h2`
-    font-size: 1.2rem;
+    font-size: 22px;
     text-align: center;
     font-weight: 600;
+    line-height: 1.3;
     font-family: "Poppins";
     color: var(--blue);
     transition: all 0.2s ease-in-out;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width:768px) {
+       font-size: 18px; 
+    }
 `;
 
 
@@ -86,6 +102,7 @@ export const Row = styled.div`
     display: flex;
     gap: 40px;
     padding-bottom: 70px;
+    padding-top: 40px;
 
     @media screen and (max-width: 760px){
         flex-direction: column;
@@ -105,7 +122,6 @@ export const Column = styled.div`
     @media screen and (max-width: 480px){
         width: 100%;
         margin: 0 auto;
-        padding: 45px 10px;
     }
 `
 
@@ -116,6 +132,10 @@ export const HeadingService = styled.h3`
     margin-bottom: 22px;
     line-height: 1.7;
     text-transform: uppercase;
+
+    @media screen and (max-width: 480px) {
+        font-size: 1rem;
+    }
 `
 
 export const ColumnService = styled.div`
@@ -123,6 +143,10 @@ export const ColumnService = styled.div`
     align-items: center;
     gap: 15px;
     margin-bottom: 13px;
+
+    @media screen and (max-width: 480px) {
+        margin-bottom: 7px;
+    }
 `
 
 export const CheckIcon = styled.div`
@@ -137,4 +161,8 @@ export const SubtitleServices = styled.h3`
     font-size: 1.1rem;
     font-weight: 400;
     color: var(--black);
+
+    @media screen and (max-width: 480px) {
+        font-size: 1rem;
+    }
 `

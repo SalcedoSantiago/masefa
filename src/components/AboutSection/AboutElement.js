@@ -97,7 +97,7 @@ export const Subtitle = styled.h2`
     color: var(--blue);
     
     @media screen and (max-width: 768px){
-        font-size: 36px;
+        font-size: 24px;
         text-align: center;
     }
 
