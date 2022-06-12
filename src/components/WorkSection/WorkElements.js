@@ -8,23 +8,6 @@ export const WorkContainer = styled.section`
     margin: 0 auto;
 `;
 
-export const Heading = styled.h1`
-    font-size: 2.5rem;
-    font-family: "Montserrat", "Poppins";
-    line-height: 1.1;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 80px;
-    
-    @media screen and (max-width: 768px){
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    @media screen and (max-width: 480px){
-    }  
-`;
-
 
 export const CardRow = styled.div`
     display: grid;
@@ -32,6 +15,7 @@ export const CardRow = styled.div`
     align-items: center;
     grid-gap: 15px;
     margin-bottom: 60px;
+    margin-top: 60px;
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
@@ -104,14 +88,14 @@ export const InfoH2 = styled.h2`
 `;
 
 export const InfoP = styled.p`
-    font-size:14px;
+    font-size: 14px;
     font-weight: 400;
     color: #fff;
     text-align: center; 
     text-decoration: none;
 
     @media screen and (max-width: 768px) {
-        font-size:12px;
+        font-size: 12px;
     }
 `;
 

@@ -1,7 +1,6 @@
 import Fade from 'react-reveal/Fade';
 import {
     WorkContainer,
-    Heading,
     CardRow,
     CardContainer,
     Card,
@@ -13,6 +12,7 @@ import {
 } from './WorkElements';
 import { Button } from '../button';
 import { WORKS } from './Data';
+import { Heading } from '../heading';
 
 
 const Work = () => {
