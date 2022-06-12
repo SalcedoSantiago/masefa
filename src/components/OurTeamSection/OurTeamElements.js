@@ -28,6 +28,11 @@ export const RowTeamMembers = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
 
+    .swiper {
+        margin-left: 0!important;
+        margin-right: 0!important
+    } 
+
     @media screen  and (max-width: 1000px){
         order: 2;
     }
@@ -35,6 +40,8 @@ export const RowTeamMembers = styled.div`
     @media screen  and (max-width: 768px){
         grid-template-columns:  1fr;
     }
+
+   
 `
 
 export const CardMember = styled.div`
@@ -44,6 +51,7 @@ export const CardMember = styled.div`
         max-width: 100%;
         margin: 0 auto;
     }
+ 
 `
 
 export const ImageContainer = styled.div`
@@ -53,10 +61,10 @@ export const MemberImage = styled.img`
     width: 300px;
     
     @media screen  and (max-width: 1000px){
-        width: 100%;
+        /* width: 100%; */
+        width: 100vw;
     }
 
-  
 `
 
 export const MemberTitle = styled.h2`
@@ -75,6 +83,10 @@ export const MemberDesc = styled.h3`
 export const MemberInfo = styled.p`
     font-family: "Poppins", Sans-serif;
     font-size: 15px;
+
+    @media screen and (max-width: 480px){
+        margin-bottom: 35px;
+    }  
 `
 
 export const InfoContainer = styled.div`
@@ -86,23 +98,30 @@ export const InfoContainer = styled.div`
         /* max-width: 500px; */
         margin: 0 auto; 
         margin-bottom: 30px;
-
     }
 `
 
 export const InfoH2 = styled.h2`
-    font-family: "Montserrat", Sans-serif;
-    font-size: 1.5rem;
+    font-size: 26px;
+    font-family: "Montserrat", "Poppins";
+    line-height: 1.1;
     font-weight: 700;
+    text-transform: uppercase;
     color: var(--blue);
+    
     @media screen and (max-width: 768px){
-        font-size: 1.3rem;
+        font-size: 24px;
+        text-align: center;
+        font-size: 22px;
     }
+
+   
 `
 
 export const InfoP = styled.p`
     font-family: "Poppins", Sans-serif;
     font-size: 16px;
+    
     @media screen  and (max-width: 1000px){
         max-width: 680px;
         margin: 0 auto;

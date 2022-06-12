@@ -21,7 +21,7 @@ import {
     ImageWrapper
 } from './AboutElement';
 import { Button } from '../button';
-import { Heading } from '../heading';
+import { Heading, SubHeading } from '../heading';
 import AboutImage from '../../assets/images/about.jpg'
 
 import Fade from 'react-reveal/Fade';
@@ -40,7 +40,7 @@ const About = () => {
                             </ImageWrapper>
                         </Column1>
                         <Column2>
-                            <Subtitle>Sobre nosotros</Subtitle>
+                            <SubHeading>Sobre nosotros</SubHeading>
                             <AboutInfoWrapper>
                                 <InfoText>
                                     Nos dedicamos fundamentalmente a satisfacer necesidades de mantenimiento

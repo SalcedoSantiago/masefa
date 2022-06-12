@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 /**
  * External dependencies
  */
