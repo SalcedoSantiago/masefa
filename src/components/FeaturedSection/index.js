@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 /**
  * External dependencies
  */
+
+import 'boxicons'
 import Fade from 'react-reveal/Fade';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -66,29 +68,60 @@ const Featured = () => {
                                     modules={[Pagination]}
                                     className="mySwiper"
                                 >
-                                    {cards.map(({ title, description, imageSrc }, index) => (
-                                        <SwiperSlide key={index}>
-                                            <FeaturedCard>
-                                                <IconWrapper>
-                                                    test
-                                                </IconWrapper>
-                                                <CardH2>{title}</CardH2>
-                                                <CardP>{description}</CardP>
-                                            </FeaturedCard>
-                                        </SwiperSlide>
-                                    ))}
-                                </Swiper>)
+                                    <SwiperSlide>
+                                        <FeaturedCard>
+                                            <IconWrapper>
+                                                <box-icon name='mail-send'></box-icon>
+                                            </IconWrapper>
+                                            <CardH2>Soporte 24/7</CardH2>
+                                            <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
+                                        </FeaturedCard>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <FeaturedCard>
+                                            <IconWrapper>
+                                                <box-icon name='mail-send'></box-icon>
+                                            </IconWrapper>
+                                            <CardH2>Soporte 24/7</CardH2>
+                                            <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
+                                        </FeaturedCard>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <FeaturedCard>
+                                            <IconWrapper>
+                                                <box-icon name='mail-send'></box-icon>
+                                            </IconWrapper>
+                                            <CardH2>Soporte 24/7</CardH2>
+                                            <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
+                                        </FeaturedCard>
+                                    </SwiperSlide>
+                                </Swiper>
+                            )
                             ||
                             (
-                                cards.map(({ title, description, imageSrc }, index) => (
-                                    <FeaturedCard key={index}>
+                                <>
+                                    <FeaturedCard>
                                         <IconWrapper>
-                                            test
+                                            <box-icon name='mail-send'></box-icon>
                                         </IconWrapper>
-                                        <CardH2>{title}</CardH2>
-                                        <CardP>{description}</CardP>
+                                        <CardH2>Soporte 24/7</CardH2>
+                                        <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
                                     </FeaturedCard>
-                                ))
+                                    <FeaturedCard>
+                                        <IconWrapper>
+                                            <box-icon name='mail-send'></box-icon>
+                                        </IconWrapper>
+                                        <CardH2>Soporte 24/7</CardH2>
+                                        <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
+                                    </FeaturedCard>
+                                    <FeaturedCard>
+                                        <IconWrapper>
+                                            <box-icon name='mail-send' width="32"></box-icon>
+                                        </IconWrapper>
+                                        <CardH2>Soporte 24/7</CardH2>
+                                        <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
+                                    </FeaturedCard>
+                                </>
                             )
                         }
                     </FeaturedWrapper>

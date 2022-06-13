@@ -50,8 +50,12 @@ export const FeaturedCard = styled.div`
 `
 export const IconWrapper = styled.div`
     font-size: 2rem;
-    color: var(--orange);
+    fill: var(--orange);
     margin-bottom: 20px;
+
+    svg{
+        width: 2rem;
+    }
 `
 
 export const CardH2 = styled.h2`

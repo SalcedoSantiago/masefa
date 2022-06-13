@@ -1,6 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import Fade from 'react-reveal/Fade';
+
+
+
+import LogoEstado from '../../assets/images/estado.png';
+import LogoCyanamid from '../../assets/images/cyanamid.jpg';
+import LogoFavareto from '../../assets/images/favareto.jpg';
+import LogoFranz from '../../assets/images/franz.jpg';
+import LogoGorina from '../../assets/images/gorina.jpeg';
+import LogoIngse from '../../assets/images/ingse.png';
+
 /**
  * Internal dependencies
  */
@@ -8,9 +18,8 @@ import Fade from 'react-reveal/Fade';
 
 const SectionStyled = styled.section`
   padding: 60px 0;
-  max-width: 1280px;
-  margin: 0 auto
-
+  max-width: 1200px;
+  margin: 0 auto;
   `
 
 
@@ -19,9 +28,6 @@ const PartnersContainer = styled.div`
   align-items: center;
 
   .featured{
-    border-style: solid;
-    border-width: 0px 1px 0px 0px;
-    border-color: #ccc;
 
     h2{
       font-size: 20px;
@@ -32,8 +38,30 @@ const PartnersContainer = styled.div`
   }
 `
 
+const WrapperImage = styled.div`
+  margin-right: 15px;
+  margin-left: 15px;
+
+`
+
+export const ImageLogo = styled.img`
+  max-height: 100px;
+`
 
 
+export const LineSpan = styled.span`
+  height: 100%;
+  border-left: 1px solid #ccc;
+  margin-left: 30px;
+
+`
+
+const FlexEnd = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex: 1;
+`
 
 export default () => {
   return (
@@ -41,67 +69,40 @@ export default () => {
       <SectionStyled>
         <PartnersContainer>
           <div className="featured">
-            <h2>Industry Partners</h2>
+            <h2>Nuestros Clientes <LineSpan /></h2>
           </div>
-          <div>
-            <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-1.svg" />
-          </div>
-          <div>
-            <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-2.svg" />
-          </div>
+          <FlexEnd>
 
-          <div>
-            <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-3.svg" />
-          </div>
+            <WrapperImage>
+              <ImageLogo src={LogoEstado} style={{ height: '80px' }} />
+            </WrapperImage>
+            <WrapperImage>
+              <ImageLogo src={LogoCyanamid} style={{ height: '120px' }} />
+            </WrapperImage>
 
-          <div>
-            <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-4.svg" />
-          </div>
+            <WrapperImage>
+              <ImageLogo src={LogoFavareto} style={{ height: '50px' }} />
+            </WrapperImage>
 
-          <div>
-            <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-2.svg" />
-          </div>
-          <div>
-            <img src="https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-3.svg" />
-          </div>
+            <WrapperImage>
+              <ImageLogo src={LogoFranz} style={{ height: '50px' }} />
+            </WrapperImage>
+
+            <WrapperImage>
+              <ImageLogo src={LogoGorina} style={{ height: '80px' }} />
+            </WrapperImage>
+            <WrapperImage>
+              <ImageLogo src={LogoIngse} style={{ height: '120px' }} />
+            </WrapperImage>
+          </FlexEnd>
+
         </PartnersContainer>
+
       </SectionStyled>
-    </Fade>
+    </Fade >
   );
 };
 
 
 // https://websitedemos.net/learndash-academy-02/wp-content/uploads/sites/457/2021/03/logo-2.svg
 
-const cardServices = [
-  {
-    imageSrc: 'https://img2.freepng.es/20180328/gge/kisspng-check-mark-cheque-clip-art-check-5abb46ab8338c7.0866514015222227635375.jpg',
-    title: "Secure",
-    description: "We provide discounts on the most popular services and on the season services, so you could definitely receive any help without delay."
-  },
-  {
-    imageSrc: 'https://img2.freepng.es/20180328/gge/kisspng-check-mark-cheque-clip-art-check-5abb46ab8338c7.0866514015222227635375.jpg',
-    title: "24/7 Support",
-    description: "We provide discounts on the most popular services and on the season services, so you could definitely receive any help without delay."
-  },
-  {
-    imageSrc: 'https://img2.freepng.es/20180328/gge/kisspng-check-mark-cheque-clip-art-check-5abb46ab8338c7.0866514015222227635375.jpg',
-    title: "Customizable",
-    description: "We provide discounts on the most popular services and on the season services, so you could definitely receive any help without delay."
-  },
-  {
-    imageSrc: 'https://img2.freepng.es/20180328/gge/kisspng-check-mark-cheque-clip-art-check-5abb46ab8338c7.0866514015222227635375.jpg',
-    title: "Reliable",
-    description: "We provide discounts on the most popular services and on the season services, so you could definitely receive any help without delay."
-  },
-  {
-    imageSrc: 'https://img2.freepng.es/20180328/gge/kisspng-check-mark-cheque-clip-art-check-5abb46ab8338c7.0866514015222227635375.jpg',
-    title: "Fast",
-    description: "We provide discounts on the most popular services and on the season services, so you could definitely receive any help without delay."
-  },
-  {
-    imageSrc: 'https://img2.freepng.es/20180328/gge/kisspng-check-mark-cheque-clip-art-check-5abb46ab8338c7.0866514015222227635375.jpg',
-    title: "Easy",
-    description: "We provide discounts on the most popular services and on the season services, so you could definitely receive any help without delay."
-  }
-];

@@ -15,6 +15,7 @@ import {
     SectionCopy,
     TextCopy
 } from './FooterElements';
+import 'boxicons'
 
 
 

@@ -3,16 +3,16 @@ import { css } from 'styled-components';
 
 
 export const HeroContainer = styled.div`
-    height: 650px;
-    max-height: 650px;
+    height: 600px;
+    max-height: 600px;
     
     background-color: var(--white);
     overflow: hidden;
 `
 
 export const StyledSlider = styled.div`
-    height: 650px;
-    max-height: 650px;
+    height: 600px;
+    max-height: 600px;
 
     position: relative;
 
@@ -29,8 +29,8 @@ export const StyledSlider = styled.div`
     }
 `
 export const BgImageSlider = styled.div`
-    height: 650px;
-    max-height: 650px;
+    height: 600px;
+    max-height: 600px;
 
     ${({ imageUrl }) => css`
         background-image: url(${imageUrl});
@@ -46,7 +46,7 @@ export const HeroInfoContainer = styled.div`
     position: absolute;
     top: 0;
     z-index: 2;
-    height: 650px;
+    height: 600px;
     background-color: #00000094;
     display: flex;
     justify-content: center;

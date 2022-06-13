@@ -35,7 +35,7 @@ const Hero = () => {
                         spaceBetween={30}
                         loop={true}
                         autoplay={{
-                            delay: 1500,
+                            delay: 2500,
                             disableOnInteraction: false,
                         }}
                         pagination={{
@@ -59,13 +59,13 @@ const Hero = () => {
                     <HeroInfoContainer>
                         <HeroInfoContent>
                             <HeroH1>
-                                Montajes industriales
+                              Servicios a su servicio
                             </HeroH1>
-                            <HeroSubHeading>
-                                TEL: <a>(011) 342535542</a>
-                            </HeroSubHeading>
+                            {/* <HeroSubHeading>
+                                TEL: <a> (011) 342535542</a>
+                            </HeroSubHeading> */}
                             <SmartText>
-                                The smartest working shop in the steel business
+                                Una empresa de oficio integral
                             </SmartText>
                             <HeroInfoText>
                                 Lorem ipsum dolor sit amet conse ctetur adipisicing elit,

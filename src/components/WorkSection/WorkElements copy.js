@@ -27,27 +27,24 @@ export const CardRow = styled.div`
 `;
 
 export const InfoContainer = styled.div`
-    /* opacity: 0; */
-    /* background-color: #1E1D24D9; */
-    /* height: 18rem;   */
-    /* align-items: center; */
-    /* flex-direction: column; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
-    /* padding: 0px 50px 0px 50px; */
+    opacity: 0;
+    background-color: #1E1D24D9;
+    height: 18rem;  
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 50px 0px 50px;
     border-radius: 4px;
     transition: all 0.4s ease-in-out;
-    margin-bottom: 50px;
-    padding-top: 15px;
 `
 
 export const Card = styled.div`
-    /* background-color: #808080; */
+    background-color: #808080;
     width: 100%;
     cursor: pointer;
     border-radius: 4px;
-    margin-top: 40px;
     transition: all 0.4s ease-in-out;
 
     &:hover{
@@ -63,7 +60,7 @@ export const Card = styled.div`
 
 export const BgImage = styled.div`
    ${props => css`background-image: url("${props.imageSrc}");`}
-    height: 13rem;
+    height: 18rem;
     align-items: center;
     flex-direction: column;
     display: flex;
@@ -77,14 +74,13 @@ export const BgImage = styled.div`
 
 
 export const InfoH2 = styled.h2`
-    font-size: 1rem;
-    text-align: start;
+    font-size: 1.5rem;
+    text-align: center;
     font-family: "Montserrat";
-    /* color: #FFFFFF; */
+    color: #FFFFFF;
     font-weight: 700;
     text-transform: capitalize;
     margin-bottom: 0.5rem;
-    color: var(--blue);
 
     @media screen and (max-width: 768px) {
         font-size: 1.3rem;
@@ -94,9 +90,8 @@ export const InfoH2 = styled.h2`
 export const InfoP = styled.p`
     font-size: 14px;
     font-weight: 400;
-    /* color: #fff; */
-    text-align: start;
-
+    color: #fff;
+    text-align: center; 
     text-decoration: none;
 
     @media screen and (max-width: 768px) {

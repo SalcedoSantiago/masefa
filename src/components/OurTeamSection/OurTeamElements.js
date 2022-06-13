@@ -46,6 +46,7 @@ export const RowTeamMembers = styled.div`
 
 export const CardMember = styled.div`
     padding: 5px;
+    margin-right: 10px;
 
     @media screen  and (max-width: 768px){
         max-width: 100%;

@@ -1,4 +1,12 @@
 import Fade from 'react-reveal/Fade';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
+
+/**
+ * Internal dependencies
+ */
 import {
     WorkContainer,
     CardRow,
@@ -20,24 +28,37 @@ const Work = () => {
         <Fade>
             <WorkContainer>
                 <Heading>Nuestros Proyectos</Heading>
-                <CardRow>
+                <Swiper
+                    spaceBetween={25}
+                    slidesPerView={4}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                >
                     {WORKS.map((card, index) => (
-                        <Card key={index} href={card.url}>
-                            <BgImage imageSrc={card.imageSrc}>
+                        <SwiperSlide key={index} href={card.url}>
+                            <Card href={card.url}>
+                                <BgImage imageSrc={card.imageSrc}>
+                                </BgImage>
                                 <InfoContainer>
                                     <InfoH2>
-                                        Lorem Ipsum
+                                        Unidades Compresoras Loma La Lata
                                     </InfoH2>
                                     <InfoP>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo i ncidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.
+                                        Cliente: YPF
+                                    </InfoP>
+                                    <InfoP>
+                                        Año: 2004
                                     </InfoP>
                                 </InfoContainer>
-                            </BgImage>
-                        </Card>
+                            </Card>
+                        </SwiperSlide>
                     ))}
-                </CardRow>
+                </Swiper>
                 <BtnWrapper>
-                    <Button to="show" primary="true">Show More</Button>
+                    {/* <Button to="show" primary="true">Show More</Button> */}
                 </BtnWrapper>
             </WorkContainer>
         </Fade>
