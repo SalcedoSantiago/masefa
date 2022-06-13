@@ -6,6 +6,7 @@ export const WorkContainer = styled.section`
     max-width: 1280px;
     padding: 120px 2rem;
     margin: 0 auto;
+    overflow: hidden;
 `;
 
 
@@ -27,14 +28,7 @@ export const CardRow = styled.div`
 `;
 
 export const InfoContainer = styled.div`
-    /* opacity: 0; */
-    /* background-color: #1E1D24D9; */
-    /* height: 18rem;   */
-    /* align-items: center; */
-    /* flex-direction: column; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
+   
     /* padding: 0px 50px 0px 50px; */
     border-radius: 4px;
     transition: all 0.4s ease-in-out;

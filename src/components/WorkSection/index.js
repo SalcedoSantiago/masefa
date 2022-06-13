@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import { useState, useEffect } from 'react';
 
 /**
  * Internal dependencies
@@ -18,19 +19,46 @@ import {
     InfoP,
     BtnWrapper
 } from './WorkElements';
-import { Button } from '../button';
 import { WORKS } from './Data';
 import { Heading } from '../heading';
 
 
+function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+        width,
+        height
+    };
+}
+
+function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    useEffect(() => {
+        function handleResize() {
+            setWindowDimensions(getWindowDimensions());
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    return windowDimensions;
+}
+
+
 const Work = () => {
+
+    const { width } = useWindowDimensions();
+
+
     return (
         <Fade>
             <WorkContainer>
                 <Heading>Nuestros Proyectos</Heading>
                 <Swiper
                     spaceBetween={25}
-                    slidesPerView={4}
+                    slidesPerView={ width <= 480 && 2 ||  width <= 768 && 3 || width <= 768 && 4 || 1 }
                     pagination={{
                         clickable: true,
                     }}

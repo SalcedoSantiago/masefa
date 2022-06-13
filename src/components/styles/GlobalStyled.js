@@ -51,6 +51,8 @@ const GlobalStyle = createGlobalStyle`
         } */
     }
 
+
+
     main {
     margin: 0 auto;
     width: 100%;

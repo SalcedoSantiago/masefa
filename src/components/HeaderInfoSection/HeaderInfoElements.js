@@ -8,6 +8,7 @@ export const InfoContainer = styled.div`
 
 export const InfoWrapper = styled.div`
     max-width: 1280px;
+    overflow: hidden;
     padding: 15px 2rem;
     margin: 0 auto;
     display: flex;
