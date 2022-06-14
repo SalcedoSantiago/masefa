@@ -6,9 +6,9 @@ import { Autoplay, Pagination, Navigation } from "swiper";
  * Internal dependencies
  */
 
-import slide1 from '../../assets/images/slide-1.png'
-import slide2 from '../../assets/images/slide-2.jpg'
-import slide3 from '../../assets/images/slide-3.png'
+import slide1 from '../../assets/images/slide-1.webp'
+import slide2 from '../../assets/images/slide-2.webp'
+import slide3 from '../../assets/images/slide-3.webp'
 import {
     HeroContainer,
     StyledSlider,
@@ -67,14 +67,9 @@ const Hero = () => {
                             <SmartText>
                                 Una empresa de oficio integral
                             </SmartText>
-                            <HeroInfoText>
-                                Lorem ipsum dolor sit amet conse ctetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </HeroInfoText>
                             <BtnWrapper>
                                 <Button
                                     primary="true"
-                                    big="true"
                                     fontbig="true"
                                     to="contact"
                                 >
@@ -82,7 +77,6 @@ const Hero = () => {
                                 </Button>
                                 <Button
                                     primary="true"
-                                    big="true"
                                     fontbig="true"
                                     to="about"
                                 >

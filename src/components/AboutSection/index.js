@@ -22,7 +22,7 @@ import {
 } from './AboutElement';
 import { Button } from '../button';
 import { Heading, SubHeading } from '../heading';
-import AboutImage from '../../assets/images/about.jpg'
+import AboutImage from '../../assets/images/about.webp'
 
 import Fade from 'react-reveal/Fade';
 

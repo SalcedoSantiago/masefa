@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { Button } from '../button'
+import { Heading } from '../heading';
 
 export const WorkContainer = styled.section`
     max-width: 1280px;
     padding: 120px 2rem;
     margin: 0 auto;
     overflow: hidden;
+
+    ${Heading}{
+        margin-bottom: 60px;
+    }
 `;
 
 
@@ -71,7 +76,7 @@ export const BgImage = styled.div`
 
 
 export const InfoH2 = styled.h2`
-    font-size: 1rem;
+    font-size: 16px;
     text-align: start;
     font-family: "Montserrat";
     /* color: #FFFFFF; */
@@ -81,22 +86,30 @@ export const InfoH2 = styled.h2`
     color: var(--blue);
 
     @media screen and (max-width: 768px) {
-        font-size: 1.3rem;
+        font-size: 14px;
     }
 `;
 
-export const InfoP = styled.p`
+export const Client = styled.p`
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     /* color: #fff; */
     text-align: start;
-
+    margin-bottom: 5px;
+    color: var(--black);
     text-decoration: none;
 
     @media screen and (max-width: 768px) {
         font-size: 12px;
     }
 `;
+
+export const Year = styled(Client)`
+    margin-bottom: 0;
+    font-weight: 400;
+    color: var(--black);
+`
+
 
 export const BtnWrapper = styled.div`
     display: flex;

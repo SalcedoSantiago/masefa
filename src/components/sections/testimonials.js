@@ -4,12 +4,12 @@ import Fade from 'react-reveal/Fade';
 
 
 
-import LogoEstado from '../../assets/images/estado.png';
-import LogoCyanamid from '../../assets/images/cyanamid.jpg';
-import LogoFavareto from '../../assets/images/favareto.jpg';
-import LogoFranz from '../../assets/images/franz.jpg';
-import LogoGorina from '../../assets/images/gorina.jpeg';
-import LogoIngse from '../../assets/images/ingse.png';
+import LogoEstado from '../../assets/images/estado.webp';
+import LogoCyanamid from '../../assets/images/cyanamid.webp';
+import LogoFavareto from '../../assets/images/favareto.webp';
+import LogoFranz from '../../assets/images/franz.webp';
+import LogoGorina from '../../assets/images/gorina.webp';
+import LogoIngse from '../../assets/images/ingse.webp';
 
 /**
  * Internal dependencies

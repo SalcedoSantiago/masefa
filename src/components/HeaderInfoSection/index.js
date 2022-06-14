@@ -8,7 +8,6 @@ import {
     IconWrapper,
 } from './HeaderInfoElements';
 
-import 'boxicons'
 
 const HeaderInfo = () => {
 
@@ -17,27 +16,27 @@ const HeaderInfo = () => {
         <InfoContainer>
             <InfoWrapper>
                 <SocialContianer>
-                    <Social>
+                    <Social href='masefa@gmail.com'>
                         <SocialLink>
-                            <box-icon name='envelope'></box-icon><p>masefa@gmail.com</p>
+                            i<p>masefa@gmail.com</p>
                         </SocialLink>
                     </Social>
 
-                    <Social>
+                    <Social href='112509942'>
                         <SocialLink>
-                        <box-icon name='phone' type='solid' ></box-icon> <p> 1120334455</p>
+                            i <p> 1120334455</p>
                         </SocialLink>
                     </Social>
                 </SocialContianer>
                 <IconsContainer>
                     <IconWrapper>
-                        <box-icon type='logo' name='facebook'></box-icon>
+                        facebook
                     </IconWrapper>
                     <IconWrapper>
-                        <box-icon name='linkedin' type='logo'></box-icon>
+                        linkedin
                     </IconWrapper>
                     <IconWrapper>
-                    <box-icon name='whatsapp' type='logo' ></box-icon>
+                        whatsapp
                     </IconWrapper>
                 </IconsContainer>
             </InfoWrapper>

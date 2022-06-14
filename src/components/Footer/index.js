@@ -15,10 +15,6 @@ import {
     SectionCopy,
     TextCopy
 } from './FooterElements';
-import 'boxicons'
-
-
-
 
 const Footer = () => {
     return (
@@ -34,13 +30,13 @@ const Footer = () => {
                     </InfoUs>
                     <IconsContainer>
                         <IconWrapper>
-                            <box-icon type='logo' name='facebook'></box-icon>
+                            i
                         </IconWrapper>
                         <IconWrapper>
-                            <box-icon name='linkedin' type='logo'></box-icon>
+                            i
                         </IconWrapper>
                         <IconWrapper>
-                            <box-icon name='instagram' type='logo'></box-icon>
+                            i
                         </IconWrapper>
                     </IconsContainer>
                 </FooterAbout>
@@ -48,29 +44,29 @@ const Footer = () => {
                     <Column>
                         <HeadingSection>About us</HeadingSection>
                         <Navigate>
-                            <Link>Who are you?</Link>
-                            <Link>Who are you?</Link>
-                            <Link>Who are you?</Link>
-                            <Link>Who are you?</Link>
-                            <Link>Who are you?</Link>
+                            <Link to="contact">Who are you?</Link>
+                            <Link to="contact">Who are you?</Link>
+                            <Link to="contact">Who are you?</Link>
+                            <Link to="contact">Who are you?</Link>
+                            <Link to="contact">Who are you?</Link>
                         </Navigate>
                     </Column>
                     <Column>
                         <HeadingSection>About us</HeadingSection>
                         <Navigate>
-                            <Link>Healthly Food</Link>
-                            <Link>Who are you?</Link>
-                            <Link>Who are you?</Link>
-                            <Link>Who are you?</Link>
+                            <Link to="contact">Healthly Food</Link>
+                            <Link to="contact">Who are you?</Link>
+                            <Link to="contact">Who are you?</Link>
+                            <Link to="contact">Who are you?</Link>
                         </Navigate>
                     </Column>
                     <Column>
                         <HeadingSection>About us</HeadingSection>
                         <Navigate>
-                            <Link>Who are you?</Link>
-                            <Link>Who are you?</Link>
-                            <Link>Who are you?</Link>
-                            <Link>Who are you?</Link>
+                            <Link to="contact">Who are you?</Link>
+                            <Link to="contact">Who are you?</Link>
+                            <Link to="contact">Who are you?</Link>
+                            <Link to="contact">Who are you?</Link>
                         </Navigate>
                     </Column>
                 </Row>

@@ -12,7 +12,7 @@ import { Pagination } from "swiper";
  * Internal dependencies
  */
 import { Heading, SubHeading } from '../heading';
-import Team from '../../assets/images/team.jpg'
+import Team from '../../assets/images/team.webp'
 import {
     OurTeamContainer,
     OurTeamWrapper,
@@ -57,6 +57,9 @@ const OurTeam = () => {
     return (
         <OurTeamContainer>
             <Heading>Nuestro Equipo</Heading>
+            <InfoP>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+            </InfoP>
             <OurTeamWrapper>
                 <RowTeamMembers>
                     {width <= 768 &&
@@ -71,7 +74,7 @@ const OurTeam = () => {
                             <SwiperSlide>
                                 <CardMember>
                                     <ImageContainer>
-                                        <MemberImage src="https://websitedemos.net/criminal-lawyer-04/wp-content/uploads/sites/785/2021/03/team-06-free-img.jpg" />
+                                        <MemberImage src={Team} />
                                     </ImageContainer>
                                     <MemberTitle>Nikolas tesla</MemberTitle>
                                     <MemberDesc>Director</MemberDesc>
@@ -81,7 +84,17 @@ const OurTeam = () => {
                             <SwiperSlide>
                                 <CardMember>
                                     <ImageContainer>
-                                        <MemberImage src="https://websitedemos.net/criminal-lawyer-04/wp-content/uploads/sites/785/2021/03/team-06-free-img.jpg" />
+                                        <MemberImage src={Team} />
+                                    </ImageContainer>
+                                    <MemberTitle>Nikolas tesla</MemberTitle>
+                                    <MemberDesc>Director</MemberDesc>
+                                    <MemberInfo>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</MemberInfo>
+                                </CardMember>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <CardMember>
+                                    <ImageContainer>
+                                        <MemberImage src={Team} />
                                     </ImageContainer>
                                     <MemberTitle>Nikolas tesla</MemberTitle>
                                     <MemberDesc>Director</MemberDesc>
@@ -93,7 +106,7 @@ const OurTeam = () => {
                         <>
                             <CardMember>
                                 <ImageContainer>
-                                    <MemberImage src="https://websitedemos.net/criminal-lawyer-04/wp-content/uploads/sites/785/2021/03/team-06-free-img.jpg" />
+                                    <MemberImage src={Team} />
                                 </ImageContainer>
                                 <MemberTitle>Nikolas tesla</MemberTitle>
                                 <MemberDesc>Director</MemberDesc>
@@ -101,7 +114,15 @@ const OurTeam = () => {
                             </CardMember>
                             <CardMember>
                                 <ImageContainer>
-                                    <MemberImage src="https://websitedemos.net/criminal-lawyer-04/wp-content/uploads/sites/785/2021/03/team-06-free-img.jpg" />
+                                    <MemberImage src={Team} />
+                                </ImageContainer>
+                                <MemberTitle>Nikolas tesla</MemberTitle>
+                                <MemberDesc>Director</MemberDesc>
+                                <MemberInfo>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</MemberInfo>
+                            </CardMember>
+                            <CardMember>
+                                <ImageContainer>
+                                    <MemberImage src={Team} />
                                 </ImageContainer>
                                 <MemberTitle>Nikolas tesla</MemberTitle>
                                 <MemberDesc>Director</MemberDesc>
@@ -110,15 +131,6 @@ const OurTeam = () => {
                         </>
                     }
                 </RowTeamMembers>
-                <InfoContainer>
-                    <SubHeading>
-                        Lorem ipsum dolor sit amet
-                    </SubHeading>
-                    <InfoP>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.
-                    </InfoP>
-                </InfoContainer>
             </OurTeamWrapper>
         </OurTeamContainer>
     )

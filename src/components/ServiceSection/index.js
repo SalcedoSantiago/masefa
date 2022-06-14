@@ -18,20 +18,18 @@ import {
 } from './ServicesElements';
 import { Heading } from '../heading';
 
-import 'boxicons'
-
 
 const Services = () => {
 
     return (
         <Fade>
-            <ServicesContainer>
+            <ServicesContainer id="services">
                 <Heading>Nuestros Servicios</Heading>
                 <ServicesRow>
                     {services.map(({ title, Icon }, index) =>
                         <CardService key={index}>
                             <IconWrapper>
-                                <box-icon name='mail-send'></box-icon>
+                                i
 
                             </IconWrapper>
                             <ServiceTitle>{title}</ServiceTitle>
@@ -45,7 +43,7 @@ const Services = () => {
                         {[1, 2, 3, 4, 5].map((data, index) =>
                             <ColumnService key={index}>
                                 <CheckIcon>
-                                    <box-icon name='mail-send'></box-icon>
+                                    i
 
                                 </CheckIcon>
                                 <SubtitleServices>
@@ -59,7 +57,7 @@ const Services = () => {
                         {[1, 2, 3, 4, 5].map((data, index) =>
                             <ColumnService key={index}>
                                 <CheckIcon>
-                                    <box-icon name='mail-send'></box-icon>
+                                    i
 
                                 </CheckIcon>
                                 <SubtitleServices>

@@ -16,7 +16,8 @@ import {
     BgImage,
     InfoContainer,
     InfoH2,
-    InfoP,
+    Client,
+    Year,
     BtnWrapper
 } from './WorkElements';
 import { WORKS } from './Data';
@@ -48,17 +49,15 @@ function useWindowDimensions() {
 
 
 const Work = () => {
-
     const { width } = useWindowDimensions();
-
 
     return (
         <Fade>
             <WorkContainer>
-                <Heading>Nuestros Proyectos</Heading>
+                <Heading>Obras Destacadas</Heading>
                 <Swiper
                     spaceBetween={25}
-                    slidesPerView={ width <= 480 && 2 ||  width <= 768 && 3 || width <= 768 && 4 || 1 }
+                    slidesPerView={ width <= 480 && 2 ||  width <= 768 && 3 || width > 768 && 4 || 1 }
                     pagination={{
                         clickable: true,
                     }}
@@ -74,12 +73,12 @@ const Work = () => {
                                     <InfoH2>
                                         Unidades Compresoras Loma La Lata
                                     </InfoH2>
-                                    <InfoP>
+                                    <Client>
                                         Cliente: YPF
-                                    </InfoP>
-                                    <InfoP>
+                                    </Client>
+                                    <Year>
                                         Año: 2004
-                                    </InfoP>
+                                    </Year>
                                 </InfoContainer>
                             </Card>
                         </SwiperSlide>

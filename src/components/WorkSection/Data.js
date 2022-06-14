@@ -1,4 +1,4 @@
-import Work1 from '../../assets/images/work-1.jpg';
+import Work1 from '../../assets/images/work-1.webp';
 
 
 export const WORKS = [

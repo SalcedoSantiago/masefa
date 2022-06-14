@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
  * External dependencies
  */
 
-import 'boxicons'
 import Fade from 'react-reveal/Fade';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -71,7 +70,7 @@ const Featured = () => {
                                     <SwiperSlide>
                                         <FeaturedCard>
                                             <IconWrapper>
-                                                <box-icon name='mail-send'></box-icon>
+                                                <svg xmlns="http://www.w3.org/2000/svg"><path d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"></path><path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path></svg>
                                             </IconWrapper>
                                             <CardH2>Soporte 24/7</CardH2>
                                             <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
@@ -80,7 +79,7 @@ const Featured = () => {
                                     <SwiperSlide>
                                         <FeaturedCard>
                                             <IconWrapper>
-                                                <box-icon name='mail-send'></box-icon>
+                                                i
                                             </IconWrapper>
                                             <CardH2>Soporte 24/7</CardH2>
                                             <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
@@ -89,7 +88,7 @@ const Featured = () => {
                                     <SwiperSlide>
                                         <FeaturedCard>
                                             <IconWrapper>
-                                                <box-icon name='mail-send'></box-icon>
+                                                i
                                             </IconWrapper>
                                             <CardH2>Soporte 24/7</CardH2>
                                             <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
@@ -102,21 +101,21 @@ const Featured = () => {
                                 <>
                                     <FeaturedCard>
                                         <IconWrapper>
-                                            <box-icon name='mail-send'></box-icon>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53"><path d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"></path><path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path></svg>
                                         </IconWrapper>
                                         <CardH2>Soporte 24/7</CardH2>
                                         <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
                                     </FeaturedCard>
                                     <FeaturedCard>
                                         <IconWrapper>
-                                            <box-icon name='mail-send'></box-icon>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" ><path d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"></path><path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path></svg>
                                         </IconWrapper>
                                         <CardH2>Soporte 24/7</CardH2>
                                         <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
                                     </FeaturedCard>
                                     <FeaturedCard>
                                         <IconWrapper>
-                                            <box-icon name='mail-send' width="32"></box-icon>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53"><path d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"></path><path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path></svg>
                                         </IconWrapper>
                                         <CardH2>Soporte 24/7</CardH2>
                                         <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>

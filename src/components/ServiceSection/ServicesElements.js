@@ -55,6 +55,7 @@ export const CardService = styled.div`
 `;
 
 export const IconWrapper = styled.div`
+
     text-align: center;
     font-size: 60px;
     color: var(--blue);

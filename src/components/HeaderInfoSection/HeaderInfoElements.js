@@ -27,6 +27,12 @@ export const SocialContianer = styled.div`
 
 export const Social = styled.a`
     color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover{
+        text-decoration: underline;
+    }
 
 `
 
@@ -40,7 +46,9 @@ export const SocialLink = styled.span`
 
     p{
         color: white;
+        line-height: 1.2;
         font-weight: 500;
+        font-size: 15px;
     }
 
 `

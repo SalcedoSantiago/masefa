@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { css } from 'styled-components';
+import { Button } from '../button';
 
 
 export const HeroContainer = styled.div`
@@ -51,7 +52,7 @@ export const HeroInfoContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: start;
 `
 
 export const HeroInfoContent = styled.div`
@@ -131,5 +132,11 @@ export const BtnWrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 15px;
-    justify-content: center;
+    margin-top: 40px;
+    justify-content: start;
+
+    ${Button}{
+        border-radius: 3px;
+        font-size: 16px;
+    }
 `
