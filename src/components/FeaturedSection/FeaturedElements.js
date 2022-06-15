@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Heading } from '../heading';
 
 export const BgFeaturedContainer = styled.div`
     background-color: var(--blue);
@@ -12,27 +13,17 @@ export const FeaturedContainer = styled.div`
     padding-left: 2rem;
     padding-right: 2rem;
 
-`
 
-export const Heading = styled.h1`
-    font-size: 2.5rem;
-    font-family: "Montserrat", "Poppins";
-    line-height: 1.1;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 60px;
-    color: var(--white);
-
-    @media screen and (max-width: 768px){
-        font-size: 2rem;
-        text-align: center;
+    ${Heading}{
+        margin-bottom: 60px;
     }
+
 `
 
 export const FeaturedWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+    align-items: start;
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
@@ -55,10 +46,11 @@ export const IconWrapper = styled.div`
 `
 
 export const CardH2 = styled.h2`
-     padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     font-family: "Poppins", Sans-serif;
     font-size: 24px;
     font-weight: 600;
+    margin-bottom: 15px;
     color: var(--white);
 
     @media screen and (max-width: 768px){

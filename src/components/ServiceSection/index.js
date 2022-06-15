@@ -1,4 +1,4 @@
-import { services } from './Data';
+import { services, prefabricado, soldaduras } from './Data';
 import Fade from 'react-reveal/Fade';
 
 import {
@@ -9,8 +9,6 @@ import {
     ServiceTitle,
     Row,
     Column,
-    Column2,
-    RowService,
     ColumnService,
     SubtitleServices,
     HeadingService,
@@ -37,27 +35,27 @@ const Services = () => {
                 <Heading>Ademas ofrecemos</Heading>
                 <Row>
                     <Column>
-                        <HeadingService>El rubro donde nos desarrollamos:</HeadingService>
-                        {[1, 2, 3, 4, 5].map((data, index) =>
+                        <HeadingService>PREFABRICADO Y MONTAJES DE CAÑERIAS PARA:</HeadingService>
+                        {prefabricado.map((title, index) =>
                             <ColumnService key={index}>
                                 <CheckIcon>
                                     <i className="fa-solid fa-circle-check"></i>
                                 </CheckIcon>
                                 <SubtitleServices>
-                                    Industria química
+                                    {title}
                                 </SubtitleServices>
                             </ColumnService>
                         )}
                     </Column>
                     <Column>
-                        <HeadingService>El rubro donde nos desarrollamos:</HeadingService>
-                        {[1, 2, 3, 4, 5].map((data, index) =>
+                        <HeadingService>EJECUCIÓN DE SOLDADURAS ESPECIALES EN</HeadingService>
+                        {soldaduras.map((title, index) =>
                             <ColumnService key={index}>
                                 <CheckIcon>
                                     <i className="fa-solid fa-circle-check"></i>
                                 </CheckIcon>
                                 <SubtitleServices>
-                                    Industria química
+                                    {title}
                                 </SubtitleServices>
                             </ColumnService>
                         )}

@@ -1,20 +1,18 @@
-export const cards = [
+
+export const FeaturedCards = [
     {
-        imageSrc: 'https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/img-3.jpg',
-        title: "Secure",
-        description: "We strictly only deal with vendors that provide top notch security.",
-        url: "#"
+        icon: 'handshake-angle',
+        title: 'Seguridad',
+        desc: 'Como empresa garantizamos de manera estricta la seguridad de ofrecer trabajos realizados de manera correcta, con técnicos profesionales de  primer nivel y maquinaria adecuada para una segura ejecución y una ágil realización.'
     },
     {
-        imageSrc: 'https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/img-3.jpg',
-        title: "24/7 Support",
-        description: "Lorem ipsum donor amet siti ceali placeholder text",
-        url: "#"
+        icon: 'clipboard-list',
+        title: 'Soporte 24/7',
+        desc: 'Tenemos la facultad de adaptarnos a las necesidades y tiempos de quienes precisen nuestro servicio. Además, contactarnos por primera vez es muy fácil y no requiere de larga   espera a recibir nuestra respuesta. Trabajamos para un soporte 24/7 a su disposición.'
     },
     {
-        imageSrc: 'https://ld-wp73.template-help.com/wordpress/prod_11368/v2/wp-content/uploads/2021/04/img-3.jpg',
-        title: "Customizable",
-        description: "Lorem ipsum donor amet siti ceali placeholder text",
-        url: "#"
+        icon: 'certificate',
+        title: 'Experiencia',
+        desc: 'Conocemos la industria, todos sus cambios y evoluciones. Nuestro conocimiento es quien avala hoy a MASEFA y también los clientes conformes con nuestro servicio. MASEFA es el proyecto de profesionales con un largo camino de experiencia que vieron crecer la industria y evolucionaron junto con ella.'
     }
 ]

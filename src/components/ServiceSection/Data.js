@@ -1,18 +1,35 @@
 export const services = [
     {
         Icon: 'IoIosHammer',
-        title: "Secure",
+        title: "Mantenimiento preventivo",
     },
     {
         Icon: 'IoIosHammer',
-        title: "24/7 Support",
+        title: "Mantenimiento correctivo",
     },
     {
         Icon: 'IoIosHammer',
-        title: "Customizable",
+        title: "Tareas generales accesorias de instalaciones",
     },
     {
         Icon: 'IoIosHammer',
-        title: "Running Projects",
+        title: "Servicios en plantas Industriales",
     }
+]
+
+
+
+export const prefabricado = [
+    'Industria química',
+    'Industria alimenticia',
+    'Petroquímicas refinerías',
+    'Celulosa',
+    'Plantas compresoras de gas',
+]
+
+export const soldaduras = [
+    'ASME',
+    'Gasoductos',
+    'Poliductos',
+    'Acueductos',
 ]

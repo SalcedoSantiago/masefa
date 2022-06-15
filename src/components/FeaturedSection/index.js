@@ -22,9 +22,10 @@ import {
     CardH2,
     CardP
 } from './FeaturedElements';
-import { cards } from './Data';
+import { FeaturedCards } from './Data';
 
 const Featured = () => {
+
     const { width } = useAppContext();
 
     return (
@@ -43,59 +44,33 @@ const Featured = () => {
                                     modules={[Pagination]}
                                     className="mySwiper"
                                 >
-                                    <SwiperSlide>
-                                        <FeaturedCard>
-                                            <IconWrapper>
-                                                <i class="fa-solid fa-envelope-circle-check"></i>
-                                            </IconWrapper>
-                                            <CardH2>Soporte 24/7</CardH2>
-                                            <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
-                                        </FeaturedCard>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <FeaturedCard>
-                                            <IconWrapper>
-                                                <i class="fa-solid fa-envelope-circle-check"></i>
-                                            </IconWrapper>
-                                            <CardH2>Soporte 24/7</CardH2>
-                                            <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
-                                        </FeaturedCard>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <FeaturedCard>
-                                            <IconWrapper>
-                                                <i class="fa-solid fa-envelope-circle-check"></i>
-                                            </IconWrapper>
-                                            <CardH2>Soporte 24/7</CardH2>
-                                            <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
-                                        </FeaturedCard>
-                                    </SwiperSlide>
+                                    {FeaturedCards.map(({ icon, title, desc }, index) =>
+                                        <SwiperSlide key={index}>
+                                            <FeaturedCard>
+                                                <IconWrapper>
+                                                    <i className={`fa-solid fa-${icon}`}></i>
+                                                </IconWrapper>
+                                                <CardH2>{title}</CardH2>
+                                                <CardP>{desc}</CardP>
+                                            </FeaturedCard>
+                                        </SwiperSlide>
+                                    )
+                                    }
                                 </Swiper>
                             )
                             ||
                             (
                                 <>
-                                    <FeaturedCard>
-                                        <IconWrapper>
-                                            <i class="fa-solid fa-envelope-circle-check"></i>
-                                        </IconWrapper>
-                                        <CardH2>Soporte 24/7</CardH2>
-                                        <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
-                                    </FeaturedCard>
-                                    <FeaturedCard>
-                                        <IconWrapper>
-                                            <i class="fa-solid fa-envelope-circle-check"></i>
-                                        </IconWrapper>
-                                        <CardH2>Soporte 24/7</CardH2>
-                                        <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
-                                    </FeaturedCard>
-                                    <FeaturedCard>
-                                        <IconWrapper>
-                                            <i class="fa-solid fa-envelope-circle-check"></i>
-                                        </IconWrapper>
-                                        <CardH2>Soporte 24/7</CardH2>
-                                        <CardP>Lorem ipsum dolor sit amet, consectetur adipiscing elit</CardP>
-                                    </FeaturedCard>
+                                    {FeaturedCards.map(({ icon, title, desc }, index) =>
+                                        <FeaturedCard key={index}>
+                                            <IconWrapper>
+                                                <i className={`fa-solid fa-${icon}`}></i>
+                                            </IconWrapper>
+                                            <CardH2>{title}</CardH2>
+                                            <CardP>{desc}</CardP>
+                                        </FeaturedCard>
+                                    )
+                                    }
                                 </>
                             )
                         }
