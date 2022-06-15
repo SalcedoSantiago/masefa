@@ -37,32 +37,6 @@ export default () => {
 
 
 
-  const Brands = (
-    <>
-      <WrapperImage>
-        <ImageLogo src={LogoEstado} style={{ height: '80px' }} />
-      </WrapperImage>
-      <WrapperImage>
-        <ImageLogo src={LogoCyanamid} style={{ height: '120px' }} />
-      </WrapperImage>
-
-      <WrapperImage>
-        <ImageLogo src={LogoFavareto} style={{ height: '50px' }} />
-      </WrapperImage>
-
-      <WrapperImage>
-        <ImageLogo src={LogoFranz} style={{ height: '50px' }} />
-      </WrapperImage>
-
-      <WrapperImage>
-        <ImageLogo src={LogoGorina} style={{ height: '80px' }} />
-      </WrapperImage>
-      <WrapperImage>
-        <ImageLogo src={LogoIngse} style={{ height: '120px' }} />
-      </WrapperImage>
-    </>
-  )
-
 
   return (
     <Fade right>
@@ -72,76 +46,27 @@ export default () => {
             <h2>Nuestros Clientes <LineSpan /></h2>
           </div>
           <FlexEnd>
-            {
-              width <= 768 &&
-              (
-                <Swiper
-                  slidesPerView={1}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  modules={[Pagination]}
-                  className="mySwiper"
-                >
-                  <SwiperSlide>
-                    <WrapperImage>
-                      <ImageLogo src={LogoEstado} style={{ height: '80px' }} />
-                    </WrapperImage>
-                  </SwiperSlide>
+            <WrapperImage>
+              <ImageLogo src={LogoEstado} style={{ height: '80px' }} />
+            </WrapperImage>
+            <WrapperImage>
+              <ImageLogo src={LogoCyanamid} style={{ height: '120px' }} />
+            </WrapperImage>
 
-                  <SwiperSlide>
-                    <WrapperImage>
-                      <ImageLogo src={LogoCyanamid} style={{ height: '120px' }} />
-                    </WrapperImage>
-                  </SwiperSlide>
+            <WrapperImage>
+              <ImageLogo src={LogoFavareto} style={{ height: '50px' }} />
+            </WrapperImage>
 
-                  <SwiperSlide>
-                    <WrapperImage>
-                      <ImageLogo src={LogoFavareto} style={{ height: '50px' }} />
-                    </WrapperImage>
-                  </SwiperSlide>
+            <WrapperImage>
+              <ImageLogo src={LogoFranz} style={{ height: '50px' }} />
+            </WrapperImage>
 
-                  <SwiperSlide>
-                    <WrapperImage>
-                      <ImageLogo src={LogoFranz} style={{ height: '50px' }} />
-                    </WrapperImage>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <WrapperImage>
-                      <ImageLogo src={LogoGorina} style={{ height: '80px' }} />
-                    </WrapperImage>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <WrapperImage>
-                      <ImageLogo src={LogoIngse} style={{ height: '120px' }} />
-                    </WrapperImage>
-                  </SwiperSlide>
-                </Swiper>
-              ) ||
-              <>
-                <WrapperImage>
-                  <ImageLogo src={LogoEstado} style={{ height: '80px' }} />
-                </WrapperImage>
-                <WrapperImage>
-                  <ImageLogo src={LogoCyanamid} style={{ height: '120px' }} />
-                </WrapperImage>
-
-                <WrapperImage>
-                  <ImageLogo src={LogoFavareto} style={{ height: '50px' }} />
-                </WrapperImage>
-
-                <WrapperImage>
-                  <ImageLogo src={LogoFranz} style={{ height: '50px' }} />
-                </WrapperImage>
-
-                <WrapperImage>
-                  <ImageLogo src={LogoGorina} style={{ height: '80px' }} />
-                </WrapperImage>
-                <WrapperImage>
-                  <ImageLogo src={LogoIngse} style={{ height: '120px' }} />
-                </WrapperImage>
-              </>
-            }
+            <WrapperImage>
+              <ImageLogo src={LogoGorina} style={{ height: '80px' }} />
+            </WrapperImage>
+            <WrapperImage>
+              <ImageLogo src={LogoIngse} style={{ height: '120px' }} />
+            </WrapperImage>
           </FlexEnd>
         </PartnersContainer>
       </SectionStyled>
