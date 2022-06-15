@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components';
-import { theme } from './components/styles/theme'
-import GlobalStyle from "./components/styles/GlobalStyled";
+import { theme } from './styles/theme'
+import GlobalStyle from "./styles/GlobalStyled";
 import {
     BrowserRouter as Router,
     Routes,

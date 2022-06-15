@@ -89,7 +89,7 @@ const BtnWrapper = styled.div`
 export default () => {
 
     return (
-        <Fade>
+        <Fade right>
             <CtaContainer >
                 <Row>
                     <Column>

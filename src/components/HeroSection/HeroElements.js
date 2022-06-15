@@ -38,7 +38,7 @@ export const HeroInfoContainer = styled.div`
     top: 0;
     z-index: 2;
     height: 600px;
-    background-color: #00000094;
+    background-color: #00000069;
     display: flex;
     justify-content: center;
     align-items: center;

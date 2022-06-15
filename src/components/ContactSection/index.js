@@ -16,7 +16,7 @@ import {
 
 const Contact = () => {
     return (
-        <Fade>
+        <Fade right>
             <ContactContainer id="contact">
                 <Heading style={{ marginBottom: '80px' }}>Contact us</Heading>
                 <ContactWrapper>

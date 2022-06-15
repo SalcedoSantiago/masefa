@@ -21,7 +21,7 @@ import { Heading } from '../heading';
 const Services = () => {
 
     return (
-        <Fade>
+        <Fade right>
             <ServicesContainer id="services">
                 <Heading>Nuestros Servicios</Heading>
                 <ServicesRow>

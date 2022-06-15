@@ -28,7 +28,7 @@ import Fade from 'react-reveal/Fade';
 
 const About = () => {
     return (
-        <Fade>
+        <Fade right>
             <AboutContainer id="about">
                 <Heading>Quienes somos?</Heading>
                 <AboutWrapper>

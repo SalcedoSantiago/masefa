@@ -28,7 +28,7 @@ const Featured = () => {
     const { width } = useAppContext();
 
     return (
-        <Fade>
+        <Fade right>
             <BgFeaturedContainer id="featured">
                 <FeaturedContainer>
                     <Heading white="true">Soluciones que ofrecemos</Heading>
