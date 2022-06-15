@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useAppContext } from '../../context/Context'
 
 /**
  * External dependencies
@@ -27,51 +27,65 @@ import {
     InfoH2,
     InfoP
 } from './OurTeamElements'
+import { Fade } from 'react-reveal';
 
-function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-        width,
-        height
-    };
-}
-
-function useWindowDimensions() {
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-    useEffect(() => {
-        function handleResize() {
-            setWindowDimensions(getWindowDimensions());
-        }
-
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    return windowDimensions;
-}
 
 const OurTeam = () => {
-    const { width } = useWindowDimensions();
+
+    const { width } = useAppContext();
+
 
     return (
-        <OurTeamContainer>
-            <Heading>Nuestro Equipo</Heading>
-            <InfoP>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
-            </InfoP>
-            <OurTeamWrapper>
-                <RowTeamMembers>
-                    {width <= 768 &&
-                        <Swiper
-                            slidesPerView={1}
-                            pagination={{
-                                clickable: true,
-                            }}
-                            modules={[Pagination]}
-                            className="mySwiper"
-                        >
-                            <SwiperSlide>
+        <Fade right>
+            <OurTeamContainer>
+                <Heading>Nuestro Equipo</Heading>
+                <InfoP>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </InfoP>
+                <OurTeamWrapper>
+                    <RowTeamMembers>
+                        {width <= 768 &&
+                            <Swiper
+                                slidesPerView={1}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                modules={[Pagination]}
+                                className="mySwiper"
+                            >
+                                <SwiperSlide>
+                                    <CardMember>
+                                        <ImageContainer>
+                                            <MemberImage src={Team} />
+                                        </ImageContainer>
+                                        <MemberTitle>Nikolas tesla</MemberTitle>
+                                        <MemberDesc>Director</MemberDesc>
+                                        <MemberInfo>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</MemberInfo>
+                                    </CardMember>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <CardMember>
+                                        <ImageContainer>
+                                            <MemberImage src={Team} />
+                                        </ImageContainer>
+                                        <MemberTitle>Nikolas tesla</MemberTitle>
+                                        <MemberDesc>Director</MemberDesc>
+                                        <MemberInfo>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</MemberInfo>
+                                    </CardMember>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <CardMember>
+                                        <ImageContainer>
+                                            <MemberImage src={Team} />
+                                        </ImageContainer>
+                                        <MemberTitle>Nikolas tesla</MemberTitle>
+                                        <MemberDesc>Director</MemberDesc>
+                                        <MemberInfo>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</MemberInfo>
+                                    </CardMember>
+                                </SwiperSlide>
+                            </Swiper>
+                            ||
+                            <>
                                 <CardMember>
                                     <ImageContainer>
                                         <MemberImage src={Team} />
@@ -80,8 +94,6 @@ const OurTeam = () => {
                                     <MemberDesc>Director</MemberDesc>
                                     <MemberInfo>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</MemberInfo>
                                 </CardMember>
-                            </SwiperSlide>
-                            <SwiperSlide>
                                 <CardMember>
                                     <ImageContainer>
                                         <MemberImage src={Team} />
@@ -90,8 +102,6 @@ const OurTeam = () => {
                                     <MemberDesc>Director</MemberDesc>
                                     <MemberInfo>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</MemberInfo>
                                 </CardMember>
-                            </SwiperSlide>
-                            <SwiperSlide>
                                 <CardMember>
                                     <ImageContainer>
                                         <MemberImage src={Team} />
@@ -100,39 +110,12 @@ const OurTeam = () => {
                                     <MemberDesc>Director</MemberDesc>
                                     <MemberInfo>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</MemberInfo>
                                 </CardMember>
-                            </SwiperSlide>
-                        </Swiper>
-                        ||
-                        <>
-                            <CardMember>
-                                <ImageContainer>
-                                    <MemberImage src={Team} />
-                                </ImageContainer>
-                                <MemberTitle>Nikolas tesla</MemberTitle>
-                                <MemberDesc>Director</MemberDesc>
-                                <MemberInfo>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</MemberInfo>
-                            </CardMember>
-                            <CardMember>
-                                <ImageContainer>
-                                    <MemberImage src={Team} />
-                                </ImageContainer>
-                                <MemberTitle>Nikolas tesla</MemberTitle>
-                                <MemberDesc>Director</MemberDesc>
-                                <MemberInfo>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</MemberInfo>
-                            </CardMember>
-                            <CardMember>
-                                <ImageContainer>
-                                    <MemberImage src={Team} />
-                                </ImageContainer>
-                                <MemberTitle>Nikolas tesla</MemberTitle>
-                                <MemberDesc>Director</MemberDesc>
-                                <MemberInfo>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</MemberInfo>
-                            </CardMember>
-                        </>
-                    }
-                </RowTeamMembers>
-            </OurTeamWrapper>
-        </OurTeamContainer>
+                            </>
+                        }
+                    </RowTeamMembers>
+                </OurTeamWrapper>
+            </OurTeamContainer>
+        </Fade>
     )
 }
 

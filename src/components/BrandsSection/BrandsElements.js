@@ -30,6 +30,7 @@ export const WrapperImage = styled.div`
 
 export const ImageLogo = styled.img`
   max-height: 100px;
+  width: auto;
 `
 
 

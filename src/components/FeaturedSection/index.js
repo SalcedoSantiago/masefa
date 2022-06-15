@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useAppContext } from '../../context/Context'
 /**
  * External dependencies
  */
@@ -24,32 +24,8 @@ import {
 } from './FeaturedElements';
 import { cards } from './Data';
 
-function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-        width,
-        height
-    };
-}
-
-function useWindowDimensions() {
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-    useEffect(() => {
-        function handleResize() {
-            setWindowDimensions(getWindowDimensions());
-        }
-
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    return windowDimensions;
-}
-
 const Featured = () => {
-    const { width } = useWindowDimensions();
-
+    const { width } = useAppContext();
 
     return (
         <Fade>

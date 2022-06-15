@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-import { useState, useEffect } from 'react';
+import { useAppContext } from '../../context/Context'
 
 /**
  * Internal dependencies
@@ -24,35 +24,11 @@ import { WORKS } from './Data';
 import { Heading } from '../heading';
 
 
-function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-        width,
-        height
-    };
-}
-
-function useWindowDimensions() {
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-    useEffect(() => {
-        function handleResize() {
-            setWindowDimensions(getWindowDimensions());
-        }
-
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    return windowDimensions;
-}
-
-
 const Work = () => {
-    const { width } = useWindowDimensions();
+    const { width } = useAppContext();
 
     return (
-        <Fade>
+        <Fade right>
             <WorkContainer id="work">
                 <Heading>Obras Destacadas</Heading>
                 <Swiper
