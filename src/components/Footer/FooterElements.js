@@ -83,8 +83,10 @@ export const Column = styled.div`
 `;
 
 export const HeadingSection = styled.h2`
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #fff;
+    margin-right: 20px;
+    margin-bottom: 15px;
     @media screen and (max-width: 768px){
         margin-bottom: 10px;
         font-size: 1.8rem;
@@ -99,12 +101,13 @@ export const Navigate = styled.ul`
 
 export const Link = styled(LinkS)`
     list-style: none;
-    text-decoration: none;
+    text-decoration: underline;
     color: #ffe;
     display: block;
     cursor: pointer;
-    margin-bottom: 5px;
+    margin-bottom: 14px;
     font-size: 14px;
+    font-weight: 400;
     @media screen and (max-width: 768px){
         margin-bottom: 10px;
         font-size: 16px;

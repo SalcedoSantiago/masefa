@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Button } from '../button';
 
 
 export const ContactContainer = styled.section`
@@ -16,7 +17,8 @@ export const ColumnsField = styled.div`
     gap: 25px;
     flex-wrap: wrap;
     width: 100%;
-
+    margin-bottom: 15px;
+    
     @media (max-width: 768px) {
         gap: 0;
         flex-direction: column;
@@ -35,7 +37,6 @@ export const ContactWrapper = styled.div`
     @media screen and (max-width: 768px) {
         width: 100%;
     }
-  
 `
 
 export const FormContainer = styled.form`
@@ -87,3 +88,21 @@ export const ContactTextarea = styled.textarea`
     margin: 8px 0;
 `
 
+
+export const BtnWrapper = styled.div`
+    display: flex;
+    justify-content: end;
+
+    ${Button}{
+        font-weight: 600;
+        width: 200px;
+
+        @media screen and (max-width: 768px ) {
+            width: 60%;
+        }
+
+        @media screen and (max-width: 480px ) {
+            width: 100%;
+        }
+    }
+`;

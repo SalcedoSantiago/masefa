@@ -7,13 +7,13 @@ import Cta from '../components/cta';
 import Works from '../components/WorkSection';
 import OurTeam from '../components/OurTeamSection';
 import Contact from '../components/ContactSection';
-import Testimonials from '../components/sections/testimonials'
+import Brands from '../components/BrandsSection'
 
 const Home = () => {
     return (
         <>
             <Hero />
-            <Testimonials />    
+            <Brands />
             <About />
             <Featured />
             <Services />

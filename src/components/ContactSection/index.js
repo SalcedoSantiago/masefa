@@ -9,7 +9,8 @@ import {
     ContactWrapper,
     ContactLabel,
     ContactInput,
-    ContactTextarea
+    ContactTextarea,
+    BtnWrapper
 } from './ContactElements';
 
 
@@ -50,7 +51,9 @@ const Contact = () => {
                                 ></ContactTextarea>
                             </Field>
                         </ColumnsField>
-                        <Button>Enviar</Button>
+                        <BtnWrapper>
+                            <Button>Enviar</Button>
+                        </BtnWrapper>
                     </FormContainer>
                 </ContactWrapper>
             </ContactContainer>

@@ -30,43 +30,42 @@ const Footer = () => {
                     </InfoUs>
                     <IconsContainer>
                         <IconWrapper>
-                            i
+                            <i class="fa-brands fa-facebook-f"></i>
                         </IconWrapper>
                         <IconWrapper>
-                            i
+                            <i class="fa-brands fa-linkedin-in"></i>
                         </IconWrapper>
                         <IconWrapper>
-                            i
+                            <i class="fa-brands fa-instagram"></i>
                         </IconWrapper>
                     </IconsContainer>
                 </FooterAbout>
                 <Row>
                     <Column>
-                        <HeadingSection>About us</HeadingSection>
+                        <HeadingSection>Nosotros</HeadingSection>
                         <Navigate>
-                            <Link to="contact">Who are you?</Link>
-                            <Link to="contact">Who are you?</Link>
-                            <Link to="contact">Who are you?</Link>
-                            <Link to="contact">Who are you?</Link>
-                            <Link to="contact">Who are you?</Link>
+                            <Link to="about">Quienes somos?</Link>
+                            <Link to="featured">Descatado</Link>
+                            <Link to="work">Obras</Link>
+                            <Link to="services">Servicios</Link>
+                            <Link to="clients">Clientes</Link>
                         </Navigate>
                     </Column>
                     <Column>
-                        <HeadingSection>About us</HeadingSection>
+                        <HeadingSection>Servicios</HeadingSection>
                         <Navigate>
-                            <Link to="contact">Healthly Food</Link>
-                            <Link to="contact">Who are you?</Link>
-                            <Link to="contact">Who are you?</Link>
-                            <Link to="contact">Who are you?</Link>
+                            <Link to="contact">Secure</Link>
+                            <Link to="contact">24/7 Support</Link>
+                            <Link to="contact">Customizable</Link>
+                            <Link to="contact">Running Projects</Link>
                         </Navigate>
                     </Column>
                     <Column>
-                        <HeadingSection>About us</HeadingSection>
+                        <HeadingSection>FAQ</HeadingSection>
                         <Navigate>
-                            <Link to="contact">Who are you?</Link>
-                            <Link to="contact">Who are you?</Link>
-                            <Link to="contact">Who are you?</Link>
-                            <Link to="contact">Who are you?</Link>
+                            <Link to="contact">Contacto</Link>
+                            <Link to="contact">+112534456</Link>
+                            <Link to="contact">masefa@gmail.com</Link>
                         </Navigate>
                     </Column>
                 </Row>

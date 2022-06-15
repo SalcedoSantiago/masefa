@@ -9,6 +9,8 @@ export const OurTeamContainer = styled.section`
 
 export const OurTeamWrapper = styled.div`
     padding-top: 60px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 `;
 
 
@@ -33,27 +35,35 @@ export const CardMember = styled.div`
         max-width: 100%;
         margin: 0 auto;
         padding-bottom: 50px;
+        margin-right:15px;
     }
  
 `
 
 export const ImageContainer = styled.div`
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     margin-bottom: 10px;
+
 `
 export const MemberImage = styled.img`
     width: 300px;
-    
     @media screen  and (max-width: 1000px){
         /* width: 100%; */
+    width: 250px;
+
         /* width: 100vw; */
     }
     @media screen and (max-width: 768px){
-        width: 400px;
+        width: 350px;
     }
 
 
     @media screen and (max-width: 480px){
-        width: 500px;
+        width: 100%; 
+        margin: 0 2px;
     }
 `
 
@@ -61,6 +71,11 @@ export const MemberTitle = styled.h2`
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 5px;
+
+    
+    @media screen and (max-width: 480px){
+        font-size: 1.2rem;
+    }
 `
 
 export const MemberDesc = styled.h3`
@@ -68,6 +83,9 @@ export const MemberDesc = styled.h3`
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    @media screen and (max-width: 480px){
+        font-size: 11px;
+    }
 `
 
 export const MemberInfo = styled.p`
@@ -76,6 +94,7 @@ export const MemberInfo = styled.p`
 
     @media screen and (max-width: 480px){
         margin-bottom: 35px;
+        font-size: 13px;
     }  
 `
 

@@ -18,25 +18,25 @@ const HeaderInfo = () => {
                 <SocialContianer>
                     <Social href='masefa@gmail.com'>
                         <SocialLink>
-                            i<p>masefa@gmail.com</p>
+                            <i class="fa-solid fa-envelope"></i><p>masefa@gmail.com</p>
                         </SocialLink>
                     </Social>
 
                     <Social href='112509942'>
                         <SocialLink>
-                            i <p> 1120334455</p>
+                            <i class="fa-solid fa-phone"></i><p>1120334455</p>
                         </SocialLink>
                     </Social>
                 </SocialContianer>
                 <IconsContainer>
                     <IconWrapper>
-                        facebook
+                        <i class="fa-brands fa-facebook-f"></i>
                     </IconWrapper>
                     <IconWrapper>
-                        linkedin
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </IconWrapper>
                     <IconWrapper>
-                        whatsapp
+                        <i class="fa-brands fa-instagram"></i>
                     </IconWrapper>
                 </IconsContainer>
             </InfoWrapper>

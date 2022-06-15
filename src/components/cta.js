@@ -90,7 +90,7 @@ export default () => {
 
     return (
         <Fade>
-            <CtaContainer>
+            <CtaContainer >
                 <Row>
                     <Column>
                         <Heading>looking for a reliable & stable partner?</Heading>

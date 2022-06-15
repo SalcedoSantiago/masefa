@@ -57,7 +57,7 @@ export const CardService = styled.div`
 export const IconWrapper = styled.div`
 
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     color: var(--blue);
     margin-bottom: 15px;
     line-height: 1;
@@ -75,6 +75,8 @@ export const IconWrapper = styled.div`
     @media screen and (max-width: 480px){
         width: 70px;
         height: 70px;
+        font-size: 20px;
+    
     }
 `;
 
@@ -151,7 +153,7 @@ export const ColumnService = styled.div`
 `
 
 export const CheckIcon = styled.div`
-    font-size: 28px;
+    font-size: 24px;
     color: var(--orange);
     line-height: 1;
 `

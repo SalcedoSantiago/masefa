@@ -49,14 +49,9 @@ export const FeaturedCard = styled.div`
     padding: 20px 15px 40px 15px;
 `
 export const IconWrapper = styled.div`
-    font-size: 2rem;
-    fill: var(--orange);
+    font-size: 1.5rem;
+    color: var(--orange);
     margin-bottom: 20px;
-
-    svg{
-        width: 2rem;
-        height: 2rem;
-    }
 `
 
 export const CardH2 = styled.h2`

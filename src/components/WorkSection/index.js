@@ -53,7 +53,7 @@ const Work = () => {
 
     return (
         <Fade>
-            <WorkContainer>
+            <WorkContainer id="work">
                 <Heading>Obras Destacadas</Heading>
                 <Swiper
                     spaceBetween={25}

@@ -18,7 +18,6 @@ import {
 } from './ServicesElements';
 import { Heading } from '../heading';
 
-
 const Services = () => {
 
     return (
@@ -29,8 +28,7 @@ const Services = () => {
                     {services.map(({ title, Icon }, index) =>
                         <CardService key={index}>
                             <IconWrapper>
-                                i
-
+                                <i class="fa-solid fa-envelope-circle-check"></i>
                             </IconWrapper>
                             <ServiceTitle>{title}</ServiceTitle>
                         </CardService>
@@ -43,8 +41,7 @@ const Services = () => {
                         {[1, 2, 3, 4, 5].map((data, index) =>
                             <ColumnService key={index}>
                                 <CheckIcon>
-                                    i
-
+                                    <i className="fa-solid fa-circle-check"></i>
                                 </CheckIcon>
                                 <SubtitleServices>
                                     Industria química
@@ -57,8 +54,7 @@ const Services = () => {
                         {[1, 2, 3, 4, 5].map((data, index) =>
                             <ColumnService key={index}>
                                 <CheckIcon>
-                                    i
-
+                                    <i className="fa-solid fa-circle-check"></i>
                                 </CheckIcon>
                                 <SubtitleServices>
                                     Industria química

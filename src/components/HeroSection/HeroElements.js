@@ -17,17 +17,7 @@ export const StyledSlider = styled.div`
 
     position: relative;
 
-    > div{
-        height: 100%;
-        .previousButton,
-        .nextButton
-        {
-            z-index: 2;
-            svg polygon{
-                fill: var(--white);
-            }
-        }
-    }
+    
 `
 export const BgImageSlider = styled.div`
     height: 600px;

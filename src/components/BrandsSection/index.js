@@ -1,8 +1,5 @@
 import React from "react";
-import styled from "styled-components";
 import Fade from 'react-reveal/Fade';
-
-
 
 import LogoEstado from '../../assets/images/estado.webp';
 import LogoCyanamid from '../../assets/images/cyanamid.webp';
@@ -14,59 +11,21 @@ import LogoIngse from '../../assets/images/ingse.webp';
 /**
  * Internal dependencies
  */
+import {
+  SectionStyled,
+  PartnersContainer,
+  WrapperImage,
+  ImageLogo,
+  LineSpan,
+  FlexEnd,
+} from './BrandsElements'
 
 
-const SectionStyled = styled.section`
-  padding: 60px 0;
-  max-width: 1200px;
-  margin: 0 auto;
-  `
-
-
-const PartnersContainer = styled.div`
-  display: flex;
-  align-items: center;
-
-  .featured{
-
-    h2{
-      font-size: 20px;
-      padding-right: 10px;
-      color: var(--blue);
-      font-weight: 700;
-    }
-  }
-`
-
-const WrapperImage = styled.div`
-  margin-right: 15px;
-  margin-left: 15px;
-
-`
-
-export const ImageLogo = styled.img`
-  max-height: 100px;
-`
-
-
-export const LineSpan = styled.span`
-  height: 100%;
-  border-left: 1px solid #ccc;
-  margin-left: 30px;
-
-`
-
-const FlexEnd = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  flex: 1;
-`
 
 export default () => {
   return (
-    <Fade>
-      <SectionStyled>
+    <Fade right>
+      <SectionStyled id="clients">
         <PartnersContainer>
           <div className="featured">
             <h2>Nuestros Clientes <LineSpan /></h2>
