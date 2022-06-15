@@ -15,4 +15,4 @@ export const FeaturedCards = [
         title: 'Experiencia',
         desc: 'Conocemos la industria, todos sus cambios y evoluciones. Nuestro conocimiento es quien avala hoy a MASEFA y también los clientes conformes con nuestro servicio. MASEFA es el proyecto de profesionales con un largo camino de experiencia que vieron crecer la industria y evolucionaron junto con ella.'
     }
-]
+];
