@@ -25,7 +25,7 @@ export const PartnersContainer = styled.div`
 export const WrapperImage = styled.div`
   margin-right: 15px;
   margin-left: 15px;
-
+  max-width: 100%;
 `
 
 export const ImageLogo = styled.img`
